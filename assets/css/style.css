@@ -1,8 +1,10 @@
 
 :root {
-  --clinica: hsl(340 100% 45%);
-  --color-principal: hsl(205 24% 11%);
-  --color-secundario: hsl(30 31% 95%);
+  --color-principal: hsl(15, 100%, 40%);
+  --color-secundario: hsl(34, 96%, 59%);
+  --color-fondo:hsl(0, 0%, 100%);
+  --color-footer:hsl(15, 100%, 25%);
+  --color-texto:hsl(0, 0%, 0%);
   --md: 799px;
 }
 
@@ -29,37 +31,6 @@ a {
   text-decoration: none;
 }
 
-/*------------------- Utilidades --------------------------*/
-.d-grid { display: grid; }
-.grid-columns-1 { grid-template-columns: 1fr; }
-.d-flex { display: flex; }
-.align-items-center { align-items: center; }
-.justify-content-center { justify-content: center; }
-.justify-content-between { justify-content: space-between; }
-.flex-grow { flex-grow: 1; }
-.gap-1 { gap: 1em; }
-.container {
-  width: 96%;
-  max-width: 1200px;
-  margin-inline: auto;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-.border-bottom-1 { border-bottom: 1px solid #eee; }
-.border-top-1 { border-top: 1px solid #eee; }
-.pt-1 { padding-top: 1em; }
-@media screen {
-  .d-none { display: none; }
-}
 /*------------------- Responsivo utilidades --------------------------*/
 @media screen and (min-width: 400px) {
   .grid-columns-sm-2 { grid-template-columns: repeat(2, 1fr); }
@@ -112,7 +83,7 @@ header .telefono::after {
 header svg {
   height: 1em;
   aspect-ratio: 1;
-  fill: currentColor;
+  fill: black;
 }
 header svg.icon__xl {
    height: 1.2em;

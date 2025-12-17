@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
     <header>
-        <div class="border-bottom-1 pre-header">
+        <div class="border-bottom-1 pre-header list-unstyled">
             <div class="container d-md-flex justify-content-md-between">
             <ul class="d-flex justify-content-center gap-1">
                 <li class="telefono"><a href="tel:+34666666666">+34 666 666 666</a></li>
@@ -16,33 +17,54 @@
             </ul>
             <ul class="d-flex justify-content-center gap-1 border-top-1 border-md-0 pt-1 pt-md-0 rrss">
                 <li><a href="https://www.facebook.com/" target="_blank" title="Facebook">
-                    <svg><use href="assets/img/sprite.svg#facebook-f-brands-solid"></use></svg><span class="visually-hidden">Facebook</span></a></li>
-                <li><a href="https://x.com/" target="_blank" title="X"><svg><use href="assets/img/sprite.svg#x-twitter-brands-solid"></use></svg><span class="visually-hidden">X</span></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank" title="Instagram"><svg class="icon__xl"><use href="assets/img/sprite.svg#instagram-brands-solid-full"></use></svg><span class="visually-hidden">Instagram</span></a></li>
-                <li><a href="https://wa.me/+34666666666" target="_blank" title="WhatsApp"><svg class="icon__xl"><use href="assets/img/sprite.svg#whatsapp-brands-solid"></use></svg><span class="visually-hidden">WhatsApp</span></a></li>
+                    <svg><use href="assets/img/sprite.svg#rrssfacebook"></use></svg><span class="visually-hidden">Facebook</span></a></li>
+                <li><a href="https://x.com/" target="_blank" title="X"><svg><use href="assets/img/sprite.svg#rrsstwitter"></use></svg><span class="visually-hidden">X</span></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" title="Instagram"><svg class="icon__xl"><use href="assets/img/sprite.svg#rrssinstagram"></use></svg><span class="visually-hidden">Instagram</span></a></li>
             </ul>
             </div>
         </div>
+
+       
+
         <!-- inicio seccion nav -->
-        <nav>
-            <div class="container d-flex justify-content-between align-items-center align-items-md-stretch">
-                <a href="#"><img src="assets/img/logo.png" alt="Inicio"></a>
-                <button class="menu-toggle d-md-none" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-
-
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Tratamientos</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#"><svg class="icon__xl d-none visible-md"><use href="assets/img/sprite.svg#search"></use></svg><span class="d-md-none">Buscar</span></a></li>
+               
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Curt Thompson</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
                 </ul>
-             </div>
-        </nav>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+              </div>
+            </div>
+          </nav>   
+
           <!-- fin nav  -->
     </header>
     <main>
