@@ -12,3 +12,6 @@ Biblitoeca de Sprite SVGs
 10- [heart] - Corazon
 11- [lamp] - Lampara / Idea
 12- [persons] - 3 Personas juntas
+13- [paleta] - Icono para tarjeta categoría "manualidades"
+14- [tijeras] - Icono para tarjeta categoría "textil"
+15- [boton] - Icono para tarjeta categoría "mercería"
