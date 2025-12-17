@@ -83,7 +83,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-secundario);
+  color: var(--color-principal);
   text-decoration: none;
 }
 
