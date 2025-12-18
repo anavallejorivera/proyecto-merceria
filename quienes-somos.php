@@ -7,7 +7,7 @@
   <title>Quienes somos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/carousel.css">
+  <link rel="stylesheet" href="./assets/css/carousel.css?v=1.5">
 </head>
 
 <body class="about">
@@ -139,7 +139,7 @@
                 Nuestra historia
               </p>
               <p>
-                <a class="btn btn-lg btn-primary" href="#nuestrahistoria">Ver más</a>
+                <a class="btn btn-lg btn-primary boton-orange" href="#nuestrahistoria">Ver más</a>
               </p>
             </div>
           </div>
@@ -159,12 +159,12 @@
               preserveAspectRatio="xMidYMid slice" />
           </svg>
           <div class="container">
-            <div class="carousel-caption">
+            <div class="carousel-caption text-start">
               <h1>Quienes Somos</h1>
               <p>
                 Nuestra historia
               </p>
-              <p><a class="btn btn-lg btn-primary" href="#nuestrahistoria">Ver más</a></p>
+              <p><a class="btn btn-lg btn-primary boton-orange" href="#nuestrahistoria">Ver más</a></p>
             </div>
           </div>
         </div>
@@ -183,13 +183,13 @@
               preserveAspectRatio="xMidYMid slice" />
           </svg>
           <div class="container">
-            <div class="carousel-caption text-end">
+            <div class="carousel-caption text-start">
               <h1>Quienes Somos</h1>
               <p>
                 Nuestra historia
               </p>
               <p>
-                <a class="btn btn-lg btn-primary" href="#nuestrahistoria">Ver más</a>
+                <a class="btn btn-lg btn-primary boton-orange" href="#nuestrahistoria">Ver más</a>
               </p>
             </div>
           </div>
@@ -280,7 +280,7 @@
           </h2>
           <p class="lead">
             Larraz está situada en el centro de Zaragoza. Somos la mayor tienda de Aragón de manualidades textiles (o labores), mercería y manualidades creativas de todo tipo y para todas las edades. Un paseo por la tienda te llenará de inspiración, para tus propias creaciones, o para hacer un regalo original.
-            La tienda es una alianza entre la tradición y la modernidad: exposición de todos los productos, autoservicio y atención personalizada. Conjuga intemporalidad, elegancia y creatividad. <br><br>
+            La tienda es una alianza entre la tradición y la modernidad: exposición de todos los productos, autoservicio y atención personalizada. Conjuga intemporalidad, elegancia y creatividad.
             Cada temporada incorporamos nuevas gamas de productos siguiendo las últimas tendencias de la moda. Para ello, disponemos de una selección de artículos de fabricación nacional y realizamos importaciones, algunas de las cuales en exclusiva.
           </p>
         </div>
@@ -297,8 +297,6 @@
               href="assets/img/cajaentrada.jpg"
               width="100%"
               height="100%"
-              width="100%"
-              height="100%"
               fill="var(--bs-secondary-bg)">
               <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
                 500x500
@@ -310,15 +308,11 @@
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading fw-normal lh-1">
-            And lastly, this one.
-            <span class="text-body-secondary">Checkmate.</span>
+            Confianza, calidad y seguridad
           </h2>
-          <p class="lead">
-            And yes, this is the last block of representative placeholder
-            content. Again, not really intended to be actually read, simply
-            here to give you a better view of what this would look like with
-            some actual content. Your content.
-          </p>
+          <p><strong>- Confianza:</strong> servimos a miles de clientes que confían en nosotros. Organismos oficiales como la Casa Real, ministerios, gobiernos autonómicos y ayuntamientos, compañías multinacionales y marcas reconocidas, clubes y federaciones deportivas, Ejército, Guardia Civil y otros cuerpos de seguridad, cofradías, partidos políticos y sindicatos, etc.</p>
+          <p>También distribuyen nuestros productos empresas como agencias de publicidad, tiendas de banderas y artículos personalizados, etc.<br /><strong>- Calidad:</strong> el conocimiento acumulado durante nuestra larga existencia nos permite ofrecer una amplia variedad de productos con la máxima calidad.</p>
+          <p>Algunos de nuestros productos son los de mayor calidad en España.<br /><strong>- Seguridad:</strong> satisfacemos las necesidades de nuestros clientes y cumplimos las fechas de entrega demandadas.</p>
         </div>
         <div class="col-md-5">
           <svg
@@ -329,14 +323,11 @@
             role="img"
             width="500"
             xmlns="http://www.w3.org/2000/svg">
-            <title>Placeholder</title>
-            <rect
+            <image
+              href="assets/img/manualidades.png"
               width="100%"
               height="100%"
-              fill="var(--bs-secondary-bg)"></rect>
-            <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-              500x500
-            </text>
+              fill="var(--bs-secondary-bg)">
           </svg>
         </div>
       </div>
