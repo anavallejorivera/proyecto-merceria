@@ -1,0 +1,92 @@
+/* -------------------------------------
+   Estilos personalizados para Catálogo
+---------------------------------------- */
+
+/* Header del catálogo */
+.catalogo-header .titulo-catalogo {
+  color: var(--color-principal);
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.catalogo-header .subtitulo-catalogo {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Elevación suave */
+.card-hover-up {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover-up:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen de fondo en tarjeta */
+.card-bg {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+/* Zoom animado sobre la capa de fondo */
+.card-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease;
+  z-index: 0;
+  border-radius: 0.75rem;
+}
+
+/* Zoom al hacer hover */
+.card-hover-up:hover .card-bg::before {
+  transform: scale(1.1);
+}
+
+/* Contenido visible encima del fondo */
+.card-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 0.75rem;
+}
+
+/* Icono SVG en círculo */
+.icono-catalogo {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: var(--color-principal);
+  fill: var(--color-fondo);
+  border-radius: 50%;
+  padding: 0.3rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+/* Fondos específicos por tarjeta */
+.bg-manualidades::before {
+  background-image: url('../img/cat-manualidades.jpg');
+}
+
+.bg-textil::before {
+  background-image: url('../img/cat-textil.jpg');
+}
+
+.bg-merceria::before {
+  background-image: url('../img/cat-merceria.jpg');
+}
