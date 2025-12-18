@@ -1,0 +1,63 @@
+<section class="container-lg d-flex destacados">
+<div class="">
+<h2>Sobre Nosotros</h2>
+<p>En el corazón de Zaragoza, somos la mayor tienda de Aragón en manualidades, mercería y creatividad para todas las edades. Inspírate, crea y encuentra el regalo perfecto.</p>
+</div>
+<div>
+<img src="./assets/img/cat-textil.jpg" alt="Inicio" class="align-items-center">
+</div>
+ </section> quiero que la imagen este centrada en la seccion
+
+Perfecto 👍
+Como estás usando Bootstrap, la forma más limpia es centrar la imagen usando utilidades flex o las clases de centrado de imágenes.
+
+Ahora mismo tu estructura es correcta, solo falta centrar el contenido del segundo div.
+
+✅ Opción recomendada (Bootstrap puro)
+
+Centra la imagen vertical y horizontalmente dentro de su columna:
+
+<section class="container-lg d-flex destacados">
+  <div>
+    <h2>Sobre Nosotros</h2>
+    <p>
+      En el corazón de Zaragoza, somos la mayor tienda de Aragón en manualidades,
+      mercería y creatividad para todas las edades. Inspírate, crea y encuentra
+      el regalo perfecto.
+    </p>
+  </div>
+
+  <div class="d-flex align-items-center justify-content-center">
+    <img src="./assets/img/cat-textil.jpg" alt="Inicio" class="img-fluid">
+  </div>
+</section>
+
+Qué hace cada clase
+
+d-flex → convierte el div en flex
+git 
+align-items-center → centra verticalmente
+
+justify-content-center → centra horizontalmente
+
+img-fluid → hace la imagen responsive (muy recomendable)
+
+✅ Alternativa simple (solo centrado horizontal)
+
+Si solo quieres centrarla horizontalmente:
+
+<img src="./assets/img/cat-textil.jpg" alt="Inicio" class="img-fluid d-block mx-auto">
+
+💡 Recomendación extra
+
+Si esta sección es para desktop y mobile, considera usar grid de Bootstrap (row + col) para que en móvil el texto y la imagen se apilen correctamente.
+
+Si quieres, puedo adaptarte esta sección a:
+
+responsive (desktop / mobile)
+
+layout con imagen a la derecha en desktop y abajo en móvil
+
+animación suave al cargar
+
+Dime 👍
