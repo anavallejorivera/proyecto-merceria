@@ -6,14 +6,6 @@ body.about {
   color: rgb(var(--bs-tertiary-color-rgb));
 }
 
-@media (min-width: 768px) {
-  .about .navbar {
-    position: relative;
-    width: 100%;
-    z-index: 999999;
-  }
-}
-
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -31,7 +23,7 @@ body.about {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 25rem;
+  height: 32rem;
 }
 
 
