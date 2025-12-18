@@ -27,14 +27,18 @@
 }
 
 /* Imagen de fondo en tarjeta */
+.card {
+  border-radius: 0.75rem;
+}
+
 .card-bg {
   position: relative;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   border-radius: 0.75rem;
 }
 
-/* Zoom animado sobre la capa de fondo */
 .card-bg::before {
   content: "";
   position: absolute;
@@ -47,7 +51,6 @@
   border-radius: 0.75rem;
 }
 
-/* Zoom al hacer hover */
 .card-hover-up:hover .card-bg::before {
   transform: scale(1.1);
 }
@@ -78,6 +81,14 @@
   vertical-align: middle;
 }
 
+@media (min-width: 768px) {
+  .seccion-compacta {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+
 /* Fondos específicos por tarjeta */
 .bg-manualidades::before {
   background-image: url('../img/cat-manualidades.jpg');
@@ -89,4 +100,28 @@
 
 .bg-merceria::before {
   background-image: url('../img/cat-merceria.jpg');
+}
+
+.bg-pintura-acrilica::before {
+  background-image: url('../img/catalogo/manualidades/pintura-acrilica.png');
+}
+
+.bg-pasta-modelable::before {
+  background-image: url('../img/catalogo/manualidades/pasta-modelable.png');
+}
+
+.bg-sellos-decorativos::before {
+  background-image: url('../img/catalogo/manualidades/sellos-decorativos.png');
+}
+
+.bg-plantillas-stencil::before {
+  background-image: url('../img/catalogo/manualidades/plantillas-stencil.jpg');
+}
+
+.bg-goma-eva::before {
+  background-image: url('../img/catalogo/manualidades/goma-eva.png');
+}
+
+.bg-soportes-decorar::before {
+  background-image: url('../img/catalogo/manualidades/soportes-decorar.png');
 }
