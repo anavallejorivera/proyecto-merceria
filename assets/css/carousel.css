@@ -2,8 +2,15 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+html {
+  font-size: clamp(14px, 0.58vw + 11.8px, 17px);
+}
+
+
+
 body.about {
   color: rgb(var(--bs-tertiary-color-rgb));
+  font-family: "Hind", sans-serif;
 }
 
 
@@ -74,13 +81,13 @@ body.about {
   }
 
   .featurette-heading {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
 @media (min-width: 62em) {
   .featurette-heading {
-    margin-top: 7rem;
+    margin-top: 0.2rem;
   }
 }
 
@@ -119,7 +126,7 @@ body.about {
 
 .bi {
   vertical-align: -0.125em;
-  fill: currentColor;
+  fill: var(--color-principal);
 }
 
 .nav-scroller {
@@ -170,14 +177,14 @@ body.about {
 }
 
 .boton-orange {
-  background-color: var(--color-principal);
-  border-color: var(--color-principal);
-}
-
-.boton-orange:hover {
   background-color: var(--color-secundario);
   border-color: var(--color-secundario);
   color: var(--color-principal);
+}
+
+.boton-orange:hover {
+  background-color: var(--color-principal);
+  border-color: var(--color-principal);
 }
 
 .carousel-item::before {
@@ -198,4 +205,14 @@ body.about {
     width: 100%;
     z-index: 999999;
   }
+}
+
+.title-red{
+  color: var(--color-footer)!important;
+}
+
+.img1
+ {
+    width: 100%;
+    max-width: 525px;
 }
