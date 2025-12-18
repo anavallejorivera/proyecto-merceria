@@ -170,14 +170,14 @@ body.about {
 }
 
 .boton-orange {
-  background-color: var(--color-principal);
-  border-color: var(--color-principal);
-}
-
-.boton-orange:hover {
   background-color: var(--color-secundario);
   border-color: var(--color-secundario);
   color: var(--color-principal);
+}
+
+.boton-orange:hover {
+  background-color: var(--color-principal);
+  border-color: var(--color-principal);
 }
 
 .carousel-item::before {
