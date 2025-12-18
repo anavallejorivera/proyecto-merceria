@@ -226,18 +226,16 @@
 
           <h2 class="fw-normal">Misión</h2>
           <p>
-            Larraz tiene como misión ofrecer a sus clientes una experiencia única en el mundo de las manualidades, la mercería y las labores textiles, combinando tradición, creatividad e innovación. Desde el corazón de Zaragoza, buscamos inspirar la expresión artística y artesanal de personas de todas las edades mediante una atención personalizada, una cuidada selección de productos de calidad —nacionales e importados— y un entorno que une la elegancia clásica con las últimas tendencias del sector.
-          </p>
+            Larraz tiene como misión ofrecer a sus clientes una experiencia única en el mundo de las manualidades, la mercería y las labores textiles, combinando tradición, creatividad e innovación. Desde el corazón de Zaragoza, buscamos inspirar la expresión artística y artesanal de personas de todas las edades mediante una atención personalizada.
         </div>
         <!-- /.col-lg-4 -->
         <div class="col-lg-6 text-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
-            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+          <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
+            <path d="M4 11H2v3h2zm5-4H7v7h2zm5-5v12h-2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z" />
           </svg>
           <h2 class="fw-normal">Visión</h2>
           <p>
-            Ser reconocida como la tienda de referencia en España en manualidades textiles, mercería y artes creativas, destacando por nuestra capacidad de adaptación, nuestra trayectoria centenaria y nuestro compromiso con la innovación constante. Aspiramos a mantener viva la tradición artesanal mientras incorporamos nuevas tecnologías, productos y experiencias que impulsen la creatividad y consoliden a Larraz como un símbolo de calidad, inspiración y modernidad.
+            Ser reconocida como la tienda de referencia en España en manualidades textiles, mercería y artes creativas, destacando por nuestra capacidad de adaptación, nuestra trayectoria centenaria y nuestro compromiso con la innovación constante. Aspiramos a mantener viva la tradición artesanal mientras incorporamos nuevas tecnologías, productos y experiencias.
           </p>
         </div>
       </div>
