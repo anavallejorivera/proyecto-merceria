@@ -1,0 +1,397 @@
+/* ===============================================
+   VARIABLES CSS
+   =============================================== */
+:root {
+  /* Colores principales */
+  --color-principal: hsl(15, 100%, 40%);
+  --color-secundario: hsl(34, 96%, 59%);
+  --color-fondo: hsl(0, 0%, 100%);
+  --color-footer: hsl(15, 100%, 25%);
+  --color-texto: hsl(0, 0%, 0%);
+  --sombra: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+  /* Transiciones */
+  --transition-base: 0.3s ease;
+  --transition-fast: 0.2s ease;
+  
+  /* Sombras */
+  --sombra: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===============================================
+   MODO OSCURO
+   =============================================== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-principal: hsl(15, 100%, 25%);
+    --color-secundario: hsl(34, 96%, 59%);
+    --color-fondo: hsl(0, 0%, 7%);
+    --color-footer: hsl(15, 100%, 40%);
+    --color-texto: hsl(0, 0%, 100%);
+    --sombra: 0 2px 8px rgba(255, 255, 255, 0.06);
+  }
+  
+  /* Ajustes específicos para modo oscuro */
+  .navbar {
+    box-shadow: var(--sombra);
+  }
+  
+  .dropdown-menu {
+    background-color: var(--color-fondo);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+ 
+  .navbar-collapse {
+    background-color: var(--color-fondo) !important;
+  }
+}
+
+/* ===============================================
+   FUENTES
+   =============================================== */
+/* Importar fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&display=swap');
+
+/* ===============================================
+   ESTILOS BASE
+   =============================================== */
+html {
+  font-size: clamp(15px, 0.5vw + 12px, 18px);
+}
+
+body {
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  font-optical-sizing: auto;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Hind", sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: var(--color-footer);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-principal);
+  text-decoration: none;
+}
+
+/* ===============================================
+   UTILIDADES PERSONALIZADAS
+   =============================================== */
+
+/* Hover opacity */
+.hover-opacity-100:hover {
+  opacity: 1 !important;
+  transition: var(--transition-fast);
+}
+
+
+
+/* ---------imagenes---------- */
+img{
+  width: 50%;
+  height: auto;
+  float: left;
+}
+
+/* ===============================================
+   COMPONENTES - BOTONES
+   =============================================== */
+.btn-cta {
+  color: var(--color-footer);
+  background-color: var(--color-secundario);
+  border: 2px solid var(--color-secundario);
+  border-radius: 0.5rem;
+  padding: 0.625rem 1.5rem;
+  font-weight: 600;
+  display: inline-block;
+  transition: var(--transition-base);
+}
+
+.btn-cta:hover,
+.btn-cta:focus {
+  background-color: var(--color-principal);
+  border-color: var(--color-principal);
+  color: var(--color-secundario);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-cta:active {
+  transform: translateY(0);
+}
+
+/* ===============================================
+   HEADER
+   =============================================== */
+
+/* Pre-header */
+.pre-header {
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  .pre-header {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.pre-header .telefono::after {
+  content: '|';
+  margin-left: 1rem;
+  opacity: 0.3;
+}
+
+.pre-header a {
+  opacity: 0.5;
+  transition: var(--transition-fast);
+}
+
+.pre-header a:hover {
+  opacity: 1;
+}
+
+/* Logo */
+.logo {
+  max-width: 180px;
+  height: auto;
+  padding: 1rem 0;
+  transition: var(--transition-base);
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+@media screen and(max-width: 600px) {
+  .logo {
+    max-width: 150px;
+    width: 75%;
+  }
+}
+
+/* ===============================================
+HERO
+   =============================================== */
+.hero {
+  text-align: center;
+  font-size: 1.1rem;
+   background-image: linear-gradient(90deg, rgb(0 0 0 / .3) 0%, rgb(0 0 0 / .3) 100%), url('../img/hero-imagen.png');
+   background-size: cover;
+   color: white;
+   padding: 4em 5%;
+}
+@media screen and (min-width: 600px) {
+  .hero {
+    padding-top: calc(133px + 4em);
+    padding-bottom: 2em;
+  }
+}
+.hero h2 {
+  font-family: 'Hind', sans-serif;
+  font-size: 3em;
+  font-weight: 400;
+  margin-top: 0;
+}
+.hero h2 + p{
+    font-size: 1.5em;
+}
+
+/* ===============================================
+   ICONOS REDES SOCIALES
+   =============================================== */
+header svg {
+  height: 1em;
+  aspect-ratio: 1;
+ fill: currentColor;
+  vertical-align: middle;
+}
+header svg.icon__xl{
+  width: 1.2em;
+  height: 1.2em;
+}
+
+header .pre-header{
+  opacity: .55;
+  transition: .2s;
+}
+header .pre-header a:hover{
+  opacity: 1;
+}
+
+/* ===============================================
+   NAVEGACIÓN
+   =============================================== */
+.navbar {
+  background-color: var(--color-fondo) !important;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 999999;
+  }
+}
+
+.navbar-brand {
+  transition: var(--transition-fast);
+}
+
+.nav-link {
+  color: var(--color-footer);
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  transition: var(--transition-base);
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-secundario);
+ 
+}
+
+/* Efecto hover borde superior en desktop */
+@media (min-width: 992px) {
+  .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: currentColor;
+    transition: width var(--transition-base);
+  }
+  
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    width: 80%;
+  }
+  
+  /* Evitar efecto de borde en botón CTA */
+  .btn-cta.nav-link::before,
+  .nav-item .btn-cta::before {
+    display: none;
+  }
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  border: none;
+  margin-top: 0.5rem;
+  background-color: var(--color-fondo);
+
+}
+
+.dropdown-item {
+  color: var(--color-footer);
+  padding: 0.625rem 1.25rem;
+  transition: var(--transition-fast);
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: var(--color-secundario);
+}
+/* Menú móvil */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--color-fondo);
+    text-align: center;
+  }
+  
+  .nav-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .nav-item {
+      border-bottom-color: rgba(255, 255, 255, 0.05);
+    }
+  }
+  
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Botón CTA centrado en móvil */
+  .nav-item .btn-cta {
+    display: block;
+    margin: 0.5rem auto;
+    text-align: center;
+  }
+}
+
+
+/* ===============================================
+   ANIMACIONES Y TRANSICIONES
+   =============================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+/* ===============================================
+   RESPONSIVE UTILITIES
+   =============================================== */
+
+/* Espaciado consistente en secciones */
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+/* ===============================================
+   FOOTER 
+   =============================================== */
+   footer{
+  background-color: var(--color-footer);
+  color: var(--color-fondo);
+   }
+
+   footer a{
+    color: var(--color-fondo);
+   }
+   footer a:hover{
+    color: var(--color-secundario);
+   }
+   footer h6{
+    color: var(--color-secundario);
+   }
+  
