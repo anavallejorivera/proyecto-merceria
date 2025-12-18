@@ -10,6 +10,7 @@ html {
 
 body.about {
   color: rgb(var(--bs-tertiary-color-rgb));
+  font-family: "Hind", sans-serif;
 }
 
 
@@ -125,7 +126,7 @@ body.about {
 
 .bi {
   vertical-align: -0.125em;
-  fill: currentColor;
+  fill: var(--color-principal);
 }
 
 .nav-scroller {
@@ -204,4 +205,14 @@ body.about {
     width: 100%;
     z-index: 999999;
   }
+}
+
+.title-red{
+  color: var(--color-footer)!important;
+}
+
+.img1
+ {
+    width: 100%;
+    max-width: 525px;
 }
