@@ -10,18 +10,18 @@
   </head>
   <body>
     <header>
-     <div class="border-bottom pre-header">
-    <div class="container">
+     <div class="border-bottom pre-header align-items-center">
+    <div class="container ">
         <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-center">
             <!-- Información de contacto -->
-            <ul class="list-unstyled d-flex gap-3 mb-2 mb-md-0">
+            <!-- <ul class="list-unstyled d-flex gap-3 mb-2 mb-md-0">
                 <li class="telefono">
-                    <a href="tel:+34666666666" class="text-decoration-none">+34 666 666 666</a>
+                   Tienda Online
                 </li>
                 <li>
-                    <a href="mailto:correo@correo.com" class="text-decoration-none">correo@correo.com</a>
+                    <a href="www.larraz.es" target="_blank" class="text-decoration-none">www.Larraz.es</a>
                 </li>
-            </ul> 
+            </ul>  -->
             <!-- Redes sociales -->
               <ul class="d-flex justify-content-center border-top border-md-top-0 pt-0 pt-1 gap-2 list-unstyled">   
             <li><a href="http://www.facebook.com" target="_blank"><svg class="icon__xl"><use href="assets/img/sprite.svg#rrssfacebook"></use></svg><span class="visually-hidden">facebook</span></a></li>
@@ -58,15 +58,15 @@
             Catálogo
           </a>
           <ul class="dropdown-menu text-center">
-            <li><a class="dropdown-item" href="#">Manualidades</a></li>
-            <li><a class="dropdown-item" href="#">Manualidades</a></li>
-            <li><a class="dropdown-item" href="#">Manualidades</a></li>
+            <li><a class="dropdown-item" href="#">Manualidades y Decoración</a></li>
+            <li><a class="dropdown-item" href="#">Textil y Labores</a></li>
+            <li><a class="dropdown-item" href="#">Merceria y Bisuteía</a></li>
           </ul>
         </li>
          <li class="nav-item">
           <a class="nav-link cta" href="#">Contacto</a>
         </li>
-<li><button class="btn btn-outline-success btn-cta nav-item" >Visitanos</button></li>
+<li><button class="btn-cta-nav nav-item">Visitanos</button></li>
                     
 
           </ul>
@@ -77,24 +77,91 @@
     </header>
     <main>
 <section class="hero">
-    <h1>Bienvenido a Mundo Larraz</h1>
-    <p>Inspirate y Crea</p>
-    <div>
+    <h1>Mercería Larraz</h1>
+    <div class="hero-texto p-2 mb-2 bg-white bg-opacity-50">
+    <p class="hero-texto">Tu creatividad empieza aquí</p>
+    <p><span class="">Encuentra todo lo necesario para tus creaciones y diseños únicos.
+Ven, recorre nuestra tienda y déjate inspirar</span></p>
+     </div>
+     <div>
     <a href="#" rel="wobble-top" class="button wobble-top btn-cta">Explora Productos</a>
     <a href="#" rel="wobble-top" class="button wobble-top btn-cta">Conocenos</a>
   </div>
     </section>
-
-    
-        <section class="container-lg">
-    <h2>Productos destacados</h2>  
-<ul class="d-grid grid-columns-1 grid-columns-sm-2 grid-columns-md-4">
-    <li class="primera" ><a href="usa.html">Estados Unidos</a></li>
-    <li class="segunda"><a href="#segunda">Coreal del sur</a></li>
-    <li class="tercera"><a href="#tercera">Caribe</a></li>
-    <li class="cuarta"><a href="#cuarta">Tailandia</a></li>
-</ul>
-</section>
+<!-- Quienes somos -->
+ <section class="container-lg d-flex destacados">
+<div class="">
+<h2>Sobre Nosotros</h2>
+<p>En el corazón de Zaragoza, somos la mayor tienda de Aragón en manualidades, mercería y creatividad para todas las edades. Inspírate, crea y encuentra el regalo perfecto.</p>
+</div>
+<div>
+<img src="./assets/img/cat-textil.jpg" alt="Inicio" class="img-fluid">
+</div>
+ </section>
+    <!-- PRODUCTOS DESTACADOS -->
+    <section class="container my-5 destacados">
+   <h2 class="text-center">Productos Destacados</h2>
+      <div class="row g-4 justify-content-center">
+        
+        <!-- Tarjeta Manualidades y Decoración -->
+        <div class="col-sm-6 col-md-4">
+          <a href="#" class="text-decoration-none text-reset d-block h-100">
+            <div class="card h-100 card-hover-up">
+              <div class="card-bg bg-manualidades">
+                <div class="card-content">
+                  <h5 class="card-title mb-2">
+                    <svg class="icono-catalogo" xmlns="http://www.w3.org/2000/svg">
+                      <use href="assets/img/sprite.svg#lamp"></use>
+                    </svg>
+                    Botones
+                  </h5>
+                  <span class="">Explorar productos →</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <!-- Tarjeta Textil y Labores -->
+        <div class="col-sm-6 col-md-4">
+          <a href="#" class="text-decoration-none text-reset d-block h-100">
+            <div class="card h-100 card-hover-up">
+              <div class="card-bg bg-textil">
+                <div class="card-content">
+                  <h5 class="card-title mb-2">
+                    <svg class="icono-catalogo" xmlns="http://www.w3.org/2000/svg">
+                      <use href="assets/img/sprite.svg#heart"></use>
+                    </svg>
+                    Cintas
+                  </h5>
+                  <span class="">Explorar productos →</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <!-- Tarjeta Mercería y Bisutería -->
+        <div class="col-sm-6 col-md-4">
+          <a href="#" class="text-decoration-none text-reset d-block h-100">
+            <div class="card h-100 card-hover-up">
+              <div class="card-bg bg-merceria">
+                <div class="card-content">
+                  <h5 class="card-title mb-2">
+                    <svg class="icono-catalogo" xmlns="http://www.w3.org/2000/svg">
+                      <use href="assets/img/sprite.svg#lamp"></use>
+                    </svg>
+                     Bisutería
+                  </h5>
+                  <span class="">Explorar productos →</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+  
+      </div>
+    </section>
     </main>
    <footer  class="p-4">
     <div class="container">

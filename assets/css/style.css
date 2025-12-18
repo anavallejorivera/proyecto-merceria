@@ -50,8 +50,52 @@
    FUENTES
    =============================================== */
 /* Importar fuentes de Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&display=swap');
 
+@font-face {
+  font-family: 'FiraSans-black';
+  font-display: swap;
+  src: url("../fonts/FiraSans-Black.ttf") format("woff2");
+}
+@font-face {
+  font-family: 'FiraSans-bold';
+  font-display: swap;
+  src: url("../fonts/FiraSans-Bold.ttf") format("woff2");
+}
+@font-face {
+  font-family: 'FiraSans-semibold';
+  font-display: swap;
+  src: url("../fonts/FiraSans-SemiBold.ttf") format("woff2");
+}
+@font-face {
+  font-family: 'FiraSans-Extrabold';
+  font-display: swap;
+  src: url("../fonts/FiraSans-ExtraBold.ttf") format("woff2");
+}
+@font-face {
+  font-family: 'FiraSans-extralight';
+  font-display: swap;
+  src: url("../fonts/FiraSans-ExtraLight.ttf") format("woff2");
+}
+@font-face {
+  font-family: 'FiraSans-light';
+  font-display: swap;
+  src: url("../fonts/FiraSans-Light.ttf") format("woff2");
+}
+@font-face {
+  font-family: 'FiraSans-medium';
+  font-display: swap;
+  src: url("../fonts/FiraSans-Medium.ttf") format("woff2");
+}
+@font-face {
+  font-family: 'FiraSans-regular';
+  font-display: swap;
+  src: url("../fonts/FiraSans-Regular.ttf") format("woff2");
+}
+@font-face {
+  font-family: 'FiraSans-thin';
+  font-display: swap;
+  src: url("../fonts/FiraSans-Thin.ttf") format("woff2");
+}
 /* ===============================================
    ESTILOS BASE
    =============================================== */
@@ -60,7 +104,7 @@ html {
 }
 
 body {
-  font-family: "Hind", sans-serif;
+  font-family: "FiraSans-regular", sans-serif;
   font-weight: 500;
   font-optical-sizing: auto;
   color: var(--color-texto);
@@ -72,7 +116,7 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Hind", sans-serif;
+  font-family: "FiraSans-light", sans-serif;
   font-weight: 700;
 }
 
@@ -115,18 +159,20 @@ img{
 .btn-cta {
   color: var(--color-footer);
   background-color: var(--color-secundario);
-  border: 2px solid var(--color-secundario);
-  border-radius: 0.5rem;
+  border: 3px solid var(--color-secundario);
+  border-radius: 0.95rem;
   padding: 0.625rem 1.5rem;
+  font-family: "FiraSans-light";
   font-weight: 600;
   display: inline-block;
   transition: var(--transition-base);
+  /* opacity: 0.5; */
 }
 
 .btn-cta:hover,
 .btn-cta:focus {
-  background-color: var(--color-principal);
-  border-color: var(--color-principal);
+  background-color: var(--color-footer);
+  border-color: var(--color-footer);
   color: var(--color-secundario);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -142,6 +188,7 @@ img{
 
 /* Pre-header */
 .pre-header {
+  font-family:"FiraSans-light";
   font-size: 0.9rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -191,11 +238,25 @@ HERO
    =============================================== */
 .hero {
   text-align: center;
+ font-family: "FiraSans-black";
   font-size: 1.1rem;
-   background-image: linear-gradient(90deg, rgb(0 0 0 / .3) 0%, rgb(0 0 0 / .3) 100%), url('../img/hero-imagen.png');
+   background-image: url('../img/hero-banner.jpg');
    background-size: cover;
-   color: white;
+   color: var(--color-fondo);
    padding: 4em 5%;
+   aspect-ratio: 16/9;
+}
+.hero-texto{
+  border-radius: 0.95rem;
+}
+ .hero-texto p{
+  font-family: 'FiraSans-bold',sans-serif; 
+  color: var(--color-footer);
+  
+}
+.hero h1{
+  font-size: 3rem;
+  color:var(--color-footer)
 }
 @media screen and (min-width: 600px) {
   .hero {
@@ -203,16 +264,17 @@ HERO
     padding-bottom: 2em;
   }
 }
+
 .hero h2 {
-  font-family: 'Hind', sans-serif;
-  font-size: 3em;
+  font-family: 'FiraSans-bold', sans-serif;
+  font-size: 3rem;
   font-weight: 400;
   margin-top: 0;
+  color: var(--color-principal);
 }
-.hero h2 + p{
-    font-size: 1.5em;
+.hero span{
+  font-family:'FiraSans-light';
 }
-
 /* ===============================================
    ICONOS REDES SOCIALES
    =============================================== */
@@ -239,6 +301,8 @@ header .pre-header a:hover{
    NAVEGACIÓN
    =============================================== */
 .navbar {
+  
+  font-family: 'FiraSans-light';
   background-color: var(--color-fondo) !important;
 }
 
@@ -267,6 +331,29 @@ header .pre-header a:hover{
   color: var(--color-secundario);
  
 }
+.btn-cta-nav {
+  color: var(--color-footer);
+  background-color: var(--color-secundario);
+  border: 3px solid var(--color-secundario);
+  border-radius: 0.95rem;
+  padding: 0.625rem 1.5rem;
+  font-family: "FiraSans-light";
+  font-weight: 600;
+  display: inline-block;
+  transition: var(--transition-base);
+}
+.btn-cta-nav:hover,
+.btn-cta-nav:focus {
+  background-color: var(--color-footer);
+  border-color: var(--color-footer);
+  color: var(--color-secundario);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-cta-nav:active {
+  transform: translateY(0);
+}
 
 /* Efecto hover borde superior en desktop */
 @media (min-width: 992px) {
@@ -288,8 +375,8 @@ header .pre-header a:hover{
   }
   
   /* Evitar efecto de borde en botón CTA */
-  .btn-cta.nav-link::before,
-  .nav-item .btn-cta::before {
+  .btn-cta-nav.nav-link::before,
+  .nav-item .btn-cta-nav::before {
     display: none;
   }
 }
@@ -327,16 +414,17 @@ header .pre-header a:hover{
   
   @media (prefers-color-scheme: dark) {
     .nav-item {
-      border-bottom-color: rgba(255, 255, 255, 0.05);
+      border-bottom-color: var(--color-fondo);
     }
   }
   
   .nav-item:last-child {
+    font-family: 'FiraSans-light';
     border-bottom: none;
   }
   
   /* Botón CTA centrado en móvil */
-  .nav-item .btn-cta {
+  .nav-item .btn-cta-nav {
     display: block;
     margin: 0.5rem auto;
     text-align: center;
@@ -347,11 +435,18 @@ header .pre-header a:hover{
    FOOTER 
    =============================================== */
 footer {
+  font-family:'FiraSans-light' ;
   background-color: var(--color-footer);
   margin-top: auto;
   color: var(--color-fondo);
 }
-
+.footer h2{
+  font-family: 'FiraSans-bold';
+}
+.footer p{
+  font-family: 'FiraSans-light';
+  line-height: normal;
+}
 /* ===============================================
    ANIMACIONES Y TRANSICIONES
    =============================================== */
@@ -386,4 +481,101 @@ section {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+/* ===============================================
+   PRODUCTOS DESTACADOS
+   =============================================== */
+   .destacados h2{
+   font-family: 'FiraSans-Bold'; 
+   color: var(--color-footer);
+   }
+
+   .destacados p{
+    font-family: 'FiraSans-light';
+   }
+   .destacados img{
+    width: 100%;
+    border-radius: 0.95rem;
+   }
+/* Elevación suave */
+.card{
+  border: initial;
+  border-radius: initial;
+}
+.card-title{
+  font-family: 'FiraSans-semibold';
+}
+.card-hover-up {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover-up:hover {
+  transform: translateY(-5px);
+  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
+}
+
+/* Imagen de fondo en tarjeta */
+.card-bg {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+/* Zoom animado sobre la capa de fondo */
+.card-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease;
+  z-index: 0;
+  /* border-radius: 0.75rem; */
+}
+
+/* Zoom al hacer hover */
+.card-hover-up:hover .card-bg::before {
+  transform: scale(1.02);
+}
+
+/* Contenido visible encima del fondo */
+.card-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: rgba(0, 0, 0, 0.4);
+  /* border-radius: 0.75rem; */
+}
+
+/* Icono SVG en círculo */
+.icono-catalogo {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: var(--color-principal);
+  fill: var(--color-fondo);
+  border-radius: 50%;
+  padding: 0.3rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+/* Fondos específicos por tarjeta */
+.bg-manualidades::before {
+ 
+  background-image: url('../img/Botones-Pedreria.jpg');
+}
+
+.bg-textil::before {
+  background-image: url('../img/Botones-Pedreria.jpg');
+}
+
+.bg-merceria::before {
+  background-image: url('../img/Botones-Pedreria.jpg');
 }
