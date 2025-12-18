@@ -126,20 +126,20 @@
             preserveAspectRatio="xMidYMid slice"
             width="100%"
             xmlns="http://www.w3.org/2000/svg">
-            <rect
+            <image
+              href="assets/img/larraz-portada.png"
               width="100%"
               height="100%"
-              fill="var(--bs-secondary-color)"></rect>
+              preserveAspectRatio="xMidYMid slice" />
           </svg>
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1>Example headline.</h1>
+              <h1>Quienes Somos</h1>
               <p class="opacity-75">
-                Some representative placeholder content for the first slide of
-                the carousel.
+                Nuestra historia
               </p>
               <p>
-                <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+                <a class="btn btn-lg btn-primary" href="#nuestrahistoria">Ver más</a>
               </p>
             </div>
           </div>
@@ -152,19 +152,19 @@
             preserveAspectRatio="xMidYMid slice"
             width="100%"
             xmlns="http://www.w3.org/2000/svg">
-            <rect
+            <image
+              href="assets/img/cat-manualidades.jpg"
               width="100%"
               height="100%"
-              fill="var(--bs-secondary-color)"></rect>
+              preserveAspectRatio="xMidYMid slice" />
           </svg>
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
+              <h1>Quienes Somos</h1>
               <p>
-                Some representative placeholder content for the second slide
-                of the carousel.
+                Nuestra historia
               </p>
-              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#nuestrahistoria">Ver más</a></p>
             </div>
           </div>
         </div>
@@ -176,20 +176,20 @@
             preserveAspectRatio="xMidYMid slice"
             width="100%"
             xmlns="http://www.w3.org/2000/svg">
-            <rect
+            <image
+              href="assets/img/cat-merceria.jpg"
               width="100%"
               height="100%"
-              fill="var(--bs-secondary-color)"></rect>
+              preserveAspectRatio="xMidYMid slice" />
           </svg>
           <div class="container">
             <div class="carousel-caption text-end">
-              <h1>One more for good measure.</h1>
+              <h1>Quienes Somos</h1>
               <p>
-                Some representative placeholder content for the third slide of
-                this carousel.
+                Nuestra historia
               </p>
               <p>
-                <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+                <a class="btn btn-lg btn-primary" href="#nuestrahistoria">Ver más</a>
               </p>
             </div>
           </div>
@@ -218,81 +218,28 @@
     <div class="container marketing">
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-4">
-          <svg
-            aria-label="Placeholder"
-            class="bd-placeholder-img rounded-circle"
-            height="140"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="140"
-            xmlns="http://www.w3.org/2000/svg">
-            <title>Placeholder</title>
-            <rect
-              width="100%"
-              height="100%"
-              fill="var(--bs-secondary-color)"></rect>
+        <div class="col-lg-6 text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
           </svg>
-          <h2 class="fw-normal">Heading</h2>
+
+          <h2 class="fw-normal">Misión</h2>
           <p>
-            Some representative placeholder content for the three columns of
-            text below the carousel. This is the first column.
-          </p>
-          <p>
-            <a class="btn btn-secondary" href="#">View details &raquo;</a>
+            Larraz tiene como misión ofrecer a sus clientes una experiencia única en el mundo de las manualidades, la mercería y las labores textiles, combinando tradición, creatividad e innovación. Desde el corazón de Zaragoza, buscamos inspirar la expresión artística y artesanal de personas de todas las edades mediante una atención personalizada, una cuidada selección de productos de calidad —nacionales e importados— y un entorno que une la elegancia clásica con las últimas tendencias del sector.
           </p>
         </div>
         <!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg
-            aria-label="Placeholder"
-            class="bd-placeholder-img rounded-circle"
-            height="140"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="140"
-            xmlns="http://www.w3.org/2000/svg">
-            <title>Placeholder</title>
-            <rect
-              width="100%"
-              height="100%"
-              fill="var(--bs-secondary-color)"></rect>
+        <div class="col-lg-6 text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
           </svg>
-          <h2 class="fw-normal">Heading</h2>
+          <h2 class="fw-normal">Visión</h2>
           <p>
-            Another exciting bit of representative placeholder content. This
-            time, we've moved on to the second column.
-          </p>
-          <p>
-            <a class="btn btn-secondary" href="#">View details &raquo;</a>
+            Ser reconocida como la tienda de referencia en España en manualidades textiles, mercería y artes creativas, destacando por nuestra capacidad de adaptación, nuestra trayectoria centenaria y nuestro compromiso con la innovación constante. Aspiramos a mantener viva la tradición artesanal mientras incorporamos nuevas tecnologías, productos y experiencias que impulsen la creatividad y consoliden a Larraz como un símbolo de calidad, inspiración y modernidad.
           </p>
         </div>
-        <!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg
-            aria-label="Placeholder"
-            class="bd-placeholder-img rounded-circle"
-            height="140"
-            preserveAspectRatio="xMidYMid slice"
-            role="img"
-            width="140"
-            xmlns="http://www.w3.org/2000/svg">
-            <title>Placeholder</title>
-            <rect
-              width="100%"
-              height="100%"
-              fill="var(--bs-secondary-color)"></rect>
-          </svg>
-          <h2 class="fw-normal">Heading</h2>
-          <p>
-            And lastly this, the third column of representative placeholder
-            content.
-          </p>
-          <p>
-            <a class="btn btn-secondary" href="#">View details &raquo;</a>
-          </p>
-        </div>
-        <!-- /.col-lg-4 -->
       </div>
       <!-- /.row -->
       <!-- START THE FEATURETTES -->
@@ -300,12 +247,12 @@
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading fw-normal lh-1">
-            First featurette heading.
-            <span class="text-body-secondary">It’ll blow your mind.</span>
+            Nuestra Historia
           </h2>
           <p class="lead">
-            Some great placeholder content for the first featurette here.
-            Imagine some exciting prose here.
+            Larraz es una empresa centenaria, galardonada con la medalla Basilio Paraíso por su larga trayectoria empresarial.
+            Se desconoce la fecha y localización exacta de su fundación, pero consta que, entre 1866 y 1883, Miguel García Lito y Vicente Larraz Gil solicitaron al ayuntamiento un permiso de obras para reformar el escaparate de su mercería en el antiguo Coso 34, lugar donde actualmente está la calle Valenzuela. <br><br>
+            Durante esta época el comercio se dedica a las actividades de sedería, mercería y paquetería, trabajando principalmente productos como hilos, algodones, puntillas, encajes, flecos, pasamanería, cintas, botones y adornos. En 1917 fallece Vicente Larraz Gil, y el negocio queda en manos de Miguel García, ayudado quizás por alguno de los hijos del señor Larraz. Finalmente, es el menor de ellos, Vicente Larraz Cardiel, quien toma la dirección de la empresa.
           </p>
         </div>
         <div class="col-md-5">
@@ -317,14 +264,11 @@
             role="img"
             width="500"
             xmlns="http://www.w3.org/2000/svg">
-            <title>Placeholder</title>
-            <rect
+            <image
+              href="assets/img/historia.jpg"
               width="100%"
               height="100%"
-              fill="var(--bs-secondary-bg)"></rect>
-            <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-              500x500
-            </text>
+              preserveAspectRatio="xMidYMid slice" />
           </svg>
         </div>
       </div>
@@ -332,13 +276,12 @@
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
           <h2 class="featurette-heading fw-normal lh-1">
-            Oh yeah, it’s that good.
-            <span class="text-body-secondary">See for yourself.</span>
+            La Tienda
           </h2>
           <p class="lead">
-            Another featurette? Of course. More placeholder content here to
-            give you an idea of how this layout would work with some actual
-            real-world content in place.
+            Larraz está situada en el centro de Zaragoza. Somos la mayor tienda de Aragón de manualidades textiles (o labores), mercería y manualidades creativas de todo tipo y para todas las edades. Un paseo por la tienda te llenará de inspiración, para tus propias creaciones, o para hacer un regalo original.
+            La tienda es una alianza entre la tradición y la modernidad: exposición de todos los productos, autoservicio y atención personalizada. Conjuga intemporalidad, elegancia y creatividad. <br><br>
+            Cada temporada incorporamos nuevas gamas de productos siguiendo las últimas tendencias de la moda. Para ello, disponemos de una selección de artículos de fabricación nacional y realizamos importaciones, algunas de las cuales en exclusiva.
           </p>
         </div>
         <div class="col-md-5 order-md-1">
@@ -350,14 +293,16 @@
             role="img"
             width="500"
             xmlns="http://www.w3.org/2000/svg">
-            <title>Placeholder</title>
-            <rect
+            <image
+              href="assets/img/cajaentrada.jpg"
               width="100%"
               height="100%"
-              fill="var(--bs-secondary-bg)"></rect>
-            <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-              500x500
-            </text>
+              width="100%"
+              height="100%"
+              fill="var(--bs-secondary-bg)">
+              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
+                500x500
+              </text>
           </svg>
         </div>
       </div>
