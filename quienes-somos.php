@@ -247,7 +247,7 @@
       <!-- START THE FEATURETTES -->
       <hr class="featurette-divider" />
       <div class="row featurette">
-        <div class="col-md-7">
+        <div class="col-md-7 pe-5">
           <h2 class="featurette-heading fw-bold lh-1 title-red">
             Nuestra Historia
           </h2>
@@ -263,7 +263,7 @@
       </div>
       <hr class="featurette-divider" />
       <div class="row featurette">
-        <div class="col-md-7 order-md-2">
+        <div class="col-md-7 order-md-2 ps-5">
           <h2 class="featurette-heading fw-bold lh-1 title-red">
             La Tienda
           </h2>
@@ -279,15 +279,16 @@
       </div>
       <hr class="featurette-divider" />
       <div class="row featurette">
-        <div class="col-md-7">
+        <div class="col-md-7 pe-5">
           <h2 class="featurette-heading fw-bold lh-1 title-red">
             Confianza, calidad y seguridad
           </h2>
-          <p><strong>- Confianza:</strong> servimos a miles de clientes que confían en nosotros. Organismos oficiales como la Casa Real, ministerios, gobiernos autonómicos y ayuntamientos, compañías multinacionales y marcas reconocidas, clubes y federaciones deportivas, Ejército, Guardia Civil y otros cuerpos de seguridad, cofradías, partidos políticos y sindicatos, etc.</p>
-          <p>También distribuyen nuestros productos empresas como agencias de publicidad, tiendas de banderas y artículos personalizados, etc.<br /><strong>- Calidad:</strong> el conocimiento acumulado durante nuestra larga existencia nos permite ofrecer una amplia variedad de productos con la máxima calidad.</p>
-          <p>Algunos de nuestros productos son los de mayor calidad en España.<br /><strong>- Seguridad:</strong> satisfacemos las necesidades de nuestros clientes y cumplimos las fechas de entrega demandadas.</p>
+          <p class="lead"><strong>- Confianza:</strong> servimos a miles de clientes que confían en nosotros. Organismos oficiales como la Casa Real, ministerios, gobiernos autonómicos y ayuntamientos, compañías multinacionales y marcas reconocidas, clubes y federaciones deportivas, Ejército, Guardia Civil y otros cuerpos de seguridad, cofradías, partidos políticos y sindicatos, etc.</p>
+          <p class="lead">También distribuyen nuestros productos empresas como agencias de publicidad, tiendas de banderas y artículos personalizados, etc.<br /><strong>- Calidad:</strong> el conocimiento acumulado durante nuestra larga existencia nos permite ofrecer una amplia variedad de productos con la máxima calidad.</p>
+          <p class="lead">Algunos de nuestros productos son los de mayor calidad en España.<br /><strong>- Seguridad:</strong> satisfacemos las necesidades de nuestros clientes y cumplimos las fechas de entrega demandadas.</p>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 pe-5
+        ">
           <img src="assets/img/manualidades.png" alt="" class="img1 pt-2" srcset="">
           </svg>
         </div>
