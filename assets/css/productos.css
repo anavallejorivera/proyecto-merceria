@@ -1,143 +1,337 @@
 /* -------------------------------------
+   Estilos personalizados para Catálogo
+---------------------------------------- */
+
+/* Header del catálogo */
+.catalogo-header .titulo-catalogo {
+  color: var(--color-principal);
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.catalogo-header .subtitulo-catalogo {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Elevación suave */
+.card-hover-up {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover-up:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen de fondo en tarjeta */
+.card {
+  border-radius: 0.75rem;
+}
+
+.card-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+.card-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease;
+  z-index: 0;
+  border-radius: 0.75rem;
+}
+
+.card-hover-up:hover .card-bg::before {
+  transform: scale(1.1);
+}
+
+/* Contenido visible encima del fondo */
+.card-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  height: 100%;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 0.75rem;
+}
+
+/* Icono SVG en círculo */
+.icono-catalogo {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: var(--color-principal);
+  fill: var(--color-fondo);
+  border-radius: 50%;
+  padding: 0.3rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .seccion-compacta {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+/* Fondos específicos por tarjeta */
+.bg-manualidades::before {
+  background-image: url('../img/cat-manualidades.jpg');
+}
+
+.bg-textil::before {
+  background-image: url('../img/cat-textil.jpg');
+}
+
+.bg-merceria::before {
+  background-image: url('../img/cat-merceria.jpg');
+}
+
+.bg-pintura-acrilica::before {
+  background-image: url('../img/catalogo/manualidades/pintura-acrilica.png');
+}
+
+.bg-pasta-modelable::before {
+  background-image: url('../img/catalogo/manualidades/pasta-modelable.png');
+}
+
+.bg-sellos-decorativos::before {
+  background-image: url('../img/catalogo/manualidades/sellos-decorativos.png');
+}
+
+.bg-plantillas-stencil::before {
+  background-image: url('../img/catalogo/manualidades/plantillas-stencil.jpg');
+}
+
+.bg-goma-eva::before {
+  background-image: url('../img/catalogo/manualidades/goma-eva.png');
+}
+
+.bg-soportes-decorar::before {
+  background-image: url('../img/catalogo/manualidades/soportes-decorar.png');
+}
+
+
+/* -------------------------------------
    Estilos personalizados para Productos
 ---------------------------------------- */
 
 /* Header de detalle de producto */
 .producto-header .titulo-producto {
-    color: var(--color-principal);
-    font-weight: bold;
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+  color: var(--color-principal);
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.producto-header .subtitulo-producto {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Sección compacta para reducir padding vertical */
+@media (min-width: 768px) {
+  .producto-compacta {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
-  
-  .producto-header .subtitulo-producto {
-    color: #2c3e50;
-    font-size: 1.1rem;
-    margin: 0;
+}
+
+/* Tabs personalizados en sección de producto */
+.tabs-producto.nav-tabs {
+  border-bottom: none !important;
+  margin-bottom: 1.5rem;
+}
+
+.tabs-producto .nav-link {
+  border: none !important;
+  border-radius: 0 !important;
+  font-weight: 500;
+  color: #333;
+  padding: 0.75rem 1.25rem;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.tabs-producto .nav-link:hover {
+  color: var(--color-footer);
+  border-bottom: 2px solid var(--color-footer);
+}
+
+.tabs-producto .nav-link.active {
+  color: var(--color-footer);
+}
+
+.tab-content-producto {
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.tab-content-producto ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+.tab-content-producto ul li {
+  margin-bottom: 0.5rem;
+}
+
+.tab-content-producto .tab-pane {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tab-content-producto .tab-pane.show.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Acordeón personalizado */
+.accordion-producto-container {
+  display: none;
+}
+
+.accordion-producto-container .accordion-button {
+  font-weight: 500;
+  background-color: #fff;
+  color: #333;
+}
+
+.accordion-producto-container .accordion-button:not(.collapsed) {
+  color: var(--color-footer);
+}
+
+.accordion-producto-container .accordion-body {
+  border-top: 1px solid var(--color-footer);
+}
+
+/* Responsive: mostrar solo tabs o acordeón */
+@media (min-width: 768px) {
+  .tabs-producto-container {
+    display: block;
   }
-  
-  /* Sección compacta para reducir padding vertical */
-  @media (min-width: 768px) {
-    .producto-compacta {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-    }
-  }
-  
-  /* -------------------------------------
-     Tabs personalizados en sección de producto
-  ---------------------------------------- */
-  
-  /* Elimina cualquier borde inferior de nav-tabs */
-  .tabs-producto.nav-tabs {
-    border-bottom: none !important;
-    margin-bottom: 1.5rem;
-  }
-  
-  /* Botones de pestañas */
-  .tabs-producto .nav-link {
-    border: none !important;
-    border-radius: 0 !important;
-    font-weight: 500;
-    color: #333;
-    padding: 0.75rem 1.25rem;
-    transition: color 0.3s ease, border-color 0.3s ease;
-  }
-  
-  /* Hover: subrayado suave */
-  .tabs-producto .nav-link:hover {
-    color: var(--color-secundario);
-    border-bottom: 2px solid var(--color-secundario) !important;
-  }
-  
-  /* Pestaña activa */
-  .tabs-producto .nav-link.active {
-    color: var(--color-secundario) !important;
-    border-bottom: 3px solid var(--color-secundario) !important;
-    background-color: transparent !important;
-  }
-  
-  /* Contenido de las pestañas */
   .tab-content-producto {
-    background-color: hsla(34, 96%, 95%, 1);
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    border: 1px solid hsla(34, 96%, 80%, 1);
+    display: block;
   }
-  
-  /* Listas internas */
-  .tab-content-producto ul {
-    padding-left: 1.2rem;
-    margin-bottom: 0;
-  }
-  
-  .tab-content-producto ul li {
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Corrección de visibilidad de pestañas activas */
-  .tab-content-producto .tab-pane {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .tab-content-producto .tab-pane.show.active {
-    display: block !important;
-    opacity: 1;
-  }
-  
-  /* -------------------------------------
-     Acordeón personalizado
-  ---------------------------------------- */
-  
   .accordion-producto-container {
     display: none;
   }
-  
-  .accordion-producto-container .accordion-button {
-    font-weight: 500;
-    background-color: #fff;
-    color: #333;
+}
+
+@media (max-width: 767.98px) {
+  .tabs-producto-container {
+    display: none;
   }
-  
-  .accordion-producto-container .accordion-button:not(.collapsed) {
-    color: var(--color-secundario);
-    background-color: hsla(34, 96%, 95%, 1);
+  .tab-content-producto {
+    display: none;
   }
-  
-  .accordion-producto-container .accordion-body {
-    background-color: hsla(34, 96%, 95%, 1);
-    border-top: 1px solid hsla(34, 96%, 80%, 1);
+  .accordion-producto-container {
+    display: block;
   }
-  
-  /* -------------------------------------
-     Responsive: mostrar solo tabs o acordeón
-  ---------------------------------------- */
-  
-  /* Desktop: mostrar solo tabs */
-  @media (min-width: 768px) {
-    .tabs-producto-container {
-      display: block !important;
-    }
-    .tab-content-producto {
-      display: block !important;
-    }
-    .accordion-producto-container {
-      display: none !important;
-    }
+}
+
+/* Carousel personalizado de producto */
+.producto-carousel {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+/* Contenedor del carousel centrado y limitado */
+.carousel-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Imagen del carousel */
+.carousel-wrapper .carousel-item img {
+  object-fit: contain;
+  height: 300px;
+  border-radius: 0.5rem;
+  box-shadow: var(--sombra);
+  width: 100%;
+}
+
+/* Caption del carousel */
+.carousel-wrapper .carousel-caption h5 {
+  background-color: var(--color-secundario);
+  border-color: var(--color-principal);
+  border-width: 0.1rem;
+  border-style: solid;
+  color: var(--color-principal);
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Flechas dentro del área visible */
+.carousel-wrapper .carousel-control-prev,
+.carousel-wrapper .carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+  opacity: 1;
+  z-index: 10;
+  position: absolute;
+}
+
+.carousel-wrapper .carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-wrapper .carousel-control-next {
+  right: 10px;
+}
+
+/* Íconos de flechas */
+.carousel-wrapper .carousel-control-prev-icon,
+.carousel-wrapper .carousel-control-next-icon {
+  background-color: var(--color-principal);
+  background-size: 70% 70%;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+/* Móvil: ajustes responsivos */
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0;
   }
-  
-  /* Móvil: mostrar solo acordeón */
-  @media (max-width: 767.98px) {
-    .tabs-producto-container {
-      display: none !important;
-    }
-    .tab-content-producto {
-      display: none !important;
-    }
-    .accordion-producto-container {
-      display: block !important;
-    }
+
+  .carousel-wrapper .carousel-item img {
+    height: 200px;
   }
-  
+
+  .carousel-wrapper .carousel-caption h5 {
+    font-size: 0.95rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .carousel-wrapper .carousel-control-prev {
+    left: 12px;
+  }
+
+  .carousel-wrapper .carousel-control-next {
+    right: 12px;
+  }
+}
