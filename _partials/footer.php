@@ -25,13 +25,13 @@
           </div>
     
           <!-- Contact -->
-          <div class="col-12 col-md-3 mb-4">
+          <div class="col-12 col-md-3 mb-4 pt-4">
             <h6 class="mb-3">Contacto</h6>
     
             <ul class="list-unstyled small">
               <li class="d-flex align-items-start mb-2">
                 <svg class="me-2" width="18" height="18">
-                  <use href="assets/img/sprite-1.svg#location"></use>
+                  <use href="assets/img/sprite.svg#location"></use>
                 </svg>
                 <div>
                   <p class="mb-0">Calle de Example, 123</p>
@@ -41,7 +41,7 @@
     
               <li class="d-flex align-items-center mb-2">
                 <svg class="me-2" width="18" height="18">
-                  <use href="assets/img/sprite-1.svg#phoneleft"></use>
+                  <use href="assets/img/sprite.svg#phoneleft"></use>
                 </svg>
                 <a href="tel:+34976000000" class="text-decoration-none">
                   +34 976 00 00 00
@@ -50,7 +50,7 @@
     
               <li class="d-flex align-items-center mb-3">
                 <svg class="me-2" width="18" height="18">
-                  <use href="assets/img/sprite-1.svg#letter"></use>
+                  <use href="assets/img/sprite.svg#letter"></use>
                 </svg>
                 <a href="mailto:info@mundolarraz.es" class="text-decoration-none">
                   info@mundolarraz.es
@@ -59,12 +59,15 @@
             </ul>
           </div>
     
-          <!-- Schedule -->
-          <div class="col-12 col-md-3 mb-4">
-            <h6 class="mb-3">Horario</h6>
+          <!-- Horario -->
+          <div class="col-12 col-md-3 mb-4 pt-4">
+            <h6 class="mb-3">
+              <svg class="me-2" width="18" height="18">
+                  <use href="assets/img/sprite.svg#clock"></use>
+                </svg>Horario</h6>
             <ul class="list-unstyled small">
               <li><strong>Lunes - Viernes:</strong></li>
-              <li>10:00 - 13:30 / 17:00 - 20:30</li>
+              <li>9:30 - 13:30 / 17:00 - 20:00</li>
               <li class="mt-2"><strong>Sábados:</strong></li>
               <li>10:00 - 14:00</li>
               <li class="mt-2"><strong>Domingos:</strong></li>
@@ -73,17 +76,19 @@
           </div>
     
           <!-- Quick Links & Social -->
-          <div class="col-12 col-md-2 mb-4">
+          <div class="col-12 col-md-2 mb-4 pt-4">
             <h6 class="mb-3">Enlaces Rápidos</h6>
     
             <ul class="list-unstyled small mb-3">
               <li><a href="#inicio" class="text-decoration-none">Inicio</a></li>
-              <li><a href="#categorias" class="text-decoration-none">Categorías</a></li>
-              <li><a href="#productos" class="text-decoration-none">Productos</a></li>
-              <li><a href="#nosotros" class="text-decoration-none">Nosotros</a></li>
+               <li><a href="#Aboutus" class="text-decoration-none">Nosotros</a></li>
+              <li><a href="#manualidades" class="text-decoration-none">Manualidades</a></li>
+              <li><a href="#textil" class="text-decoration-none">Textil</a></li>
+              <li><a href="#merceria" class="text-decoration-none">Mercería</a></li>
+             
             </ul>
     
-            <h6 class="small mb-2">Síguenos:</h6>
+            <h6 class="small mb-2 pt-4">Síguenos:</h6>
             <ul class="d-flex gap-2 list-unstyled">
               <li>
                 <a href="http://www.facebook.com" target="_blank">
