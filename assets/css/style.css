@@ -202,7 +202,7 @@ img{
 .pre-header .telefono::after {
   content: '|';
   margin-left: 1rem;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .pre-header a {
@@ -211,7 +211,8 @@ img{
 }
 
 .pre-header a:hover {
-  opacity: 1;
+  /* opacity: 1; */
+  color:var(--color-footer) ;
 }
 
 /* Logo */
@@ -284,7 +285,7 @@ header svg {
  fill: currentColor;
   vertical-align: middle;
 }
-header svg.icon__xl{
+header svg.icon__xl, footer svg.icon__xl{
   width: 1.2em;
   height: 1.2em;
 }
@@ -450,7 +451,10 @@ header .pre-header a:hover{
       color: var(--color-secundario);
       font-family: 'FiraSans-bold', sans-serif;
      }
-    
+    footer svg{
+      fill:white;
+
+    }
 /* ===============================================
    ANIMACIONES Y TRANSICIONES
    =============================================== */
