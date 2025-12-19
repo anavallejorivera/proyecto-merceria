@@ -25,7 +25,7 @@
     
           <!-- Contact -->
           <div class="col-12 col-md-3 mb-4 pt-4">
-            <h6 class="mb-3">Contacto</h6>
+            <h6 class="mb-3" id="contacto">Contacto</h6>
     
             <ul class="list-unstyled small">
               <li class="d-flex align-items-start mb-2">

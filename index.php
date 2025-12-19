@@ -1,6 +1,8 @@
- 
 
-<?php require_once '_partials/header.php';?>
+<?php 
+ $title = "Mercería Larraz";
+ $description = 'Descripcion de la página de inicio Mercería Larraz';
+require_once '_partials/header.php';?>
 <?php require_once '_partials/nav.php';?>
 <main>
 <section class="hero">
