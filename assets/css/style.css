@@ -437,6 +437,7 @@ header .pre-header a:hover{
    footer{
     background-color: var(--color-footer);
     color: var(--color-fondo);
+    font-family: 'FiraSans-light', sans-serif;
      }
   
      footer a{
@@ -447,6 +448,7 @@ header .pre-header a:hover{
      }
      footer h6{
       color: var(--color-secundario);
+      font-family: 'FiraSans-bold', sans-serif;
      }
     
 /* ===============================================

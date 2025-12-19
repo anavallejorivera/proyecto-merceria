@@ -82,7 +82,6 @@
           <li><a href="#categorias" class=" text-decoration-none">Categorías</a></li>
           <li><a href="#productos" class=" text-decoration-none">Productos</a></li>
           <li><a href="#nosotros" class=" text-decoration-none">Nosotros</a></li>
-          <li><a href="#contacto" class=" text-decoration-none">Contacto</a></li>
         </ul>
 
         <h6 class="small  mb-2">Síguenos:</h6>
