@@ -1,0 +1,143 @@
+/* -------------------------------------
+   Estilos personalizados para Productos
+---------------------------------------- */
+
+/* Header de detalle de producto */
+.producto-header .titulo-producto {
+    color: var(--color-principal);
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .producto-header .subtitulo-producto {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  
+  /* Sección compacta para reducir padding vertical */
+  @media (min-width: 768px) {
+    .producto-compacta {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+  
+  /* -------------------------------------
+     Tabs personalizados en sección de producto
+  ---------------------------------------- */
+  
+  /* Elimina cualquier borde inferior de nav-tabs */
+  .tabs-producto.nav-tabs {
+    border-bottom: none !important;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Botones de pestañas */
+  .tabs-producto .nav-link {
+    border: none !important;
+    border-radius: 0 !important;
+    font-weight: 500;
+    color: #333;
+    padding: 0.75rem 1.25rem;
+    transition: color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  /* Hover: subrayado suave */
+  .tabs-producto .nav-link:hover {
+    color: var(--color-secundario);
+    border-bottom: 2px solid var(--color-secundario) !important;
+  }
+  
+  /* Pestaña activa */
+  .tabs-producto .nav-link.active {
+    color: var(--color-secundario) !important;
+    border-bottom: 3px solid var(--color-secundario) !important;
+    background-color: transparent !important;
+  }
+  
+  /* Contenido de las pestañas */
+  .tab-content-producto {
+    background-color: hsla(34, 96%, 95%, 1);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    border: 1px solid hsla(34, 96%, 80%, 1);
+  }
+  
+  /* Listas internas */
+  .tab-content-producto ul {
+    padding-left: 1.2rem;
+    margin-bottom: 0;
+  }
+  
+  .tab-content-producto ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Corrección de visibilidad de pestañas activas */
+  .tab-content-producto .tab-pane {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .tab-content-producto .tab-pane.show.active {
+    display: block !important;
+    opacity: 1;
+  }
+  
+  /* -------------------------------------
+     Acordeón personalizado
+  ---------------------------------------- */
+  
+  .accordion-producto-container {
+    display: none;
+  }
+  
+  .accordion-producto-container .accordion-button {
+    font-weight: 500;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .accordion-producto-container .accordion-button:not(.collapsed) {
+    color: var(--color-secundario);
+    background-color: hsla(34, 96%, 95%, 1);
+  }
+  
+  .accordion-producto-container .accordion-body {
+    background-color: hsla(34, 96%, 95%, 1);
+    border-top: 1px solid hsla(34, 96%, 80%, 1);
+  }
+  
+  /* -------------------------------------
+     Responsive: mostrar solo tabs o acordeón
+  ---------------------------------------- */
+  
+  /* Desktop: mostrar solo tabs */
+  @media (min-width: 768px) {
+    .tabs-producto-container {
+      display: block !important;
+    }
+    .tab-content-producto {
+      display: block !important;
+    }
+    .accordion-producto-container {
+      display: none !important;
+    }
+  }
+  
+  /* Móvil: mostrar solo acordeón */
+  @media (max-width: 767.98px) {
+    .tabs-producto-container {
+      display: none !important;
+    }
+    .tab-content-producto {
+      display: none !important;
+    }
+    .accordion-producto-container {
+      display: block !important;
+    }
+  }
+  
