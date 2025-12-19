@@ -181,7 +181,7 @@
             width="100%"
             xmlns="http://www.w3.org/2000/svg">
             <image
-              href="assets/img/cat-merceria.jpg"
+              href="assets/img/cat-textil.jpg"
               width="100%"
               height="100%"
               preserveAspectRatio="xMidYMid slice" />

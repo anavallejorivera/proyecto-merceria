@@ -27,7 +27,7 @@
          <li class="nav-item">
           <a class="nav-link cta" href="#">Contacto</a>
         </li>
-<li><button class="btn-cta-nav nav-item">Visitanos</button></li>
+<li><button class="btn-cta-nav nav-item">cualqu</button></li>
                     
 
           </ul>
