@@ -491,6 +491,31 @@ section {
   }
 }
 /* ===============================================
+   CARDS NOSOTROS
+   =============================================== */
+.nosotros{
+  background: linear-gradient(135deg, hsl(15,100%,40%), hsl(15,100%,45%)); 
+}
+   
+.card-nosotros{
+  background-color: var(--color-principal);
+  color: var(--color-fondo);
+  background-color:rgba(255,255,255,0.1);
+  backdrop-filter: blur(6px);
+}
+.circle-nosotros{
+  width:48px;
+  height:48px;background-color:hsl(34,96%,59%);
+}
+.nosotros svg{
+  width: 24px;
+  height: 24px;
+  fill: var(--color-fondo);
+}
+   
+/* 
+
+===============================================
    PRODUCTOS DESTACADOS
    =============================================== */
    .destacados h2{
