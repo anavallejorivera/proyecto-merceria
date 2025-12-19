@@ -434,19 +434,21 @@ header .pre-header a:hover{
 /* ===============================================
    FOOTER 
    =============================================== */
-footer {
-  font-family:'FiraSans-light' ;
-  background-color: var(--color-footer);
-  margin-top: auto;
-  color: var(--color-fondo);
-}
-.footer h2{
-  font-family: 'FiraSans-bold';
-}
-.footer p{
-  font-family: 'FiraSans-light';
-  line-height: normal;
-}
+   footer{
+    background-color: var(--color-footer);
+    color: var(--color-fondo);
+     }
+  
+     footer a{
+      color: var(--color-fondo);
+     }
+     footer a:hover{
+      color: var(--color-secundario);
+     }
+     footer h6{
+      color: var(--color-secundario);
+     }
+    
 /* ===============================================
    ANIMACIONES Y TRANSICIONES
    =============================================== */
