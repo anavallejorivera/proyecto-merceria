@@ -14,20 +14,20 @@
     <div class="container ">
         <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-center">
             <!-- Información de contacto -->
-            <!-- <ul class="list-unstyled d-flex gap-3 mb-2 mb-md-0">
+             <ul class="list-unstyled d-flex gap-3 mb-2 mb-md-0">
                 <li class="telefono">
-                   Tienda Online
+            <a href="tel:+346666666" class="text-decoration-none"> +34 666 66 66</a>
                 </li>
                 <li>
-                    <a href="www.larraz.es" target="_blank" class="text-decoration-none">www.Larraz.es</a>
+                    <a href="mailto:correo@correo" target="_blank" class="text-decoration-none">correo@correo</a>
                 </li>
-            </ul>  -->
+            </ul>
             <!-- Redes sociales -->
               <ul class="d-flex justify-content-center border-top border-md-top-0 pt-0 pt-1 gap-2 list-unstyled">   
             <li><a href="http://www.facebook.com" target="_blank"><svg class="icon__xl"><use href="assets/img/sprite.svg#rrssfacebook"></use></svg><span class="visually-hidden">facebook</span></a></li>
             <li><a  href="http://www.instagram.com" target="_blank"><svg class="icon__xl"><use href="assets/img/sprite.svg#rrssinstagram"></use></svg><span class="visually-hidden">instagram</span></a></li>
             <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" title="X" class="text-decoration-none">
-                <svg>
+                <svg class="icon__xl">
                   <use href="assets/img/sprite.svg#rrsstwitter"></use>
                 </svg>
                 <span class="visually-hidden">X</span>
