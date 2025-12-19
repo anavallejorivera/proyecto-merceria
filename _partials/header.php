@@ -27,7 +27,7 @@
             <li><a href="http://www.facebook.com" target="_blank"><svg class="icon__xl"><use href="assets/img/sprite.svg#rrssfacebook"></use></svg><span class="visually-hidden">facebook</span></a></li>
             <li><a  href="http://www.instagram.com" target="_blank"><svg class="icon__xl"><use href="assets/img/sprite.svg#rrssinstagram"></use></svg><span class="visually-hidden">instagram</span></a></li>
             <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" title="X" class="text-decoration-none">
-                <svg>
+                <svg class="icon__xl">
                   <use href="assets/img/sprite.svg#rrsstwitter"></use>
                 </svg>
                 <span class="visually-hidden">X</span>
@@ -40,4 +40,3 @@
         <?php include '_partials/nav.php';?>
           <!-- fin nav  -->
     </header>
-
