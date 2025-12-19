@@ -64,7 +64,7 @@
             <h6 class="mb-3">Horario</h6>
             <ul class="list-unstyled small">
               <li><strong>Lunes - Viernes:</strong></li>
-              <li>9:30 - 13:30 / 17:00 - 20:00</li>
+              <li>10:00 - 13:30 / 17:00 - 20:30</li>
               <li class="mt-2"><strong>Sábados:</strong></li>
               <li>10:00 - 14:00</li>
               <li class="mt-2"><strong>Domingos:</strong></li>

@@ -382,24 +382,6 @@ header .pre-header a:hover{
   }
 }
 
-/* Dropdown menu */
-.dropdown-menu {
-  border: none;
-  margin-top: 0.5rem;
-  background-color: var(--color-fondo);
-
-}
-
-.dropdown-item {
-  color: var(--color-footer);
-  padding: 0.625rem 1.25rem;
-  transition: var(--transition-fast);
-}
-
-.dropdown-item:hover,
-.dropdown-item:focus {
-  color: var(--color-secundario);
-}
 /* Menú móvil */
 @media (max-width: 991.98px) {
   .navbar-collapse {
@@ -494,22 +476,38 @@ section {
    CARDS NOSOTROS
    =============================================== */
 .nosotros{
-  background: linear-gradient(135deg, hsl(15,100%,40%), hsl(15,100%,45%)); 
+  background: var(--color-footer);
 }
-   
+.nosotros .card-nosotros{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nosotros .card-nosotros:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Asegurar que las columnas funcionen correctamente */
+@media (max-width: 991.98px) {
+  .nosotros .col-6 {
+    width: 50% !important;
+  }
+}
+
 .card-nosotros{
   background-color: var(--color-principal);
   color: var(--color-fondo);
   background-color:rgba(255,255,255,0.1);
   backdrop-filter: blur(6px);
+  border-radius: 0.95rem;
 }
 .circle-nosotros{
   width:48px;
   height:48px;background-color:hsl(34,96%,59%);
 }
 .nosotros svg{
-  width: 24px;
-  height: 24px;
+  width: 1.2em;
+  height: 1.2em;
   fill: var(--color-fondo);
 }
    
@@ -518,97 +516,130 @@ section {
 ===============================================
    PRODUCTOS DESTACADOS
    =============================================== */
-   .destacados h2{
-   font-family: 'FiraSans-Bold'; 
-   color: var(--color-footer);
-   }
+  /* ===============================================
+   CARRUSEL PRODUCTOS DESTACADOS
+   =============================================== */
 
-   .destacados p{
-    font-family: 'FiraSans-light';
-   }
-   .destacados img{
-    width: 100%;
-    border-radius: 0.95rem;
-   }
-/* Elevación suave */
-.card{
-  border: initial;
-  border-radius: initial;
+/* Contenedor de producto */
+.destacados{
+  background: transparent;
+  font-family: 'FiraSans-light', sans-serif;
+  color:var(--color-texto);
 }
-.card-title{
-  font-family: 'FiraSans-semibold';
+.destacados h2{
+  font-family: 'FiraSans-bold', sans-serif;
+  color: var(--color-footer);
 }
-.card-hover-up {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-hover-up:hover {
-  transform: translateY(-5px);
-  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
-}
-
-/* Imagen de fondo en tarjeta */
-.card-bg {
-  position: relative;
-  height: 200px;
+.card-producto {
+  height: 320px;
   overflow: hidden;
-  border-radius: 0.75rem;
+  transition: transform 0.3s ease;
+  background-color: transparent;
+  ;
 }
 
-/* Zoom animado sobre la capa de fondo */
-.card-bg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.card-producto:hover {
+  transform: translateY(-5px);
+}
+
+/* Imagen del producto */
+.producto-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
   transition: transform 0.5s ease;
-  z-index: 0;
-  /* border-radius: 0.75rem; */
 }
 
-/* Zoom al hacer hover */
-.card-hover-up:hover .card-bg::before {
-  transform: scale(1.02);
+.card-producto:hover .producto-img {
+  transform: scale(1.1);
 }
 
-/* Contenido visible encima del fondo */
-.card-content {
-  position: relative;
-  z-index: 1;
-  color: white;
+/* Overlay con gradiente */
+.producto-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.6) 50%,
+    transparent 100%);
+  transition: background 0.3s ease;
+}
+
+.card-producto:hover .producto-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.7) 50%,
+    transparent 100%
+  );
+}
+
+/* Controles del carrusel personalizados */
+#productosCarousel .carousel-control-prev,
+#productosCarousel .carousel-control-next {
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#productosCarousel:hover .carousel-control-prev,
+#productosCarousel:hover .carousel-control-next {
+  opacity: 1;
+}
+
+#productosCarousel .carousel-control-prev {
+  left: 20px;
+}
+
+#productosCarousel .carousel-control-next {
+  right: 20px;
+}
+
+#productosCarousel .carousel-control-prev-icon,
+#productosCarousel .carousel-control-next-icon {
+  width: 100%;
   height: 100%;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  background: rgba(0, 0, 0, 0.4);
-  /* border-radius: 0.75rem; */
-}
-
-/* Icono SVG en círculo */
-.icono-catalogo {
-  width: 1.8rem;
-  height: 1.8rem;
-  background-color: var(--color-principal);
-  fill: var(--color-fondo);
+  background-color: hsl(15, 100%, 40%, 0.3);
   border-radius: 50%;
-  padding: 0.3rem;
-  margin-right: 0.5rem;
-  vertical-align: middle;
+  background-size: 50%;
+  transition: background-color 0.3s ease;
 }
 
-/* Fondos específicos por tarjeta */
-.bg-manualidades::before {
- 
-  background-image: url('../img/Botones-Pedreria.jpg');
+#productosCarousel .carousel-control-prev:hover .carousel-control-prev-icon,
+#productosCarousel .carousel-control-next:hover .carousel-control-next-icon {
+  background-color: rgba(255, 255, 255, 0,3);
 }
 
-.bg-textil::before {
-  background-image: url('../img/Botones-Pedreria.jpg');
+/* Indicadores del carrusel */
+#productosCarousel .carousel-indicators {
+  margin-bottom: -2rem;
 }
 
-.bg-merceria::before {
-  background-image: url('../img/Botones-Pedreria.jpg');
+#productosCarousel .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: hsl(15, 100%, 40%, 0.3);
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+#productosCarousel .carousel-indicators button.active {
+  opacity: 1;
+}
+#productosCarousel .carousel-inner,
+#productosCarousel .carousel-item {
+  background: transparent;
+}
+/* Responsive */
+@media (max-width: 767.98px) {
+  .card-producto {
+    height: 280px;
+  }
+  
+  .producto-img {
+    height: 280px;
+  }
 }
