@@ -9,19 +9,16 @@
   <title>Larraz | Catálogo > Manualidades</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/catalogo.css" rel="stylesheet">
+  <link href="assets/css/productos.css" rel="stylesheet">
 </head>
 <body>
-<?php
-include '_partials/nav.php';
-?>
 <?php
 include '_partials/header.php';
 ?>
 
 <!-- Encabezado de la sección de Manualidades -->
-<section class="catalogo-header text-center mb-2 seccion-compacta">
-  <div class="container">
+<section class="catalogo-header text-center mb-2 seccion-compacta pt-5">
+  <div class="container pt-5">
     <h2 class="titulo-catalogo mb-2">Manualidades</h2>
     <p class="subtitulo-catalogo mb-1">
       En nuestra sección de Manualidades encontrarás todo lo necesario para dar forma a tus ideas creativas.
