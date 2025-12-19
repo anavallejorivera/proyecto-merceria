@@ -38,7 +38,7 @@ include '_partials/header.php';
 
     <!-- Tarjeta 1 -->
     <div class="col-12 col-md-6 col-lg-4">
-      <a href="catalogo-manualidades-pintura-acrilica-decorativa.php" class="text-decoration-none text-reset d-block h-100">
+      <a href="manualidades-pintura-acrilica-decorativa.php" class="text-decoration-none text-reset d-block h-100">
         <div class="ratio ratio-16x9">
           <div class="card h-100 card-hover-up">
             <div class="card-bg bg-pintura-acrilica">
