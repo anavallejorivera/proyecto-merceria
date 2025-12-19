@@ -514,7 +514,12 @@ section {
    CARDS NOSOTROS
    =============================================== */
 .nosotros{
-  background: var(--color-footer);
+  font-family: 'FiraSans-light', sans-serif;
+  background: hsl(15, 100%, 25%, 0.8);
+  color: var(--color-fondo);
+}
+.nosotros h5{
+  font-family: 'FiraSans-bold', sans-serif;
 }
 .nosotros .card-nosotros{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -563,16 +568,16 @@ section {
   font-family: 'FiraSans-bold', sans-serif;
   color: var(--color-footer);
 }
+.destacados h3{
+  font-family: 'FiraSans-medium', sans-serif;
+  color: var(--color-fondo);
+}
 .card-producto {
   height: 320px;
   overflow: hidden;
   transition: transform 0.3s ease;
   background-color: transparent;
   ;
-}
-
-.card-producto:hover {
-  transform: translateY(-5px);
 }
 
 /* Imagen del producto */
@@ -604,6 +609,14 @@ section {
     rgba(0, 0, 0, 0.7) 50%,
     transparent 100%
   );
+}
+ .carousel-inner-1 {
+  background: white !important;
+}
+.carousel-item-home {
+  background: white !important;
+  position: relative;
+  height: auto !important;
 }
 
 /* Controles del carrusel personalizados */
@@ -656,8 +669,7 @@ section {
   border-radius: 50%;
   background-color: var(--color-principal);
   opacity: 0.5;
-  transition: opacity 0.3s ease;
-  border: 2px solid white;
+  /* transition: opacity 0.3s ease; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -665,10 +677,12 @@ section {
   opacity: 1;
   transform: scale(1.2);
 }
-#productosCarousel .carousel-inner,
-#productosCarousel .carousel-item {
-  background: transparent;
+#productosCarousel .carousel-inner-1,
+#productosCarousel .carousel-item-home {
+  background: white;
 }
+
+
 /* Responsive */
 @media (max-width: 767.98px) {
   .card-producto {

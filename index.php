@@ -1,76 +1,8 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mundo Larraz</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" type="image/svg+xml" href="assets/img/logolarraz.svg">
-  </head>
-  <body>
-    <header>
-     <div class="border-bottom pre-header align-items-center">
-    <div class="container ">
-        <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-center">
-            <!-- Información de contacto -->
-             <ul class="list-unstyled d-flex gap-3 mb-2 mb-md-0">
-                <li class="telefono">
-            <a href="tel:+346666666" class="text-decoration-none"> +34 666 66 66</a>
-                </li>
-                <li>
-                    <a href="mailto:correo@correo" target="_blank" class="text-decoration-none">correo@correo</a>
-                </li>
-            </ul>
-            <!-- Redes sociales -->
-              <ul class="d-flex justify-content-center border-top border-md-top-0 pt-0 pt-1 gap-2 list-unstyled">   
-            <li><a href="http://www.facebook.com" target="_blank"><svg class="icon__xl"><use href="assets/img/sprite.svg#rrssfacebook"></use></svg><span class="visually-hidden">facebook</span></a></li>
-            <li><a  href="http://www.instagram.com" target="_blank"><svg class="icon__xl"><use href="assets/img/sprite.svg#rrssinstagram"></use></svg><span class="visually-hidden">instagram</span></a></li>
-            <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" title="X" class="text-decoration-none">
-                <svg>
-                  <use href="assets/img/sprite.svg#rrsstwitter"></use>
-                </svg>
-                <span class="visually-hidden">X</span>
-              </a></li>
-       </ul> 
-        </div>
-    </div>
-</div>
-        <!-- inicio seccion nav -->       
- <nav class="navbar navbar-expand-lg py-0">
-  <div class="container-lg  align-items-center d-flex justify-content-between align-items-md-stretch">
-    <a href="#" rel="noopener noreferrer" title="Home" class="text-decoration-none navbar-brand">
-                       <img src="assets/img/logolarraz.svg" alt="Inicio" class="logo">
-                        <span class="visually-hidden">Home</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Manualidades</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"  href="#">Textil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"  href="#">Mercería</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link cta" href="#">Contacto</a>
-        </li>
-<li><button class="btn-cta-nav nav-item">Visitanos</button></li>
-          </ul>
-    </div>
-  </div>
-</nav>
-          <!-- fin nav  -->
+ 
 
-          <?php 
-          include('_partials/header.php');
-          ?>
-  
-    <main>
+<?php require_once '_partials/header.php';?>
+<?php require_once '_partials/nav.php';?>
+<main>
 <section class="hero">
     <h1>Mercería Larraz</h1>
     <div class="hero-texto p-2 mb-2 bg-white bg-opacity-50">
@@ -79,7 +11,7 @@
 Ven, recorre nuestra tienda y déjate inspirar</span></p>
      </div>
      <div>
-    <a href="#" rel="wobble-top" class="button wobble-top btn-cta">Explora Productos</a>
+    <a href="#productos" rel="wobble-top" class="button wobble-top btn-cta">Explora Productos</a>
     <a href="#" rel="wobble-top" class="button wobble-top btn-cta">Conocenos</a>
   </div>
     </section>
@@ -89,7 +21,8 @@ Ven, recorre nuestra tienda y déjate inspirar</span></p>
     <div class="row align-items-center g-4">
       <div class="col-12 col-lg-6">
         <h2 class="mb-4 text-center">Sobre Nosotros</h2>
-        <p class="lead">En el corazón de Zaragoza, somos la mayor tienda de Aragón en manualidades, mercería y creatividad para todas las edades. Inspírate, crea y encuentra el regalo perfecto.</p>
+        <p class="lead">En el corazón de Zaragoza, somos la mayor tienda de Aragón en manualidades, mercería y creatividad para todas las edades. </p>
+        <p class="lead">Inspírate, crea y encuentra el regalo perfecto.</p>
       </div>
       <div class="col-12 col-lg-6">
         <img src="./assets/img/cat-textil.jpg" alt="Tienda Larraz" class="img-fluid rounded-4 shadow">
@@ -121,7 +54,7 @@ Ven, recorre nuestra tienda y déjate inspirar</span></p>
         <div class="card-nosotros p-4 rounded-4 h-100">
           <div class="circle-nosotros rounded-circle d-flex align-items-center justify-content-center mb-3">
             <svg>
-              <use href="assets/img/sprite.svg#user"></use>
+              <use href="assets/img/sprite.svg#heart"></use>
             </svg>
           </div>
           <h5>Pasión artesanal</h5>
@@ -136,7 +69,7 @@ Ven, recorre nuestra tienda y déjate inspirar</span></p>
         <div class="card-nosotros p-4 rounded-4 h-100">
           <div class="circle-nosotros rounded-circle d-flex align-items-center justify-content-center mb-3">
             <svg>
-              <use href="assets/img/sprite.svg#heart"></use>
+              <use href="assets/img/sprite.svg#persons"></use>
             </svg>
           </div>
           <h5>Experiencia completa</h5>
@@ -151,11 +84,11 @@ Ven, recorre nuestra tienda y déjate inspirar</span></p>
         <div class="card-nosotros p-4 rounded-4 h-100">
           <div class="circle-nosotros rounded-circle d-flex align-items-center justify-content-center mb-3">
             <svg>
-              <use href="assets/img/sprite.svg#star"></use>
+              <use href="assets/img/sprite.svg#lamp"></use>
             </svg>
           </div>
           <h5>Atención personalizada</h5>
-          <p class="small text-light">
+          <p class="">
             Te ayudamos en cada proyecto
           </p>
         </div>
@@ -184,9 +117,9 @@ Ven, recorre nuestra tienda y déjate inspirar</span></p>
       </div>
 
       <!-- Slides -->
-      <div class="carousel-inner">
+      <div class="carousel-inner-1 carousel-inner">
         <!-- Slide 1 -->
-        <div class="carousel-item active">
+        <div class="carousel-item-home carousel-item active">
           <div class="row g-3 px-3">
             <div class="col-12 col-md-6 col-lg-4">
               <div class="card-producto position-relative overflow-hidden rounded-4 shadow-lg">
@@ -225,7 +158,7 @@ Ven, recorre nuestra tienda y déjate inspirar</span></p>
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item">
+        <div class="carousel-item-home carousel-item">
           <div class="row g-3 px-3">
             <div class="col-12 col-md-6 col-lg-4">
               <div class="card-producto position-relative overflow-hidden rounded-4 shadow-lg">
@@ -264,7 +197,7 @@ Ven, recorre nuestra tienda y déjate inspirar</span></p>
         </div>
 
         <!-- Slide 3 -->
-        <div class="carousel-item">
+        <div class="carousel-item-home carousel-item">
           <div class="row g-3 px-3">
             <div class="col-12 col-md-6 col-lg-4">
               <div class="card-producto position-relative overflow-hidden rounded-4 shadow-lg">
@@ -303,7 +236,7 @@ Ven, recorre nuestra tienda y déjate inspirar</span></p>
         </div>
 
         <!-- Slide 4 -->
-        <div class="carousel-item">
+        <div class="carousel-item-home carousel-item">
           <div class="row g-3 px-3">
             <div class="col-12 col-md-6 col-lg-4">
               <div class="card-producto position-relative overflow-hidden rounded-4 shadow-lg">
@@ -366,144 +299,4 @@ Ven, recorre nuestra tienda y déjate inspirar</span></p>
         
       </section>
     </main>
-    <footer class="pt-4 pb-1">
-      <div class="container-lg">
-    
-        <div class="row mb-4">
-    
-          <!-- About -->
-          <div class="col-12 col-md-3 mb-4">
-            <div class="d-flex align-items-center gap-3 mb-3">
-              <div class="rounded-circle d-flex align-items-center justify-content-center">
-                <img src="assets/img/logolarraz.svg" alt="Inicio" class="logo">
-              </div>
-    
-              <div>
-                <h6 class="h5 mb-0">Mercería Larraz</h6>
-                <p class="small mb-0">Desde 1900</p>
-              </div>
-            </div>
-    
-            <p class="small">
-              Entra en nuestra tienda especializada en banderas, mástiles y todo lo
-              necesario para exhibirlas con orgullo.
-            </p>
-            <a href="www.larraz.es">www.larraz.es</a>
-          </div>
-    
-          <!-- Contact -->
-          <div class="col-12 col-md-3 mb-4 pt-4">
-            <h6 class="mb-3">Contacto</h6>
-    
-            <ul class="list-unstyled small">
-              <li class="d-flex align-items-start mb-2">
-                <svg class="me-2" width="18" height="18">
-                  <use href="assets/img/sprite.svg#location"></use>
-                </svg>
-                <div>
-                  <p class="mb-0">Calle de Example, 123</p>
-                  <p class="mb-0">50001 Zaragoza, España</p>
-                </div>
-              </li>
-    
-              <li class="d-flex align-items-center mb-2">
-                <svg class="me-2" width="18" height="18">
-                  <use href="assets/img/sprite.svg#phoneleft"></use>
-                </svg>
-                <a href="tel:+34976000000" class="text-decoration-none">
-                  +34 976 00 00 00
-                </a>
-              </li>
-    
-              <li class="d-flex align-items-center mb-3">
-                <svg class="me-2" width="18" height="18">
-                  <use href="assets/img/sprite.svg#letter"></use>
-                </svg>
-                <a href="mailto:info@mundolarraz.es" class="text-decoration-none">
-                  info@mundolarraz.es
-                </a>
-              </li>
-            </ul>
-          </div>
-    
-          <!-- Horario -->
-          <div class="col-12 col-md-3 mb-4 pt-4">
-            <h6 class="mb-3">
-              <svg class="me-2" width="18" height="18">
-                  <use href="assets/img/sprite.svg#clock"></use>
-                </svg>Horario</h6>
-            <ul class="list-unstyled small">
-              <li><strong>Lunes - Viernes:</strong></li>
-              <li>9:30 - 13:30 / 17:00 - 20:00</li>
-              <li class="mt-2"><strong>Sábados:</strong></li>
-              <li>10:00 - 14:00</li>
-              <li class="mt-2"><strong>Domingos:</strong></li>
-              <li>Cerrado</li>
-            </ul>
-          </div>
-    
-          <!-- Quick Links & Social -->
-          <div class="col-12 col-md-2 mb-4 pt-4">
-            <h6 class="mb-3">Enlaces Rápidos</h6>
-    
-            <ul class="list-unstyled small mb-3">
-              <li><a href="#inicio" class="text-decoration-none">Inicio</a></li>
-               <li><a href="#Aboutus" class="text-decoration-none">Nosotros</a></li>
-              <li><a href="#manualidades" class="text-decoration-none">Manualidades</a></li>
-              <li><a href="#textil" class="text-decoration-none">Textil</a></li>
-              <li><a href="#merceria" class="text-decoration-none">Mercería</a></li>
-             
-            </ul>
-    
-            <h6 class="small mb-2 pt-4">Síguenos:</h6>
-            <ul class="d-flex gap-2 list-unstyled">
-              <li>
-                <a href="http://www.facebook.com" target="_blank">
-                  <svg class="icon__xl">
-                    <use href="assets/img/sprite.svg#rrssfacebook"></use>
-                  </svg>
-                  <span class="visually-hidden">Facebook</span>
-                </a>
-              </li>
-              <li>
-                <a href="http://www.instagram.com" target="_blank">
-                  <svg class="icon__xl">
-                    <use href="assets/img/sprite.svg#rrssinstagram"></use>
-                  </svg>
-                  <span class="visually-hidden">Instagram</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
-                  <svg class="icon__xl">
-                    <use href="assets/img/sprite.svg#rrsstwitter"></use>
-                  </svg>
-                  <span class="visually-hidden">X</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-    
-        </div>
-    
-        <hr class="border-secondary">
-    
-        <div class="text-center small">
-          <p class="mb-1">
-            &copy; <?php echo date('Y'); ?> Mundo Larraz. Todos los derechos reservados.
-          </p>
-          <p class="mb-0">
-            Diseñado con pasión por la creatividad y las manualidades.
-          </p>
-        </div>
-    
-      </div>
-    </footer>
-    
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    </body>
-    
-    </html>
+  <?php require_once '_partials/footer.php';?>  
