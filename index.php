@@ -1,11 +1,11 @@
 
 <?php 
  $title = "Mercería Larraz";
- $description = 'Descripcion de la página de inicio Mercería Larraz';
+ $description = 'Página de inicio Mercería Larraz';
 require_once '_partials/header.php';?>
 <?php require_once '_partials/nav.php';?>
 <main>
-<section class="hero">
+<section class="hero" id="inicio">
     <h1>Mercería Larraz</h1>
     <div class="hero-texto p-2 mb-2 bg-white bg-opacity-50">
     <p class="hero-texto">Tu creatividad empieza aquí</p>
@@ -14,7 +14,7 @@ Ven, recorre nuestra tienda y déjate inspirar</span></p>
      </div>
      <div>
     <a href="#productos" rel="wobble-top" class="button wobble-top btn-cta">Explora Productos</a>
-    <a href="#" rel="wobble-top" class="button wobble-top btn-cta">Conocenos</a>
+    <a href="./quienes-somos.php" rel="wobble-top" class="button wobble-top btn-cta">Conocenos</a>
   </div>
     </section>
 <!-- Quienes somos -->
@@ -291,14 +291,31 @@ Ven, recorre nuestra tienda y déjate inspirar</span></p>
 </section>
    
       <!-- Mapa responsive -->
-      <section class="ratio rounded overflow-hidden container-lg mb-4" id="visitanos">
-        <iframe
+
+
+      
+      <!-- Sección Mapa con Overlay Responsive-->
+<section class="container-lg" id="visitanos">
+        <!-- Tarjeta flotante con información -->
+        <div class="map-overlay-card">
+                <div class="card-body p-4">
+                    <div class="info-item mb-3">
+                        <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.1995671898944!2d-0.8817289244519674!3d41.6514299795765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914ee60b50ae7%3A0xc5dda747ab5cd73d!2sLarraz!5e0!3m2!1ses!2ses!4v1766089930691!5m2!1ses!2ses"
-          style="border:0;"
+          style="border-radius:1.75rem;width: 100%;
+  height: auto; filter: grayscale(20%);"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-        
-      </section>
+                    </div>
+                    <a href="https://www.google.com/maps/place/Larraz/@41.65143,-0.8817289,16z/data=!3m1!4b1!4m6!3m5!1s0xd5914ee60b50ae7:0xc5dda747ab5cd73d!8m2!3d41.651426!4d-0.879154!16s%2Fg%2F11b6djp4n0?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" 
+                       target="_blank" 
+                       class="btn btn-cta">
+                        <i class="fas fa-directions me-2 align-items-center"></i>Cómo llegar
+                    </a>
+                </div>
+            
+    </div>
+</section>
     </main>
   <?php require_once '_partials/footer.php';?>  

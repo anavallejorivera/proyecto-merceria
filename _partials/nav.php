@@ -12,7 +12,8 @@
                 </li>
             </ul>
             <!-- Redes sociales -->
-              <ul class="d-flex justify-content-center border-top border-md-top-0 pt-0 pt-1 gap-2 list-unstyled">   
+              <ul class="d-flex justify-content-center gap-2 list-unstyled 
+           border-top border-md-top-0 pt-1 pt-md-0">   
             <li><a href="http://www.facebook.com" target="_blank"><svg class="icon__xl"><use href="assets/img/sprite.svg#rrssfacebook"></use></svg><span class="visually-hidden">facebook</span></a></li>
             <li><a  href="http://www.instagram.com" target="_blank"><svg class="icon__xl"><use href="assets/img/sprite.svg#rrssinstagram"></use></svg><span class="visually-hidden">instagram</span></a></li>
             <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" title="X" class="text-decoration-none">
@@ -37,13 +38,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
       <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="">Nosotros</a>
+          <a class="nav-link" aria-current="page" href="./quienes-somos.php">Nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="">Manualidades</a>
+          <a class="nav-link" aria-current="page" href="./manualidades.php">Manualidades</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  href="">Textil</a>
+          <a class="nav-link"  href="./textil.php">Textil</a>
         </li>
         <li class="nav-item">
           <a class="nav-link"  href="./merceria.php">Mercería</a>
@@ -51,7 +52,7 @@
          <li class="nav-item">
           <a class="nav-link cta" href="#">Contacto</a>
         </li>
-<li><button class="btn-cta-nav nav-item">Visitanos</button></li>
+<li><a href="#visitanos" class="btn-cta-nav nav-item">Visitanos</a></li>
           </ul>
     </div>
   </div>
