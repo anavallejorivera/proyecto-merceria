@@ -127,7 +127,7 @@
         &copy; <?php echo date('Y'); ?> Mercería Larraz. Todos los derechos reservados.
       </p>
       <p class="mb-0">
-        Diseñado por Fernando | Ana | Antonio.
+        Diseñado por Fernanda | Ana | Antonio.
       </p>
     </div>
 

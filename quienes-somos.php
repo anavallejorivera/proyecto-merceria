@@ -1,101 +1,8 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quienes somos</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/carousel.css?v=1.5">
-</head>
-
-<body class="about">
-  <header>
-    <div class="border-bottom pre-header">
-      <div class="container">
-        <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-center py-2">
-          <!-- Información de contacto -->
-          <ul class="list-unstyled d-flex gap-3 mb-2 mb-md-0">
-            <li class="telefono">
-              <a href="tel:+34666666666" class="text-decoration-none">+34 666 666 666</a>
-            </li>
-            <li>
-              <a href="mailto:correo@correo.com" class="text-decoration-none">correo@correo.com</a>
-            </li>
-          </ul>
-
-          <!-- Redes sociales -->
-          <ul class="list-unstyled d-flex gap-3 mb-0 rrss">
-            <li>
-              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Facebook" class="text-decoration-none">
-                <svg>
-                  <use href="assets/img/sprite.svg#rrssfacebook"></use>
-                </svg>
-                <span class="visually-hidden">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/" target="_blank" rel="noopener noreferrer" title="X" class="text-decoration-none">
-                <svg>
-                  <use href="assets/img/sprite.svg#rrsstwitter"></use>
-                </svg>
-                <span class="visually-hidden">X</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Instagram" class="text-decoration-none">
-                <svg class="icon__xl">
-                  <use href="assets/img/sprite.svg#rrssinstagram"></use>
-                </svg>
-                <span class="visually-hidden">Instagram</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- inicio seccion nav -->
-    <nav class="navbar navbar-expand-lg py-0 m-2">
-      <div class="container-xl pe-xl-0 align-items-xl-start">
-        <a href="#" rel="noopener noreferrer" title="Home" class="text-decoration-none navbar-brand">
-          <img src="assets/img/logolarraz.svg" alt="Inicio">
-          <span class="visually-hidden">Home</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Conocenos</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Cátalogo
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Manualidades</a></li>
-                <li><a class="dropdown-item" href="#">Manualidadest</a></li>
-                <li><a class="dropdown-item" href="#">Manualidadest</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link cta" href="#">Contacto</a>
-            </li>
-
-            <div class="d-flex" role="search">
-              <button class="btn btn-outline-success btn-cta" type="submit">Visitanos</button>
-            </div>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- fin nav  -->
-  </header>
+<?php 
+ $title = "Mercería Larraz | Nosotros";
+ $description = 'Página de Productos de Mercería';
+require_once '_partials/header.php';?>
+<?php require_once '_partials/nav.php';?>
   <main>
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -118,7 +25,7 @@
           aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item somos active">
           <svg
             aria-hidden="true"
             class="bd-placeholder-img"
@@ -144,7 +51,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item somos">
           <svg
             aria-hidden="true"
             class="bd-placeholder-img"
@@ -168,7 +75,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item somos">
           <svg
             aria-hidden="true"
             class="bd-placeholder-img"

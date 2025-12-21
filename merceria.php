@@ -1,20 +1,9 @@
-<?php
-// Aquí irá tu código PHP
-?>
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Larraz | Catálogo > Manualidades</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/productos.css" rel="stylesheet">
-</head>
-<body>
-<?php
-include '_partials/header.php';
-?>
+<?php 
+ $title = "Larraz | Catálogo > Mercería";
+ $description = 'Página de Productos de Mercería';
+require_once '_partials/header.php';?>
+<?php require_once '_partials/nav.php';?>
 
 <!-- Encabezado de la sección de Manualidades -->
 <section class="catalogo-header text-center mb-2 seccion-compacta pt-5">
