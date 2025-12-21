@@ -139,7 +139,7 @@
                 Nuestra historia
               </p>
               <p>
-                <a class="btn btn-lg btn-primary boton-orange" href="#nuestrahistoria">Ver más</a>
+                <a class="btn-cta btn-lg" href="#nuestrahistoria">Ver más</a>
               </p>
             </div>
           </div>
@@ -164,7 +164,7 @@
               <p>
                 Nuestra historia
               </p>
-              <p><a class="btn btn-lg btn-primary boton-orange" href="#nuestrahistoria">Ver más</a></p>
+              <p><a class="btn-cta btn-lg" href="#nuestrahistoria">Ver más</a></p>
             </div>
           </div>
         </div>
@@ -189,7 +189,7 @@
                 Nuestra historia
               </p>
               <p>
-                <a class="btn btn-lg btn-primary boton-orange" href="#nuestrahistoria">Ver más</a>
+                <a class="btn-cta btn-lg" href="#nuestrahistoria">Ver más</a>
               </p>
             </div>
           </div>

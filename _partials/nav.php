@@ -50,7 +50,7 @@
           <a class="nav-link"  href="./merceria.php">Mercería</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link cta" href="#">Contacto</a>
+          <a class="nav-link cta" href="#contacto">Contacto</a>
         </li>
 <li><a href="#visitanos" class="btn-cta-nav nav-item">Visitanos</a></li>
           </ul>

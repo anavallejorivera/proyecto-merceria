@@ -119,9 +119,9 @@ Ven, recorre nuestra tienda y déjate inspirar</span></p>
       </div>
 
       <!-- Slides -->
-      <div class="carousel-inner-1 carousel-inner">
+      <div class="carousel-inner carousel-inner-1 ">
         <!-- Slide 1 -->
-        <div class="carousel-item-home carousel-item active">
+        <div class="carousel-item carousel-item-home active">
           <div class="row g-3 px-3">
             <div class="col-12 col-md-6 col-lg-4">
               <div class="card-producto position-relative overflow-hidden rounded-4 shadow-lg">
@@ -160,7 +160,7 @@ Ven, recorre nuestra tienda y déjate inspirar</span></p>
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item-home carousel-item">
+        <div class="carousel-item carousel-item-home">
           <div class="row g-3 px-3">
             <div class="col-12 col-md-6 col-lg-4">
               <div class="card-producto position-relative overflow-hidden rounded-4 shadow-lg">
@@ -199,7 +199,7 @@ Ven, recorre nuestra tienda y déjate inspirar</span></p>
         </div>
 
         <!-- Slide 3 -->
-        <div class="carousel-item-home carousel-item">
+        <div class="carousel-item carousel-item-home">
           <div class="row g-3 px-3">
             <div class="col-12 col-md-6 col-lg-4">
               <div class="card-producto position-relative overflow-hidden rounded-4 shadow-lg">
@@ -238,7 +238,7 @@ Ven, recorre nuestra tienda y déjate inspirar</span></p>
         </div>
 
         <!-- Slide 4 -->
-        <div class="carousel-item-home carousel-item">
+        <div class="carousel-item carousel-item-home">
           <div class="row g-3 px-3">
             <div class="col-12 col-md-6 col-lg-4">
               <div class="card-producto position-relative overflow-hidden rounded-4 shadow-lg">
@@ -292,30 +292,42 @@ Ven, recorre nuestra tienda y déjate inspirar</span></p>
    
       <!-- Mapa responsive -->
 
-
-      
-      <!-- Sección Mapa con Overlay Responsive-->
-<section class="container-lg" id="visitanos">
-        <!-- Tarjeta flotante con información -->
-        <div class="map-overlay-card">
-                <div class="card-body p-4">
-                    <div class="info-item mb-3">
-                        <iframe
+<section class="container-lg map-section p-2" id="visitanos">
+    <div class="map-container">
+        <!-- Tarjeta con el mapa dentro -->
+        <div class="map-card">
+            <div class="card">
+                <div class="card-body p-0">
+                    <!-- Mapa de Google dentro de la tarjeta -->
+                               <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.1995671898944!2d-0.8817289244519674!3d41.6514299795765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914ee60b50ae7%3A0xc5dda747ab5cd73d!2sLarraz!5e0!3m2!1ses!2ses!4v1766089930691!5m2!1ses!2ses"
-          style="border-radius:1.75rem;width: 100%;
-  height: auto; filter: grayscale(20%);"
+          style="border-radius:1.75rem; border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;width: 100%;
+          height: auto; filter: grayscale(20%);"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-                    </div>
+                </div>
+                <!-- Botón centrado sobre el mapa -->
+                <div class="card-body text-center map-button-overlay">
                     <a href="https://www.google.com/maps/place/Larraz/@41.65143,-0.8817289,16z/data=!3m1!4b1!4m6!3m5!1s0xd5914ee60b50ae7:0xc5dda747ab5cd73d!8m2!3d41.651426!4d-0.879154!16s%2Fg%2F11b6djp4n0?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" 
                        target="_blank" 
-                       class="btn btn-cta">
-                        <i class="fas fa-directions me-2 align-items-center"></i>Cómo llegar
+                       class="btn-cta btn-lg">
+                        <i class="fas fa-directions me-2"></i>Cómo llegar
                     </a>
                 </div>
-            
+            </div>
+        </div>
     </div>
 </section>
+      
+
     </main>
-  <?php require_once '_partials/footer.php';?>  
+
+
+  <?php require_once '_partials/footer.php';?> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="./assets/js/script.js"></script>
+  </body>
+
+</html>

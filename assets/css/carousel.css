@@ -183,6 +183,7 @@ background: linear-gradient(to right, /* se suponen a otros carruseles*/
   rgba(204, 51, 0, 0) 100%);
 }
 
+
 @media (min-width: 768px) {
   .about .navbar {
     position: relative;

@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/carousel.css">
     <link rel="stylesheet" href="./assets/css/productos.css">
-    <script src="./assets/js/script.js"></script>
     <link rel="icon" type="image/svg+xml" href="assets/img/logolarraz.svg">
   </head>
   <body>
