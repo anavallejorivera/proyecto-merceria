@@ -118,7 +118,7 @@ require '_partials/header.php'; ?>
     <!-- START THE FEATURETTES -->
     
     <div class="row featurette">
-      <div class="col-md-7 pe-5">
+      <div class="col-12 col-lg-7 pe-5">
         <h2 class="featurette-heading fw-bold lh-1 title-red">
           Nuestra Historia
         </h2>
@@ -128,7 +128,7 @@ require '_partials/header.php'; ?>
           Durante esta época el comercio se dedica a las actividades de sedería, mercería y paquetería, trabajando principalmente productos como hilos, algodones, puntillas, encajes, flecos, pasamanería, cintas, botones y adornos. En 1917 fallece Vicente Larraz Gil, y el negocio queda en manos de Miguel García, ayudado quizás por alguno de los hijos del señor Larraz. Finalmente, es el menor de ellos, Vicente Larraz Cardiel, quien toma la dirección de la empresa.
         </p>
       </div>
-      <div class="col-md-5">
+      <div class="col-12 col-lg-5">
         <img src="assets/img/historia.jpg" alt="" class="img1 pt-2" srcset="">
       </div>
     </div>
@@ -158,7 +158,7 @@ require '_partials/header.php'; ?>
     <!-- /.row -->
     <hr class="featurette-divider" />
     <div class="row featurette">
-      <div class="col-md-7 order-md-2 ps-lg-5 ps-sm-0">
+      <div class="col-12 col-lg-7 order-md-2 ps-lg-5 ps-sm-0">
         <h2 class="featurette-heading fw-bold lh-1 title-red">
           La Tienda
         </h2>
@@ -168,13 +168,13 @@ require '_partials/header.php'; ?>
           Cada temporada incorporamos nuevas gamas de productos siguiendo las últimas tendencias de la moda. Para ello, disponemos de una selección de artículos de fabricación nacional y realizamos importaciones, algunas de las cuales en exclusiva.
         </p>
       </div>
-      <div class="col-md-5 order-md-1">
+      <div class="col-12 col-lg-5 order-md-1">
         <img src="assets/img/cajaentrada.jpg" alt="" class="img1" srcset="">
       </div>
     </div>
     <hr class="featurette-divider" />
     <div class="row featurette">
-      <div class="col-md-7 pe-5">
+      <div class="col-12 col-lg-7 pe-5">
         <h2 class="featurette-heading fw-bold lh-1 title-red">
           Confianza, calidad y seguridad
         </h2>
@@ -182,7 +182,7 @@ require '_partials/header.php'; ?>
         <p>También distribuyen nuestros productos empresas como agencias de publicidad, tiendas de banderas y artículos personalizados, etc.<br /><strong>- Calidad:</strong> el conocimiento acumulado durante nuestra larga existencia nos permite ofrecer una amplia variedad de productos con la máxima calidad.</p>
         <p>Algunos de nuestros productos son los de mayor calidad en España.<br /><strong>- Seguridad:</strong> satisfacemos las necesidades de nuestros clientes y cumplimos las fechas de entrega demandadas.</p>
       </div>
-      <div class="col-md-5 pe-5
+      <div class="col-12 col-lg-5 pe-5
         ">
         <img src="assets/img/manualidades.png" alt="" class="img1 pt-2" srcset="">
         </svg>
