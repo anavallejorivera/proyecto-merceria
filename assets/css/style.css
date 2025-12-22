@@ -228,7 +228,7 @@ img{
   transform: scale(1.05);
 }
 
-@media screen and(max-width: 600px) {
+@media screen and(max-width: 900px) {
   .logo {
     max-width: 150px;
     width: 75%;
@@ -311,13 +311,6 @@ header .pre-header a:hover{
   background-color: var(--color-fondo) !important;
 }
 
-@media (min-width: 768px) {
-  .navbar {
-    position: absolute;
-    width: 100%;
-    z-index: 999999;
-  }
-}
 
 .navbar-brand {
   transition: var(--transition-fast);

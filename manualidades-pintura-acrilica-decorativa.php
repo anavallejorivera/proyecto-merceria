@@ -2,11 +2,11 @@
 <?php 
  $title = "Larraz | Catálogo > Manualidades > Pintura Acrílica Decorativa";
  $description = 'Página de Productos de Mercería';
-require_once '_partials/header.php';?>
-<?php require_once '_partials/nav.php';?>
+require '_partials/header.php';?>
+<?php require '_partials/nav.php';?>
 
 <!-- Encabezado de la sección de Producto -->
-<div class="producto-header text-center mb-2 pt-5 producto-compactamd container-md">
+<div class="producto-header text-center mb-2 producto-compactamd container-lg">
   <div class="pt-5 w-75 mx-auto">
     <h2 class="titulo-producto mb-2">Pintura Acrílica Decorativa</h2>
     <p class="subtitulo-producto mb-1">

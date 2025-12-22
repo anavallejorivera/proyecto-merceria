@@ -1,9 +1,9 @@
 
 <?php 
- $title = "Mercería Larraz";
+ $title = "Mercería Larraz | ML";
  $description = 'Página de inicio Mercería Larraz';
-require_once '_partials/header.php';?>
-<?php require_once '_partials/nav.php';?>
+require '_partials/header.php';?>
+<?php require '_partials/nav.php';?>
 <main>
 <section class="hero" id="inicio">
     <h1>Mercería Larraz</h1>
@@ -290,42 +290,10 @@ Ven, recorre nuestra tienda y déjate inspirar</span></p>
   </div>
 </section>
    
-      <!-- Mapa responsive -->
-
-<section class="container-lg map-section p-2" id="visitanos">
-    <div class="map-container">
-        <!-- Tarjeta con el mapa dentro -->
-        <div class="map-card">
-            <div class="card">
-                <div class="card-body p-0">
-                    <!-- Mapa de Google dentro de la tarjeta -->
-                               <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.1995671898944!2d-0.8817289244519674!3d41.6514299795765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914ee60b50ae7%3A0xc5dda747ab5cd73d!2sLarraz!5e0!3m2!1ses!2ses!4v1766089930691!5m2!1ses!2ses"
-          style="border-radius:1.75rem; border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;width: 100%;
-          height: auto; filter: grayscale(20%);"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-                </div>
-                <!-- Botón centrado sobre el mapa -->
-                <div class="card-body text-center map-button-overlay">
-                    <a href="https://www.google.com/maps/place/Larraz/@41.65143,-0.8817289,16z/data=!3m1!4b1!4m6!3m5!1s0xd5914ee60b50ae7:0xc5dda747ab5cd73d!8m2!3d41.651426!4d-0.879154!16s%2Fg%2F11b6djp4n0?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" 
-                       target="_blank" 
-                       class="btn-cta btn-lg">
-                        <i class="fas fa-directions me-2"></i>Cómo llegar
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-      
-
-    </main>
+     
 
 
-  <?php require_once '_partials/footer.php';?> 
+  <?php require '_partials/footer.php';?> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="./assets/js/script.js"></script>
   </body>

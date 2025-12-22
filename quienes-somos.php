@@ -1,8 +1,8 @@
 <?php 
- $title = "Mercería Larraz | Nosotros";
+ $title = "Nosotros | Mercería Larraz";
  $description = 'Página de Productos de Mercería';
-require_once '_partials/header.php';?>
-<?php require_once '_partials/nav.php';?>
+require '_partials/header.php';?>
+<?php require '_partials/nav.php';?>
   <main>
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
       <div class="carousel-indicators">

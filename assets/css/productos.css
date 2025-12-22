@@ -1,3 +1,24 @@
+/* ===============================================
+   VARIABLES CSS
+   =============================================== */
+   :root {
+    /* Colores principales */
+    --color-principal: hsl(15, 100%, 40%);
+    --color-secundario: hsl(34, 96%, 59%);
+    --color-fondo: hsl(0, 0%, 100%);
+    --color-footer: hsl(15, 100%, 25%);
+    --color-texto: hsl(0, 0%, 0%);
+    --sombra: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+    /* Transiciones */
+    --transition-base: 0.3s ease;
+    --transition-fast: 0.2s ease;
+    
+    /* Sombras */
+    --sombra: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+
 /* -------------------------------------
    Estilos personalizados para Catálogo
 ---------------------------------------- */
@@ -164,7 +185,7 @@
   font-weight: 500;
   color: #333;
   padding: 0.75rem 1.25rem;
-  transition: color 0.3s ease, border-color 0.3s ease;
+  transition: color 0.5s ease, border-color 0.5s ease;
 }
 
 .tabs-producto .nav-link:hover {
@@ -335,3 +356,4 @@
     right: 12px;
   }
 }
+/* --------clase responsive----------- */

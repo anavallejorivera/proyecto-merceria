@@ -2,12 +2,12 @@
 <?php 
  $title = "Larraz | Catálogo > Manualidades";
  $description = 'Página de Productos de Mercería';
-require_once '_partials/header.php';?>
-<?php require_once '_partials/nav.php';?>
+require '_partials/header.php';?>
+<?php require '_partials/nav.php';?>
 
 <!-- Encabezado de la sección de Manualidades -->
-<section class="catalogo-header text-center mb-2 seccion-compacta pt-5">
-  <div class="container pt-5">
+<section class="catalogo-header text-center mb-2 seccion-compacta container-lg">
+  <div class="w-75 mx-auto">
     <h2 class="titulo-catalogo mb-2">Manualidades</h2>
     <p class="subtitulo-catalogo mb-1">
       En nuestra sección de Manualidades encontrarás todo lo necesario para dar forma a tus ideas creativas.
@@ -22,7 +22,7 @@ require_once '_partials/header.php';?>
 </section>
 
 <!-- Sección de tarjetas -->
-<section class="container catalogo-section seccion-compacta">
+<section class="container-lg catalogo-section seccion-compacta">
   <div class="row g-4">
 
     <!-- Tarjeta 1 -->
