@@ -4,7 +4,6 @@
  $description = 'Página de inicio Mercería Larraz';
 require '_partials/header.php';?>
 <?php require '_partials/nav.php';?>
-<main>
 <section class="hero" id="inicio">
     <h1>Mercería Larraz</h1>
     <div class="hero-texto p-2 mb-2 bg-white bg-opacity-50">
