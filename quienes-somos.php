@@ -124,8 +124,8 @@ require '_partials/header.php'; ?>
             <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
           </svg>
 
-          <h2 class="fw-bold title-red">Misión</h2>
-          <p class="lead">
+          <h2 class="fw-bold title-red pt-3">Misión</h2>
+          <p class="lead px-3">
             Larraz tiene como misión ofrecer a sus clientes una experiencia única en el mundo de las manualidades, la mercería y las labores textiles, combinando tradición, creatividad e innovación. Desde el corazón de Zaragoza.
         </div>
         <!-- /.col-lg-4 -->
@@ -133,8 +133,8 @@ require '_partials/header.php'; ?>
           <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
             <path d="M4 11H2v3h2zm5-4H7v7h2zm5-5v12h-2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z" />
           </svg>
-          <h2 class="fw-bold title-red">Visión</h2>
-          <p class="lead">
+          <h2 class="fw-bold title-red pt-3">Visión</h2>
+          <p class="lead px-3">
             Ser reconocida como la tienda de referencia en España en manualidades textiles, mercería y artes creativas, destacando por nuestra capacidad de adaptación, nuestra trayectoria centenaria.
           </p>
         </div>
@@ -159,7 +159,7 @@ require '_partials/header.php'; ?>
       </div>
       <hr class="featurette-divider" />
       <div class="row featurette">
-        <div class="col-md-7 order-md-2 ps-5">
+        <div class="col-md-7 order-md-2 ps-lg-5 ps-sm-0">
           <h2 class="featurette-heading fw-bold lh-1 title-red">
             La Tienda
           </h2>
@@ -179,9 +179,9 @@ require '_partials/header.php'; ?>
           <h2 class="featurette-heading fw-bold lh-1 title-red">
             Confianza, calidad y seguridad
           </h2>
-          <p class="lead"><strong>- Confianza:</strong> servimos a miles de clientes que confían en nosotros. Organismos oficiales como la Casa Real, ministerios, gobiernos autonómicos y ayuntamientos, compañías multinacionales y marcas reconocidas, clubes y federaciones deportivas, Ejército, Guardia Civil y otros cuerpos de seguridad, cofradías, partidos políticos y sindicatos, etc.</p>
-          <p class="lead">También distribuyen nuestros productos empresas como agencias de publicidad, tiendas de banderas y artículos personalizados, etc.<br /><strong>- Calidad:</strong> el conocimiento acumulado durante nuestra larga existencia nos permite ofrecer una amplia variedad de productos con la máxima calidad.</p>
-          <p class="lead">Algunos de nuestros productos son los de mayor calidad en España.<br /><strong>- Seguridad:</strong> satisfacemos las necesidades de nuestros clientes y cumplimos las fechas de entrega demandadas.</p>
+          <p><strong>- Confianza:</strong> servimos a miles de clientes que confían en nosotros. Organismos oficiales como la Casa Real, ministerios, gobiernos autonómicos y ayuntamientos, compañías multinacionales y marcas reconocidas, clubes y federaciones deportivas, Ejército, Guardia Civil y otros cuerpos de seguridad, cofradías, partidos políticos y sindicatos, etc.</p>
+          <p>También distribuyen nuestros productos empresas como agencias de publicidad, tiendas de banderas y artículos personalizados, etc.<br /><strong>- Calidad:</strong> el conocimiento acumulado durante nuestra larga existencia nos permite ofrecer una amplia variedad de productos con la máxima calidad.</p>
+          <p>Algunos de nuestros productos son los de mayor calidad en España.<br /><strong>- Seguridad:</strong> satisfacemos las necesidades de nuestros clientes y cumplimos las fechas de entrega demandadas.</p>
         </div>
         <div class="col-md-5 pe-5
         ">
