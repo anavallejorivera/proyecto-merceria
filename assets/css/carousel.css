@@ -217,3 +217,8 @@ img.img1 {
   color: #fff !important;
   background-color: var(--color-principal) !important;
 }
+
+.text-bg-secondary .bi {
+    vertical-align: -0.125em;
+    fill: #fff;
+}
