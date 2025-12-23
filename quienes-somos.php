@@ -41,7 +41,7 @@ require '_partials/header.php'; ?>
         </svg>
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Quienes Somos</h1>
+            <h1 class="fw-bold ">Quienes Somos</h1>
             <p class="opacity-75">
               Nuestra historia
             </p>
@@ -64,7 +64,7 @@ require '_partials/header.php'; ?>
         </svg>
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Quienes Somos</h1>
+            <h1 class="fw-bold ">Quienes Somos</h1>
             <p>
               Nuestra historia
             </p>
@@ -87,7 +87,7 @@ require '_partials/header.php'; ?>
         </svg>
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Quienes Somos</h1>
+            <h1 class="fw-bold ">Quienes Somos</h1>
             <p>
               Nuestra historia
             </p>
