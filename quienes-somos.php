@@ -88,7 +88,7 @@ require '_partials/header.php'; ?>
         <div class="container">
           <div class="carousel-caption text-start">
             <h1 class="fw-bold ">Quienes Somos</h1>
-            <p>
+            <p class="small text-light">
               Nuestra historia
             </p>
           </div>
