@@ -210,5 +210,10 @@ body.about {
 
 img.img1 {
   width: 100%;
-  max-width: 525px;
+  max-width: 700px;
+}
+
+.text-bg-secondary {
+  color: #fff !important;
+  background-color: var(--color-principal) !important;
 }
