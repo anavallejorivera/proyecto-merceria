@@ -38,16 +38,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
       <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="./quienes-somos.php">Nosotros</a>
+          <a class="nav-link"  href="./merceria.php">Mercería</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="./manualidades.php">Manualidades</a>
         </li>
         <li class="nav-item">
           <a class="nav-link"  href="./textil.php">Textil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"  href="./merceria.php">Mercería</a>
         </li>
          <li class="nav-item">
           <a class="nav-link cta" href="./contacto.php
