@@ -76,7 +76,7 @@ body.about {
 
   /* Bump up size of carousel content */
   .main-somos .carousel-caption p {
-    margin-bottom: 1.25rem;
+    margin-bottom: 10rem;
     font-size: 1.25rem;
     line-height: 1.4;
   }
@@ -182,7 +182,7 @@ body.about {
   position: absolute;
   inset: 0;
   background: linear-gradient(to right,
-      rgba(200, 51, 0, 1) 0%,
+      rgba(190, 51, 0, 1) 0%,
       rgba(200, 51, 0, 0) 100%);
   z-index: 1;
 }
