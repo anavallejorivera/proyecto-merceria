@@ -847,3 +847,7 @@ section {
 .text-gray-light {
     color: #6c757d;
 }
+
+.text-footer {
+    color: var(--color-footer);
+}
