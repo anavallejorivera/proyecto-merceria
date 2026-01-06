@@ -18,11 +18,11 @@ require '_partials/header.php';?>
                     <h3 class="fw-bold">info@example.com</h3>
                     <hr class="w-100">
                     <p class="mb-2">Follow me:</p>
-                    <div class="d-flex pt-2">
-                    <h6 class="small mb-2 pt-4">Síguenos:</h6>
-        <ul class="d-flex justify-content-center justify-content-md-start gap-2 list-unstyled">
+                    <div class="d-flex align-items-center pt-2">
+                    <h6 class="small mb-0 me-3">Síguenos:</h6>
+        <ul class="d-flex justify-content-center justify-content-md-start gap-3 list-unstyled mb-0">
           <li>
-            <a href="http://www.facebook.com" target="_blank">
+            <a href="http://www.facebook.com" target="_blank" class="social-icon">
               <svg class="icon__xl">
                 <use href="assets/img/sprite.svg#rrssfacebook"></use>
               </svg>
@@ -30,7 +30,7 @@ require '_partials/header.php';?>
             </a>
           </li>
           <li>
-            <a href="http://www.instagram.com" target="_blank">
+            <a href="http://www.instagram.com" target="_blank" class="social-icon">
               <svg class="icon__xl">
                 <use href="assets/img/sprite.svg#rrssinstagram"></use>
               </svg>
@@ -38,7 +38,7 @@ require '_partials/header.php';?>
             </a>
           </li>
           <li>
-            <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="social-icon">
               <svg class="icon__xl">
                 <use href="assets/img/sprite.svg#rrsstwitter"></use>
               </svg>

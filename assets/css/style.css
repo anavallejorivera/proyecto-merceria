@@ -372,6 +372,26 @@ header svg.icon__xl, footer svg.icon__xl{
   height: 1.2em;
 }
 
+/* Iconos de redes sociales en página de contacto */
+main .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-base);
+}
+
+main .social-icon svg.icon__xl {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--color-footer);
+  transition: var(--transition-base);
+}
+
+main .social-icon:hover svg.icon__xl {
+  fill: var(--color-principal);
+  transform: scale(1.1);
+}
+
 header .pre-header{
   opacity: .55;
   transition: .2s;
