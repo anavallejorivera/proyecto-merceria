@@ -9,13 +9,13 @@ require '_partials/header.php';?>
 <div class="row g-5 container-lg">
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                     <p class="mb-2">My office:</p>
-                    <h3 class="fw-bold">123 Street, New York, USA</h3>
+                    <h5 class="fw-bold">123 Street, New York, USA</h5>
                     <hr class="w-100">
                     <p class="mb-2">Call me:</p>
-                    <h3 class="fw-bold">+012 345 6789</h3>
+                    <h5 class="fw-bold">+012 345 6789</h5>
                     <hr class="w-100">
                     <p class="mb-2">Mail me:</p>
-                    <h3 class="fw-bold">info@example.com</h3>
+                    <h5 class="fw-bold">info@example.com</h5>
                     <hr class="w-100">
                     <p class="mb-2">Follow me:</p>
                     <div class="d-flex align-items-center pt-2">
