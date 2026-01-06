@@ -8,7 +8,7 @@ require '_partials/header.php';?>
 
 <div class="row g-5 container-lg">
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-                    <p class="mb-2">My office:</p>
+                    <p class="mb-2">Información de la tienda</p>
                     <h5 class="fw-bold">123 Street, New York, USA</h5>
                     <hr class="w-100">
                     <p class="mb-2">Call me:</p>
@@ -49,7 +49,7 @@ require '_partials/header.php';?>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax &amp; PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                    <h3 class="titulo-catalogo mb-2">Contacte con nosotros</h3>
                     <form>
                         <div class="row g-3">
                             <div class="col-md-6">
