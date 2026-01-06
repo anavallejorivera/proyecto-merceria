@@ -37,7 +37,7 @@
      <div class="row mb-4 text-center text-md-start justify-content-center">
 
        <!-- About -->
-       <div class="col-sm-6 col-md-3 mb-4">
+       <div class="col-sm-10 col-md-3 mb-4">
          <div class="d-flex justify-content-center justify-content-md-start align-items-center gap-3 mb-3">
            <div class="rounded-circle d-flex align-items-center justify-content-center">
              <a href="./index.php" rel="noopener noreferrer" title="Home">

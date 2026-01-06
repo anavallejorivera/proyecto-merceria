@@ -6,12 +6,13 @@ require '_partials/header.php';?>
 <?php require '_partials/nav.php';?>
 <section class="hero" id="inicio">
     <h1>Mercería Larraz</h1>
-    <div class="hero-texto p-2 mb-2 bg-white bg-opacity-50">
-    <p class="hero-texto">Tu creatividad empieza aquí</p>
-    <p><span class="">Encuentra todo lo necesario para tus creaciones y diseños únicos.
-Ven, recorre nuestra tienda y déjate inspirar</span></p>
+    <div class="hero-texto mb-2 p-md-3 mb-5 col-md-6 mx-auto">
+    <p><span class="">En el corazón de <strong>Zaragoza</strong>,<br> somos la mayor tienda de Aragón en manualidades, <strong>mercería</strong> y <strong>creatividad</strong> para todas las edades.</p>
+    <p>
+    <strong>Inspírate</strong>, <strong>crea</strong> y <strong>encuentra</strong> el regalo perfecto.</span></p>
+    <p class="">Tu creatividad empieza aquí...</p>
      </div>
-     <div>
+     <div class="d-flex justify-content-center gap-4">
     <a href="#productos" rel="wobble-top" class="button wobble-top btn-cta">Explora Productos</a>
     <a href="./quienes-somos.php" rel="wobble-top" class="button wobble-top btn-cta">Conocenos</a>
   </div>
@@ -22,8 +23,8 @@ Ven, recorre nuestra tienda y déjate inspirar</span></p>
     <div class="row align-items-center g-4">
       <div class="col-12 col-lg-6">
         <h2 class="mb-4 text-center">Sobre Nosotros</h2>
-        <p class="lead">En el corazón de Zaragoza, somos la mayor tienda de Aragón en manualidades, mercería y creatividad para todas las edades. </p>
-        <p class="lead">Inspírate, crea y encuentra el regalo perfecto.</p>
+        <p class="lead">Larraz es una <strong>empresa centenaria</strong>, galardonada con la medalla Basilio Paraíso por su larga trayectoria empresarial. </p>
+        <p class="lead">Queremos <strong>ofrecer</strong> a nuestros clientes una experiencia única en el mundo de las <strong>manualidades</strong>, la <strong>mercería</strong> y las <strong>labores textiles</strong>, combinando tradición, <strong>creatividad</strong> e <strong>innovación</strong> desde el corazón de Zaragoza</p>
       </div>
       <div class="col-12 col-lg-6">
         <img src="./assets/img/cat-textil.jpg" alt="Tienda Larraz" class="img-fluid rounded-4 shadow">
