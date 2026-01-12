@@ -5,41 +5,98 @@
 require '_partials/header.php';?>
 <?php require '_partials/nav.php';?>
     <!-- HERO -->
-<section class="hero container-lg p-0" id="inicio">
-      <div class="row align-items-center g-0">
-      <div class="hero-texto order-last col-9 col-lg-6 offset-lg-1">
-      <h1>
-        Mercería Larraz
-      </h1>
-      <p><span class="">En el corazón de <strong>Zaragoza</strong>,<br> somos la mayor tienda de Aragón en manualidades, <strong>mercería</strong> y <strong>creatividad</strong> para todas las edades.</p>
-    <p>
-    <strong>Inspírate</strong>, <strong>crea</strong> y <strong>encuentra</strong> el regalo perfecto.</span></p>
-    <p class="">Tu creatividad empieza aquí...</p>
-    <div class="cta-group w-75 mx-auto">
-      <a href="#productos" rel="wobble-top" class="button wobble-top btn-cta active btn-primary">Explora Productos</a>
-    <a href="./quienes-somos.php" rel="wobble-top" class="button wobble-top btn-cta btn-outline-primary">Conocenos</a>
-      </div> </div>
-      <!-- <div class="offset-lg-1 col-lg-4">
-      <img src="./assets/img/hero-banner.jpg" alt="">
-      </div>  -->
-       <div class="Wrapper block content-3 offset-lg-1 col-lg-4">
-        <div class="Visual block-center-center">
-          <picture class="FirstPic">
-            <img src="./assets/img/cat-textil.jpg" alt="Stories Unveiled" />
-          </picture>
-          <picture class="SecondPic">
-            <img src="./assets/img/hero-imagen.png" alt="Celebrating Life Together" />
-          </picture>
-          <picture class="ThirdPic">
-            <img src="./assets/img/hero-imagen.png" alt="The Art of Giving" />
-          </picture>
-        </div>
-      </div>
-    </div><!-- DIV CIERRA ROW-->
-   </section>
+<section class="Hero p-0 w-100" aria-label="Presentación Mercería Larraz">
 
+  <!-- Slide/Sección 1 -->
+  <article id="StoriesUnveiled" class="Lockup FirstLockup d-flex align-items-center">
+    <div class="Media observe" data-slide="1" aria-hidden="true">
+      <img
+        src="./assets/img/cat-textil.jpg"
+        alt="Materiales de costura y manualidades sobre una mesa"
+        loading="eager"
+        decoding="async"
+      />
+    </div>
 
+    <div class="Text d-grid gap-3">
+      <p class="eyebrow mb-0">Mercería Larraz</p>
 
+      <h1 class="subhead mb-0">Tu creatividad empieza aquí...</h1>
+
+      <p class="mb-0">
+        En el corazón de <strong>Zaragoza</strong>,<br />
+        somos la mayor tienda de Aragón en manualidades, <strong>mercería</strong> y
+        <strong>creatividad</strong> para todas las edades.
+      </p>
+
+      <p class="mb-0">
+        <strong>Inspírate</strong>, <strong>crea</strong> y <strong>encuentra</strong> el regalo perfecto.
+      </p>
+
+      <a href="./quienes-somos.php" class="button wobble-top btn-cta btn align-self-start">Conócenos</a>
+    </div>
+  </article>
+
+  <!-- Slide/Sección 2 -->
+  <article id="CelebratingLifeTogether" class="Lockup SecondLockup d-flex align-items-center">
+    <div class="Media observe" data-slide="2" aria-hidden="true">
+      <img
+        src="./assets/img/hero-imagen.png"
+        alt="Manualidades para todos"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+
+    <div class="Text d-grid gap-3">
+      <p class="eyebrow mb-0">Mercería Larraz</p>
+
+      <h2 class="subhead mb-0">Manualidades para todos</h2>
+
+      <p class="mb-0">
+        Desde scrapbooking hasta pintura, encontrarás todo lo necesario para dar vida a tus ideas creativas.
+        Miles de productos para artistas y aficionados de todas las edades.
+      </p>
+
+      <a href="./quienes-somos.php" class="button wobble-top btn-cta btn align-self-start">Conócenos</a>
+    </div>
+  </article>
+
+  <!-- Slide/Sección 3 -->
+  <article id="TheArtofGiving" class="Lockup ThirdLockup d-flex align-items-center">
+    <div class="Media observe" data-slide="3" aria-hidden="true">
+      <img
+        src="./assets/img/hero-banner.jpg"
+        alt="Textil y Mercería"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+
+    <div class="Text d-grid gap-3">
+      <p class="eyebrow mb-0">Mercería Larraz</p>
+
+      <h2 class="subhead mb-0">Textil y Mercería</h2>
+
+      <p class="mb-0">
+        Lanas, hilos, telas y accesorios de costura. Todo lo que necesitas para tus labores textiles.
+        Desde 1866 manteniendo viva la tradición de la mercería de calidad.
+      </p>
+
+      <a href="./quienes-somos.php" class="button wobble-top btn-cta btn align-self-start">Conócenos</a>
+    </div>
+  </article>
+
+  <!-- PAGINACIÓN (solo desktop) -->
+  <nav class="pagination d-none d-lg-flex" aria-label="Navegación de secciones">
+    <div class="d-flex gap-3">
+      <a class="dot" href="#StoriesUnveiled" aria-label="Ir a la sección 1"></a>
+      <a class="dot" href="#CelebratingLifeTogether" aria-label="Ir a la sección 2"></a>
+      <a class="dot" href="#TheArtofGiving" aria-label="Ir a la sección 3"></a>
+    </div>
+  </nav>
+
+</section>
 
 
 
@@ -158,10 +215,9 @@ require '_partials/header.php';?>
             <img src="https://images.unsplash.com/photo-1618574760076-bae45d84041c?w=800" alt="Tonic">
           </div>
           <div class="icon">
-            <a href="#" class="iconBox"> <span class="bi bi-box-arrow-up-right">
-              <use href="assets/img/sprite.svg#arrowupright"></use>
-            
-              </span></a>
+            <a href="http://www.facebook.com" class="iconBox" ><svg class="icon__xl">
+                 <use href="assets/img/sprite.svg#arrowupright"></use>
+               </svg><span class="visually-hidden ">arrow-right</span></a>
           </div>
         </div>
       </div>
@@ -178,10 +234,9 @@ require '_partials/header.php';?>
             <img src="https://images.unsplash.com/photo-1618574760076-bae45d84041c?w=800" alt="Shower Gel">
           </div>
           <div class="icon">
-            <a href="#" class="iconBox"> <span class="bi bi-box-arrow-up-right">
-              <use href="assets/img/sprite.svg#arrowupright"></use>
-      
-              </span></a>
+            <a href="http://www.facebook.com" class="iconBox" ><svg class="icon__xl">
+                 <use href="assets/img/sprite.svg#arrowupright"></use>
+               </svg><span class="visually-hidden ">arrow-right</span></a>
           </div>
         </div>
       </div>
