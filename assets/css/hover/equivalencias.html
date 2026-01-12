@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equivalencias CSS Utilities - Bootstrap</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #0d6efd;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+        
+        .subtitle {
+            color: #6c757d;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        
+        h2 {
+            color: #495057;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #0d6efd;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+        
+        thead {
+            background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+            color: white;
+        }
+        
+        th {
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+        
+        td {
+            padding: 0.875rem 1rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        tbody tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .class-name {
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            color: #d63384;
+            font-weight: 500;
+        }
+        
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        
+        .note-title {
+            font-weight: 600;
+            color: #856404;
+            margin-bottom: 0.5rem;
+        }
+        
+        .info {
+            background: #cff4fc;
+            border-left: 4px solid #0dcaf0;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        
+        .info-title {
+            font-weight: 600;
+            color: #055160;
+            margin-bottom: 0.5rem;
+        }
+        
+        .example {
+            background: #f8f9fa;
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+            color: #198754;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            table {
+                font-size: 0.85rem;
+            }
+            
+            th, td {
+                padding: 0.5rem;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Tabla de Equivalencias: CSS Utilities → Bootstrap 5</h1>
+        <p class="subtitle">Guía completa de conversión para Mercería Larraz</p>
+
+        <!-- DISPLAY GRID LAYOUTS -->
+        <h2>🎯 Grid Display (Block)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 25%">Clase Actual</th>
+                    <th style="width: 35%">Equivalente Bootstrap 5</th>
+                    <th style="width: 40%">Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="class-name">.block</span></td>
+                    <td><span class="class-name">.d-grid</span></td>
+                    <td>Display grid básico</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.block-start-start</span></td>
+                    <td><span class="class-name">.d-grid .align-items-start .justify-items-start</span></td>
+                    <td>Grid con alineación arriba-izquierda</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.block-start-center</span></td>
+                    <td><span class="class-name">.d-grid .align-items-start .justify-content-center</span></td>
+                    <td>Grid con alineación arriba-centro</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.block-start-end</span></td>
+                    <td><span class="class-name">.d-grid .align-items-start .justify-content-end</span></td>
+                    <td>Grid con alineación arriba-derecha</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.block-center-start</span></td>
+                    <td><span class="class-name">.d-grid .align-items-center .justify-items-start</span></td>
+                    <td>Grid centrado verticalmente, inicio horizontal</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.block-center-center</span></td>
+                    <td><span class="class-name">.d-grid .align-items-center .justify-content-center</span></td>
+                    <td>Grid centrado completamente</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.block-center-end</span></td>
+                    <td><span class="class-name">.d-grid .align-items-center .justify-content-end</span></td>
+                    <td>Grid centrado verticalmente, fin horizontal</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.block-end-start</span></td>
+                    <td><span class="class-name">.d-grid .align-items-end .justify-items-start</span></td>
+                    <td>Grid con alineación abajo-izquierda</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.block-end-center</span></td>
+                    <td><span class="class-name">.d-grid .align-items-end .justify-content-center</span></td>
+                    <td>Grid con alineación abajo-centro</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.block-end-end</span></td>
+                    <td><span class="class-name">.d-grid .align-items-end .justify-content-end</span></td>
+                    <td>Grid con alineación abajo-derecha</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="note">
+            <div class="note-title">⚠️ Nota sobre justify-items en Bootstrap</div>
+            <p>Bootstrap no tiene clases nativas para <code>justify-items</code>. Para un control exacto, necesitarás CSS personalizado o usar <code>justify-content</code> como alternativa.</p>
+        </div>
+
+        <!-- INLINE GRID LAYOUTS -->
+        <h2>➡️ Grid Display (Inline - Auto Flow Column)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 25%">Clase Actual</th>
+                    <th style="width: 35%">Equivalente Bootstrap 5</th>
+                    <th style="width: 40%">Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="class-name">.inline</span></td>
+                    <td><span class="class-name">.d-grid</span> + CSS custom<br><code>grid-auto-flow: column</code></td>
+                    <td>Grid con flujo automático en columnas</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.inline-start-start</span></td>
+                    <td><span class="class-name">.d-grid .align-items-start</span> + CSS custom</td>
+                    <td>Inline grid alineado arriba-izquierda</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.inline-start-center</span></td>
+                    <td><span class="class-name">.d-grid .align-items-start .justify-content-center</span> + CSS custom</td>
+                    <td>Inline grid alineado arriba-centro</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.inline-start-end</span></td>
+                    <td><span class="class-name">.d-grid .align-items-start .justify-content-end</span> + CSS custom</td>
+                    <td>Inline grid alineado arriba-derecha</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.inline-center-start</span></td>
+                    <td><span class="class-name">.d-grid .align-items-center</span> + CSS custom</td>
+                    <td>Inline grid centrado verticalmente, inicio horizontal</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.inline-center-center</span></td>
+                    <td><span class="class-name">.d-grid .align-items-center .justify-content-center</span> + CSS custom</td>
+                    <td>Inline grid centrado completamente</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.inline-center-end</span></td>
+                    <td><span class="class-name">.d-grid .align-items-center .justify-content-end</span> + CSS custom</td>
+                    <td>Inline grid centrado verticalmente, fin horizontal</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.inline-end-start</span></td>
+                    <td><span class="class-name">.d-grid .align-items-end</span> + CSS custom</td>
+                    <td>Inline grid alineado abajo-izquierda</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.inline-end-center</span></td>
+                    <td><span class="class-name">.d-grid .align-items-end .justify-content-center</span> + CSS custom</td>
+                    <td>Inline grid alineado abajo-centro</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.inline-end-end</span></td>
+                    <td><span class="class-name">.d-grid .align-items-end .justify-content-end</span> + CSS custom</td>
+                    <td>Inline grid alineado abajo-derecha</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="note">
+            <div class="note-title">💡 Alternativa con Flexbox</div>
+            <p>Para <code>grid-auto-flow: column</code>, considera usar <span class="class-name">.d-flex .flex-row</span> que es más nativo en Bootstrap y logra un efecto similar.</p>
+        </div>
+
+        <!-- FLEXBOX -->
+        <h2>🔄 Flexbox</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 25%">Clase Actual</th>
+                    <th style="width: 35%">Equivalente Bootstrap 5</th>
+                    <th style="width: 40%">Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="class-name">.inline-wrap</span></td>
+                    <td><span class="class-name">.d-flex .flex-wrap</span></td>
+                    <td>Flexbox con wrap habilitado</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.space-between</span></td>
+                    <td><span class="class-name">.justify-content-between</span></td>
+                    <td>Espacio entre elementos (eje horizontal)</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.space-between-block</span></td>
+                    <td><span class="class-name">.align-content-between</span></td>
+                    <td>Espacio entre elementos (eje vertical/block)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- SPACING (GAP) -->
+        <h2>📏 Espaciado (Gap)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 25%">Clase Actual</th>
+                    <th style="width: 35%">Equivalente Bootstrap 5</th>
+                    <th style="width: 40%">Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="class-name">.gap-1</span></td>
+                    <td><span class="class-name">.gap-2</span></td>
+                    <td>0.5rem (8px)</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.gap-2</span></td>
+                    <td><span class="class-name">.gap-3</span></td>
+                    <td>1rem (16px)</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.gap-3</span></td>
+                    <td><span class="class-name">.gap-4</span></td>
+                    <td>1.5rem (24px)</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.gap-4</span></td>
+                    <td><span class="class-name">.gap-5</span></td>
+                    <td>2rem (32px) - Aproximado, Bootstrap usa 3rem (48px)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="info">
+            <div class="info-title">ℹ️ Escala de Gap en Bootstrap 5</div>
+            <p>Bootstrap usa una escala diferente:</p>
+            <div class="example">
+                .gap-0 = 0<br>
+                .gap-1 = 0.25rem (4px)<br>
+                .gap-2 = 0.5rem (8px)<br>
+                .gap-3 = 1rem (16px)<br>
+                .gap-4 = 1.5rem (24px)<br>
+                .gap-5 = 3rem (48px)
+            </div>
+        </div>
+
+        <!-- CONTENT WIDTH -->
+        <h2>📐 Anchos de Contenido (Content Width)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 25%">Clase Actual</th>
+                    <th style="width: 35%">Equivalente Bootstrap 5</th>
+                    <th style="width: 40%">Valor Max Width</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="class-name">.content-1</span></td>
+                    <td>CSS Custom o <span class="class-name">.col-md-4</span></td>
+                    <td>370px (contenido pequeño/mobile)</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.content-2</span></td>
+                    <td>CSS Custom o <span class="class-name">.col-lg-6</span></td>
+                    <td>620px (contenido mediano)</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.content-3</span></td>
+                    <td><span class="class-name">.container-lg</span></td>
+                    <td>1230px (contenido amplio)</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.content-4</span></td>
+                    <td><span class="class-name">.container-xxl</span></td>
+                    <td>1600px - Requiere CSS custom, Bootstrap max es 1320px</td>
+                </tr>
+                <tr>
+                    <td><span class="class-name">.content-full</span></td>
+                    <td><span class="class-name">.w-100</span></td>
+                    <td>100% del ancho disponible</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="note">
+            <div class="note-title">📦 Contenedores en Bootstrap 5</div>
+            <p>Breakpoints de contenedores Bootstrap:</p>
+            <div class="example">
+                .container-sm: max 540px<br>
+                .container-md: max 720px<br>
+                .container-lg: max 960px<br>
+                .container-xl: max 1140px<br>
+                .container-xxl: max 1320px<br>
+                .container-fluid: 100% width
+            </div>
+            <p style="margin-top: 0.5rem;"><strong>Para .content-4 (1600px)</strong> necesitarás CSS personalizado ya que excede el máximo de Bootstrap.</p>
+        </div>
+
+        <!-- RECOMENDACIONES -->
+        <h2>✅ Recomendaciones de Migración</h2>
+        
+        <div class="info">
+            <div class="info-title">🎯 Migración Estratégica</div>
+            <p><strong>1. Mantener clases personalizadas para:</strong></p>
+            <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                <li>Las clases <code>.inline-*</code> (grid-auto-flow: column no existe en Bootstrap)</li>
+                <li>Las clases <code>.content-1</code> y <code>.content-4</code> (valores específicos)</li>
+                <li>Cualquier <code>justify-items</code> (no soportado nativamente)</li>
+            </ul>
+            
+            <p style="margin-top: 1rem;"><strong>2. Migrar a Bootstrap para:</strong></p>
+            <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                <li>Flexbox básico (<code>.d-flex</code>, <code>.flex-wrap</code>)</li>
+                <li>Espaciado con gap (usar escala Bootstrap)</li>
+                <li>Alineación justify-content y align-items</li>
+                <li>Anchos con <code>.w-100</code></li>
+            </ul>
+            
+            <p style="margin-top: 1rem;"><strong>3. Crear utilidades híbridas:</strong></p>
+            <div class="example" style="margin-top: 0.5rem;">
+/* Ejemplo de clase híbrida */<br>
+.inline-center-center {<br>
+&nbsp;&nbsp;/* Usar Bootstrap donde sea posible */<br>
+&nbsp;&nbsp;@extend .d-grid;<br>
+&nbsp;&nbsp;@extend .align-items-center;<br>
+&nbsp;&nbsp;@extend .justify-content-center;<br>
+&nbsp;&nbsp;/* Añadir lo que Bootstrap no soporta */<br>
+&nbsp;&nbsp;grid-auto-flow: column;<br>
+}
+            </div>
+        </div>
+
+        <div class="note" style="margin-top: 1.5rem;">
+            <div class="note-title">🚀 Próximos Pasos</div>
+            <p>Para el proyecto de Mercería Larraz, te recomiendo:</p>
+            <ol style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                <li>Auditar qué clases personalizadas se usan actualmente en el proyecto</li>
+                <li>Priorizar la migración de las clases más comunes a Bootstrap nativo</li>
+                <li>Mantener un archivo de utilidades custom solo para lo que Bootstrap no cubre</li>
+                <li>Documentar las decisiones de diseño para mantener consistencia</li>
+            </ol>
+        </div>
+
+        <footer style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #dee2e6; text-align: center; color: #6c757d;">
+            <p>Tabla de equivalencias generada para <strong>Mercería Larraz</strong></p>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem;">Bootstrap 5.3 • Enero 2026</p>
+        </footer>
+    </div>
+</body>
+</html>

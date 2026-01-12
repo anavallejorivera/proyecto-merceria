@@ -15,7 +15,7 @@ require '_partials/header.php';?>
                 <p class=" mb-3">976 22 41 13</p>
                 <hr class="w-100 mb-4">
                <h5 class="mb-3 text-footer">Email</h5>
-                <p class="mb-3">info@example.com</p>
+                <p class="mb-3">correo@correo.com</p>
                 <hr class="w-100 mb-4">
                 </div>
             <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
