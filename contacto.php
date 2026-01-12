@@ -38,8 +38,8 @@ require '_partials/header.php';?>
             
                         <div class="col-12">
                             <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                <label for="message">Mensaje</label>
+                                <textarea class="form-control label-mensaje" placeholder="Leave a message here" id="message"></textarea>
+                                <label for="message" class="label-mensaje">Mensaje</label>
                             </div>
                         </div>
                         <div class="col-12 text-end">

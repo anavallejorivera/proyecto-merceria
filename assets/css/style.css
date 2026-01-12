@@ -1037,3 +1037,11 @@ section {
 .text-footer {
     color: var(--color-footer);
 }
+
+/* ===============================================
+   formulario contacto
+   =============================================== */
+
+   #message{
+height: 214px;
+   }
