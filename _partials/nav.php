@@ -63,4 +63,4 @@
      </div>
    </nav>
  </header>
- <main>
+ <main class="inline content-full">

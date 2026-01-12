@@ -1,25 +1,56 @@
 
 <?php 
  $title = "Mercería Larraz | ML";
- $description = 'Página de inicio Mercería Larraz';
+ $description = 'Página de contacto Mercería Larraz';
 require '_partials/header.php';?>
 <?php require '_partials/nav.php';?>
 <main class="py-5">
     <div class="container-lg mb-5">
         <div class="row g-5 justify-content-center">
             <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-                <p class="mb-3 text-footer">Información de la tienda</p>
-                <h5 class="fw-bold mb-3">123 Street, New York, USA</h5>
+                <h5 class="mb-3 text-footer">Información de la tienda</h5>
+                <p class=" mb-3">C. del Coso, 66-74, Casco Antiguo, 50001 Zaragoza</p>
                 <hr class="w-100 mb-4">
-                <p class="mb-2">Call me:</p>
-                <h5 class="fw-bold mb-3">+012 345 6789</h5>
+                <h5 class="mb-3 text-footer">Teléfono</h5>
+                <p class=" mb-3">976 22 41 13</p>
                 <hr class="w-100 mb-4">
-                <p class="mb-2">Mail me:</p>
-                <h5 class="fw-bold mb-3">info@example.com</h5>
+               <h5 class="mb-3 text-footer">Email</h5>
+                <p class="mb-3">info@example.com</p>
                 <hr class="w-100 mb-4">
-                <p class="mb-2">Follow me:</p>
-                <div class="d-flex align-items-center pt-2">
-                    <h6 class="small mb-0 me-3">Síguenos:</h6>
+                </div>
+            <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <h5 class="titulo-catalogo mb-4 text-footer">Contacta con nosotros</h5>
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                <label for="name">Nombre</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+            
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                <label for="message">Mensaje</label>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="btn btn-cta py-3 px-5 " type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+        <div class="d-flex align-items-center justify-content-center pt-2">
+                    <h5 class=" mb-0 me-3 text-footer">Síguenos:</h5>
                     <ul class="d-flex justify-content-center justify-content-md-start gap-3 list-unstyled mb-0">
                         <li>
                             <a href="http://www.facebook.com" target="_blank" class="social-icon">
@@ -47,41 +78,7 @@ require '_partials/header.php';?>
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-                <h3 class="titulo-catalogo mb-4 text-footer">Contacte con nosotros</h3>
-                <form>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                <label for="name">Your Name</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                <label for="email">Your Email</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                <label for="subject">Subject</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                <label for="message">Message</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <button class="btn btn-cta py-3 px-5" type="submit">Enviar</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+            </div>    
         </div>
     </div>
 

@@ -40,7 +40,7 @@
        <div class="col-sm-10 col-md-3 mb-4">
          <div class="d-flex justify-content-center justify-content-md-start align-items-center gap-3 mb-3">
            <div class="rounded-circle d-flex align-items-center justify-content-center">
-             <a href="./index.php" rel="noopener noreferrer" title="Home">
+             <a href="./index.php" rel="noopener noreferrer" title="Home"></a>
                <img src="assets/img/logolarraz.svg" alt="Inicio" class="logo">
            </div>
 

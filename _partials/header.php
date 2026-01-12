@@ -11,5 +11,5 @@
     <link rel="stylesheet" href="./assets/css/productos.css">
     <link rel="icon" type="image/svg+xml" href="assets/img/logolarraz.svg">
   </head>
-  <body>
+  <body class="block-center-center">
    
