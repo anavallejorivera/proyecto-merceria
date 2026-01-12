@@ -9,7 +9,8 @@ require '_partials/header.php';?>
         <div class="row g-5 justify-content-center">
             <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                 <h5 class="mb-3 text-footer">Información de la tienda</h5>
-                <p class=" mb-3">C. del Coso, 66-74, Casco Antiguo, 50001 Zaragoza</p>
+                <p class=" mb-3">C. del Coso, 66-74, Casco Antiguo, 
+                    <br> 50001 Zaragoza</p>
                 <hr class="w-100 mb-4">
                 <h5 class="mb-3 text-footer">Teléfono</h5>
                 <p class=" mb-3">976 22 41 13</p>
@@ -41,7 +42,7 @@ require '_partials/header.php';?>
                                 <label for="message">Mensaje</label>
                             </div>
                         </div>
-                        <div class="col-12 text-center">
+                        <div class="col-12 text-end">
                             <button class="btn btn-cta py-3 px-5 " type="submit">Enviar</button>
                         </div>
                     </div>
@@ -49,7 +50,7 @@ require '_partials/header.php';?>
             </div>
 
 
-        <div class="d-flex align-items-center justify-content-center pt-2">
+        <div class="d-flex align-items-center pt-2">
                     <h5 class=" mb-0 me-3 text-footer">Síguenos:</h5>
                     <ul class="d-flex justify-content-center justify-content-md-start gap-3 list-unstyled mb-0">
                         <li>

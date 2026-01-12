@@ -32,6 +32,9 @@
 
  </main>
  <footer class="pt-4 pb-1">
+ <a href="#inicio" class="subir"><svg class="icon__xl">
+            <use href="assets/img/sprite.svg#arrow-up"></use>
+        </svg><span class="visually-hidden">Inicio</a>
    <div class="container-lg">
 
      <div class="row mb-4 text-center text-md-start justify-content-center">

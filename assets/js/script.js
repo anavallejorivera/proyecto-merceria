@@ -36,4 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sections.forEach(section => observer.observe(section));
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const subirBtn = document.querySelector(".subir");
+
+  window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+          subirBtn.classList.add("visible");
+      } else {
+          subirBtn.classList.remove("visible");
+      }
+  });
+
 });
