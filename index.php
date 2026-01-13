@@ -8,7 +8,7 @@ require '_partials/header.php';?>
 <section class="Hero p-0 w-100" aria-label="Presentación Mercería Larraz">
 
   <!-- Slide/Sección 1 -->
-  <article id="StoriesUnveiled" class="Lockup FirstLockup d-flex align-items-center">
+  <article id="mercerialarraz" class="Lockup FirstLockup d-flex align-items-center">
     <div class="Media observe" data-slide="1" aria-hidden="true">
       <img
         src="./assets/img/cat-textil.jpg"
@@ -38,7 +38,7 @@ require '_partials/header.php';?>
   </article>
 
   <!-- Slide/Sección 2 -->
-  <article id="CelebratingLifeTogether" class="Lockup SecondLockup d-flex align-items-center">
+  <article id="manualidadestodos" class="Lockup SecondLockup d-flex align-items-center">
     <div class="Media observe" data-slide="2" aria-hidden="true">
       <img
         src="./assets/img/hero-imagen.png"
@@ -63,7 +63,7 @@ require '_partials/header.php';?>
   </article>
 
   <!-- Slide/Sección 3 -->
-  <article id="TheArtofGiving" class="Lockup ThirdLockup d-flex align-items-center">
+  <article id="textil-merceria" class="Lockup ThirdLockup d-flex align-items-center">
     <div class="Media observe" data-slide="3" aria-hidden="true">
       <img
         src="./assets/img/hero-banner.jpg"
@@ -90,9 +90,9 @@ require '_partials/header.php';?>
   <!-- PAGINACIÓN (solo desktop) -->
   <nav class="pagination d-none d-lg-flex" aria-label="Navegación de secciones">
     <div class="d-flex gap-3">
-      <a class="dot" href="#StoriesUnveiled" aria-label="Ir a la sección 1"></a>
-      <a class="dot" href="#CelebratingLifeTogether" aria-label="Ir a la sección 2"></a>
-      <a class="dot" href="#TheArtofGiving" aria-label="Ir a la sección 3"></a>
+      <a class="dot" href="#mercerialarraz" aria-label="Ir a la sección 1"></a>
+      <a class="dot" href="#manualidadestodos" aria-label="Ir a la sección 2"></a>
+      <a class="dot" href="#textil-merceria" aria-label="Ir a la sección 3"></a>
     </div>
   </nav>
 

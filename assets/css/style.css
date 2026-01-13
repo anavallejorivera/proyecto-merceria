@@ -84,7 +84,7 @@
 #home{
   position: sticky;
   top: 0;
-  z-index: 3000;          /* por encima del Hero y paginación */
+  z-index: 3000; /* por encima del Hero y paginación */
   background: var(--color-fondo);
 }
 
@@ -108,7 +108,10 @@
   .navbar-collapse {
     background-color: var(--color-fondo) !important;
   }
-
+.navbar-borde{
+border: none !important;
+border-radius: none !important;
+}
 
 /* ===============================================
    FUENTES
@@ -273,7 +276,7 @@ img {
 .logo {
   max-width: 90px;
   height: auto;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   transition: var(--transition-base);
 }
 
