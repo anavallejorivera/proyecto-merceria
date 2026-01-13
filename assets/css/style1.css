@@ -769,150 +769,172 @@ section.Hero {
 /* ===============================================
    DESTACADOS (cards con overflow/zoom)
    =============================================== */
-.destacados h2 {
-  font-family: "FiraSans-bold", sans-serif;
-  color: var(--color-footer);
-}
-
-section.destacados {
-  width: min(76.5rem, 90%);
-  margin-inline: auto;
-  color: #111;
-}
-
-.destacados .container-cards {
-  margin-top: 5em;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  gap: 2rem;
-}
-
-.destacados .container-cards .card {
-  border: none;
-}
-
-.destacados .container-cards .card:nth-child(1) .box .icon .iconBox {
-  background: var(--color-secundario);
-}
-.destacados .container-cards .card:nth-child(2) .box .icon .iconBox {
-  background: var(--color-footer);
-}
-.destacados .container-cards .card:nth-child(3) .box .icon .iconBox {
-  background: var(--color-secundario);
-}
-
-.destacados .container-cards .card .content {
-  padding: 0.938rem 0.625rem;
-}
-
-.destacados .container-cards .card .content h3 {
-  font-family: "FiraSans-medium", sans-serif;
-  color: var(--color-secundario);
-}
-
-.destacados .container-cards .card .content p {
-  margin: 0.625rem 0 1.25rem;
-  color: var(--color-texto);
-}
-
-/* overflow interno + zoom */
-.destacados .card-inner {
-  position: relative;
-  width: 100%;
-  height: 18.75rem;
-  background: var(--clr);
-  border-radius: 0.5rem;
-  border-bottom-right-radius: 0;
-  overflow: hidden;
-}
-
-.destacados .card-inner .box {
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-
-.destacados .card-inner .imgBox {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-}
-
-.destacados .card-inner .imgBox img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-  display: block;
-}
-
-.destacados .card:hover .imgBox img {
-  transform: scale(1.08);
-}
-
-.destacados .card-inner .icon {
-  position: absolute;
-  bottom: -0.375rem;
-  right: -0.375rem;
-  width: 6rem;
-  height: 6rem;
-  background: var(--clr);
-  border-top-left-radius: 50%;
-}
-
-.destacados .card-inner .icon::before {
-  position: absolute;
-  content: "";
-  bottom: 0.375rem;
-  left: -1.25rem;
-  background: transparent;
-  width: 1.25rem;
-  height: 1.25rem;
-  border-bottom-right-radius: 1.25rem;
-  box-shadow: 0.313rem 0.313rem 0 0.313rem #fff;
-}
-
-.destacados .card-inner .icon::after {
-  position: absolute;
-  content: "";
-  top: -1.25rem;
-  right: 0.375rem;
-  background: transparent;
-  width: 1.25rem;
-  height: 1.25rem;
-  border-bottom-right-radius: 1.25rem;
-  box-shadow: 0.313rem 0.313rem 0 0.313rem var(--clr);
-}
-
-.destacados .card-inner .iconBox {
-  position: absolute;
-  inset: 0.625rem;
-  background: #282828;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease;
-}
-
-.destacados .card-inner .icon:hover .iconBox {
-  transform: scale(1.1);
-}
-
-section.destacados svg {
-  fill: white;
-  width: 1.2em;
-  height: 1.2em;
-}
-
-@media (max-width: 767.98px) {
-  .destacados .card-inner {
-    height: 17rem;
+   .destacados h2 {
+    font-family: "FiraSans-bold", sans-serif;
+    color: var(--color-footer);
   }
-}
-
+  
+  section.destacados {
+    width: min(76.5rem, 90%);
+    margin-inline: auto;
+    color: #111;
+  }
+  
+  .destacados .container-cards {
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  
+  
+  /* Tablet */
+  @media (min-width: 768px) {
+    .destacados .container-cards {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards */
+    }
+  }
+  
+  /* Desktop / Destock grande */
+  @media (min-width: 1200px) {
+    .destacados .container-cards {
+      grid-template-columns: repeat(4, 1fr); /* 4 cards */
+    }
+  }
+  
+  
+  
+  
+  
+  .destacados .container-cards .card {
+    border: none;
+  }
+  
+  .destacados .container-cards .card:nth-child(1) .box .icon .iconBox {
+    background: var(--color-secundario);
+  }
+  .destacados .container-cards .card:nth-child(2) .box .icon .iconBox {
+    background: var(--color-footer);
+  }
+  .destacados .container-cards .card:nth-child(3) .box .icon .iconBox {
+    background: var(--color-secundario);
+  }
+  .destacados .container-cards .card:nth-child(4) .box .icon .iconBox {
+    background: var(--color-footer);
+  }
+  
+  .destacados .container-cards .card .content {
+    padding: 0.938rem 0.625rem;
+  }
+  
+  .destacados .container-cards .card .content h3 {
+    font-family: "FiraSans-medium", sans-serif;
+    color: var(--color-secundario);
+  }
+  
+  .destacados .container-cards .card .content p {
+    margin: 0.625rem 0 1.25rem;
+    color: var(--color-texto);
+  }
+  
+  /* overflow interno + zoom */
+  .destacados .card-inner {
+    position: relative;
+    width: 100%;
+    height: 18.75rem;
+    background: var(--clr);
+    border-radius: 0.5rem;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+  }
+  
+  .destacados .card-inner .box {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .destacados .card-inner .imgBox {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+  }
+  
+  .destacados .card-inner .imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    display: block;
+  }
+  
+  .destacados .card:hover .imgBox img {
+    transform: scale(1.08);
+  }
+  
+  .destacados .card-inner .icon {
+    position: absolute;
+    bottom: -0.375rem;
+    right: -0.375rem;
+    width: 6rem;
+    height: 6rem;
+    background: var(--clr);
+    border-top-left-radius: 50%;
+  }
+  
+  .destacados .card-inner .icon::before {
+    position: absolute;
+    content: "";
+    bottom: 0.375rem;
+    left: -1.25rem;
+    background: transparent;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    box-shadow: 0.313rem 0.313rem 0 0.313rem #fff;
+  }
+  
+  .destacados .card-inner .icon::after {
+    position: absolute;
+    content: "";
+    top: -1.25rem;
+    right: 0.375rem;
+    background: transparent;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    box-shadow: 0.313rem 0.313rem 0 0.313rem var(--clr);
+  }
+  
+  .destacados .card-inner .iconBox {
+    position: absolute;
+    inset: 0.625rem;
+    background: #282828;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .destacados .card-inner .icon:hover .iconBox {
+    transform: scale(1.1);
+  }
+  
+  section.destacados svg {
+    fill: white;
+    width: 1.2em;
+    height: 1.2em;
+  }
+  
+  @media (max-width: 767.98px) {
+    .destacados .card-inner {
+      height: 17rem;
+    }
+  }
+  
 /* ===============================================
    MAPA
    =============================================== */

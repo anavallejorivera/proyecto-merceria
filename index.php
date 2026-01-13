@@ -18,19 +18,21 @@ require '_partials/header.php';?>
       />
     </div>
 
-    <div class="Text d-grid gap-3">
+    <div class="Text d-grid gap-2">
       <p class="eyebrow mb-0">Mercería Larraz</p>
 
       <h1 class="subhead mb-0">Tu creatividad empieza aquí...</h1>
 
       <p class="mb-0">
-        En el corazón de <strong>Zaragoza</strong>,<br />
-        somos la mayor tienda de Aragón en manualidades, <strong>mercería</strong> y
-        <strong>creatividad</strong> para todas las edades.
+      En el corazón de <span>Zaragoza</span>,<br />
+somos la mayor tienda de Aragón en manualidades, <span>mercería</span> y
+<span>creatividad</span> para todas las edades.
+
       </p>
 
       <p class="mb-0">
-        <strong>Inspírate</strong>, <strong>crea</strong> y <strong>encuentra</strong> el regalo perfecto.
+      <span>Inspírate</span>, <span>crea</span> y <span>encuentra</span> el regalo perfecto.
+
       </p>
 
       <a href="./quienes-somos.php" class="button wobble-top btn-cta btn align-self-start">Conócenos</a>
@@ -48,14 +50,14 @@ require '_partials/header.php';?>
       />
     </div>
 
-    <div class="Text d-grid gap-3">
+    <div class="Text d-grid gap-2">
       <p class="eyebrow mb-0">Mercería Larraz</p>
 
       <h2 class="subhead mb-0">Manualidades para todos</h2>
 
       <p class="mb-0">
-        Desde scrapbooking hasta pintura, encontrarás todo lo necesario para dar vida a tus ideas creativas.
-        Miles de productos para artistas y aficionados de todas las edades.
+      Desde <span>scrapbooking</span> hasta <span>pintura</span>, encontrarás todo lo necesario para dar vida a tus <span>ideas creativas</span>.
+      Miles de <span>productos</span> para <span>artistas</span> y <span>aficionados</span> de todas las <span>edades</span>.
       </p>
 
       <a href="./quienes-somos.php" class="button wobble-top btn-cta btn align-self-start">Conócenos</a>
@@ -73,14 +75,16 @@ require '_partials/header.php';?>
       />
     </div>
 
-    <div class="Text d-grid gap-3">
+    <div class="Text d-grid gap-2">
       <p class="eyebrow mb-0">Mercería Larraz</p>
 
       <h2 class="subhead mb-0">Textil y Mercería</h2>
 
       <p class="mb-0">
-        Lanas, hilos, telas y accesorios de costura. Todo lo que necesitas para tus labores textiles.
-        Desde 1866 manteniendo viva la tradición de la mercería de calidad.
+      <span>Lanas</span>, <span>hilos</span>, <span>telas</span> y <span>accesorios de costura</span>. 
+Todo lo que necesitas para tus <span>labores textiles</span>.
+Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>mercería de calidad</span>.
+
       </p>
 
       <a href="./quienes-somos.php" class="button wobble-top btn-cta btn align-self-start">Conócenos</a>
@@ -89,7 +93,7 @@ require '_partials/header.php';?>
 
   <!-- PAGINACIÓN (solo desktop) -->
   <nav class="pagination d-none d-lg-flex" aria-label="Navegación de secciones">
-    <div class="d-flex gap-3">
+    <div class="d-flex gap-2">
       <a class="dot" href="#mercerialarraz" aria-label="Ir a la sección 1"></a>
       <a class="dot" href="#manualidadestodos" aria-label="Ir a la sección 2"></a>
       <a class="dot" href="#textil-merceria" aria-label="Ir a la sección 3"></a>
@@ -107,8 +111,12 @@ require '_partials/header.php';?>
     <div class="row align-items-center g-4">
       <div class="col-12 col-lg-6">
         <h2 class="mb-4 text-center">Sobre Nosotros</h2>
-        <p class="lead">Larraz es una <strong>empresa centenaria</strong>, galardonada con la medalla Basilio Paraíso por su larga trayectoria empresarial. </p>
-        <p class="lead">Queremos <strong>ofrecer</strong> a nuestros clientes una experiencia única en el mundo de las <strong>manualidades</strong>, la <strong>mercería</strong> y las <strong>labores textiles</strong>, combinando tradición, <strong>creatividad</strong> e <strong>innovación</strong> desde el corazón de Zaragoza</p>
+        
+
+       <p class="lead"> <span>Larraz</span> es una <span>empresa centenaria</span>, galardonada con la <span>medalla Basilio Paraíso</span> por su <span>larga trayectoria empresarial</span>.</p>
+
+       <p class="lead">Queremos ofrecer a nuestros <span>clientes</span> una <span>experiencia única</span> en el mundo de las <span>manualidades</span>, la <span>mercería</span> y las <span>labores textiles</span>, combinando <span>tradición</span>, <span>creatividad</span> e <span>innovación</span> desde el corazón de <span>Zaragoza</span>.</p>
+
       </div>
       <div class="col-12 col-lg-6">
         <img src="./assets/img/cat-textil.jpg" alt="Tienda Larraz" class="img-fluid rounded-4 shadow">
@@ -245,6 +253,9 @@ require '_partials/header.php';?>
         <p class="small mb-0">Complementos perfectos para tus trabajos de costura</p>
       </div>
     </div>
+
+    
+
   </div>
 
 </section>
