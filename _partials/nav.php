@@ -50,12 +50,12 @@
            <li class="nav-item">
              <a class="nav-link" href="./textil.php">Textil</a>
            </li>
+           <li>
            <a class="nav-link" href="./quienes-somos.php">Nosotros</a>
            <li class="nav-item">
            </li>
            <li class="nav-item">
-             <a class="nav-link cta" href="./contacto.php
-          ">Contacto</a>
+             <a class="nav-link cta" href="./contacto.php">Contacto</a>
            </li>
            <li><a href="#visitanos" class="btn-cta-nav nav-item">Visitanos</a></li>
          </ul>

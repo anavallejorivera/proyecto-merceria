@@ -170,3 +170,26 @@
 
    </div>
  </footer>
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+    navLinks.forEach(link => {
+      const href = link.getAttribute("href");
+      if (!href) return;
+
+      const linkPath = href.split("/").pop().replace(".php", "");
+
+      // Buscamos coincidencia parcial en la URL actual
+      if (currentPath.includes(linkPath)) {
+        link.classList.add("active");
+        link.removeAttribute("href");
+        link.setAttribute("aria-disabled", "true");
+        link.style.cursor = "default";
+      }
+    });
+  });
+</script>
+
+

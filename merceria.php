@@ -26,25 +26,27 @@ require '_partials/header.php';?>
   <div class="row g-4">
 
     <!-- Tarjeta 1 -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <a href="catalogo-manualidades-pintura-acrilica-decorativa.php" class="text-decoration-none text-reset d-block h-100">
-        <div class="ratio ratio-16x9">
-          <div class="card h-100 card-hover-up">
-            <div class="card-bg bg-pintura-acrilica">
-              <div class="card-content">
-                <h5 class="card-title mb-2">
-                  <svg class="icono-catalogo" xmlns="http://www.w3.org/2000/svg">
-                    <use href="assets/img/sprite.svg#paleta"></use>
-                  </svg>
-                  Pintura acrílica decorativa
-                </h5>
-                <span class="fw-semibold text-white">Explorar productos →</span>
-              </div>
-            </div>
-          </div>
+<div class="col-12 col-md-6 col-lg-4">
+  <div class="ratio ratio-16x9">
+    <div class="card h-100 card-hover-up">
+      <div class="card-bg bg-pintura-acrilica">
+        <div class="card-content">
+          <h5 class="card-title mb-2">
+            <svg class="icono-catalogo" xmlns="http://www.w3.org/2000/svg">
+              <use href="assets/img/sprite.svg#paleta"></use>
+            </svg>
+            Pintura acrílica decorativa
+          </h5>
+          <!-- Enlace solo en el texto -->
+          <a href="catalogo-manualidades-pintura-acrilica-decorativa.php" class="fw-semibold text-white text-decoration-none">
+            Explorar productos →
+          </a>
         </div>
-      </a>
+      </div>
     </div>
+  </div>
+</div>
+
 
     <!-- Tarjeta 2 -->
     <div class="col-12 col-md-6 col-lg-4">
