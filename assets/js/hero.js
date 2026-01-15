@@ -6,50 +6,49 @@ document.addEventListener('DOMContentLoaded', () => {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  /* ===== Paginación por secciones ===== */
-  const dots = document.querySelectorAll('.pagination .dot');
+/* ===== Paginación por secciones ===== */
+const dots = document.querySelectorAll('.pagination .dot');
 
-  const sections = [
-    document.querySelector('#StoriesUnveiled'),
-    document.querySelector('#CelebratingLifeTogether'),
-    document.querySelector('#TheArtofGiving')
-  ];
+const sections = [
+  document.querySelector('#mercerialarraz'),
+  document.querySelector('#manualidadestodos'),
+  document.querySelector('#textil-merceria')
+];
 
-  const pictures = document.querySelectorAll('.Visual.picture');
+const pictures = document.querySelectorAll('.Media.picture'); // ACTUALIZADO ✅
 
-  const activateSection = (index) => {
-    pictures.forEach((pic, i) =>
-      pic.classList.toggle('active', i === index)
-    );
-    dots.forEach((dot, i) =>
-      dot.classList.toggle('active', i === index)
-    );
-  };
+const activateSection = (index) => {
+  pictures.forEach((pic, i) =>
+    pic.classList.toggle('active', i === index)
+  );
+  dots.forEach((dot, i) =>
+    dot.classList.toggle('active', i === index)
+  );
+};
 
-  dots.forEach((dot, i) => {
-    dot.addEventListener('click', () => {
-      if (sections[i]) {
-        sections[i].scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    });
+dots.forEach((dot, i) => {
+  dot.addEventListener('click', () => {
+    if (sections[i]) {
+      sections[i].scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
   });
+});
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const index = sections.indexOf(entry.target);
-        if (index !== -1) activateSection(index);
-      }
-    });
-  }, { threshold: 0.6 });
-
-  sections.forEach(section => {
-    if (section) observer.observe(section);
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const index = sections.indexOf(entry.target);
+      if (index !== -1) activateSection(index);
+    }
   });
+}, { threshold: 0.6 });
 
+sections.forEach(section => {
+  if (section) observer.observe(section);
+});
   /* ===== Botón subir ===== */
   const subirBtn = document.querySelector(".subir");
   if (subirBtn) {
@@ -57,6 +56,33 @@ document.addEventListener('DOMContentLoaded', () => {
       subirBtn.classList.toggle("visible", window.scrollY > 300);
     });
   }
+
+
+
+// hero scroll desappear
+const heroSection = document.querySelector(".Hero");
+const nosotrosSection = document.querySelector(".conocenos");
+
+if (heroSection && conocenosSection) {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        heroSection.classList.add("fade-out");
+      } else {
+        heroSection.classList.remove("fade-out");
+      }
+    },
+    {
+      root: null,
+      threshold: 0.3,
+    }
+  );
+
+  observer.observe(conocenosSection);
+}
+
+
+
 
   /* ===== Menú activo según URL ===== */
 

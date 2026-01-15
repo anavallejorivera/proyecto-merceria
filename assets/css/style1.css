@@ -689,6 +689,48 @@ section.Hero {
   }
 }
 
+
+/* Fijar HERO en pantalla */
+.Hero {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; /* debajo del navbar */
+  background-color: var(--color-fondo);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Desvanecimiento + desplazamiento al llegar a "nosotros" */
+.Hero.fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+
+/* Evita que el contenido siguiente se esconda debajo del Hero */
+.hero-spacer {
+  height: 100vh;
+}
+
+
+/* ================================
+   Activación visual por sección HERO
+   ================================ */
+
+   @media (max-width: 991px) {
+    /* Oculta todas las imágenes del Hero por defecto en móvil */
+    .Media.picture {
+      display: none;
+    }
+  
+    /* Muestra solo la imagen activa */
+    .Media.picture.active {
+      display: block;
+    }
+  }
+  
+
 /* ===============================================
    CONÓCENOS
    =============================================== */

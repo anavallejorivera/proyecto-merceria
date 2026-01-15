@@ -62,7 +62,7 @@
 
        <!-- Contact -->
        <div class="col-sm-6 col-md-3 mb-4 pt-2 pt-md-4">
-         <h6 class="mb-3" id="contacto">Contacto</h6>
+         <h6 class="mb-3" id="contacto"><a href="./contacto.php">Contacto</a></h6>
 
          <ul class="list-unstyled small">
            <li class="d-flex justify-content-center justify-content-md-start align-items-start mb-2">

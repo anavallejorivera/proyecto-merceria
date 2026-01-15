@@ -36,43 +36,43 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const index = sections.findIndex((sec) => sec === entry.target);
-          if (index !== -1) activateDot(index);
-        }
-      });
-    },
-    { threshold: 0.6 }
-  );
+  // const observer = new IntersectionObserver(
+  //   (entries) => {
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting) {
+  //         const index = sections.findIndex((sec) => sec === entry.target);
+  //         if (index !== -1) activateDot(index);
+  //       }
+  //     });
+  //   },
+  //   { threshold: 0.6 }
+  // );
 
-  sections.forEach((section) => {
-    if (section) observer.observe(section);
-  });
+  // sections.forEach((section) => {
+  //   if (section) observer.observe(section);
+  // });
 
-  // Sticky text en 3ª sección (Textil y Mercería)
-  const thirdText = document.querySelector("#textil-merceria .Text");
-  const thirdLockup = document.querySelector("#textil-merceria");
-  const sectionNosotros = document.querySelector(".nosotros");
+  // // Sticky text en 3ª sección (Textil y Mercería)
+  // const thirdText = document.querySelector("#textil-merceria .Text");
+  // const thirdLockup = document.querySelector("#textil-merceria");
+  // const sectionNosotros = document.querySelector(".nosotros");
 
-  if (thirdText && thirdLockup && sectionNosotros) {
-    const updateStickyText = () => {
-      const lockupBottom = thirdLockup.getBoundingClientRect().bottom;
-      const nosotrosTop = sectionNosotros.getBoundingClientRect().top;
+  // if (thirdText && thirdLockup && sectionNosotros) {
+  //   const updateStickyText = () => {
+  //     const lockupBottom = thirdLockup.getBoundingClientRect().bottom;
+  //     const nosotrosTop = sectionNosotros.getBoundingClientRect().top;
 
-      const isDesktop = window.innerWidth >= 992;
+  //     const isDesktop = window.innerWidth >= 992;
 
-      if (isDesktop && lockupBottom <= window.innerHeight && nosotrosTop > 100) {
-        thirdText.classList.add("sticky-text");
-      } else {
-        thirdText.classList.remove("sticky-text");
-      }
-    };
+  //     if (isDesktop && lockupBottom <= window.innerHeight && nosotrosTop > 100) {
+  //       thirdText.classList.add("sticky-text");
+  //     } else {
+  //       thirdText.classList.remove("sticky-text");
+  //     }
+  //   };
 
-    window.addEventListener("scroll", updateStickyText);
-    window.addEventListener("resize", updateStickyText);
-    updateStickyText(); // Ejecutar al cargar
-  }
+  //   window.addEventListener("scroll", updateStickyText);
+  //   window.addEventListener("resize", updateStickyText);
+  //   updateStickyText(); // Ejecutar al cargar
+  // }
 });

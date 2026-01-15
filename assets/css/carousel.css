@@ -8,11 +8,21 @@ html {
 
 body.about {
   color: rgb(var(--bs-tertiary-color-rgb));
-  font-family: "FiraSans", sans-serif;
+  font-family: "FiraSans-light", sans-serif;
+  
 }
 
 .main-somos h1 {
   font-size: 3rem;
+}
+.about h2{
+  font-family: "FiraSans-semibold", sans-serif;
+  color: var(--color-texto);
+}
+
+.about span{
+  font-family: "FiraSans-semibold", sans-serif;
+  color: var(--color-texto);
 }
 
 /* CUSTOMIZE THE CAROUSEL

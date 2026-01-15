@@ -212,7 +212,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
             </div>
           </div>
           <div class="content">
-            <h3 class="h4 mb-2">Lanas y Ovillos</h3>
+            <h3 class="h4 mb-2"><a href="">Lanas y Ovillos</a></h3>
             <p>Amplia selección de lanas de calidad para tus proyectos de tejido</p>
           </div>
         </div>
@@ -230,7 +230,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
             </div>
           </div>
           <div class="content">
-           <h3 class="h4 mb-2">Cintas y Lazos</h3>
+           <h3 class="h4 mb-2"><a href="">Cintas y Lazos</a></h3>
             <p class="small mb-0">Variedad de cintas decorativas para tus creaciones</p>
         
           </div>
@@ -249,7 +249,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
             </div>
           </div>
           <div class="content">
-            <h3 class="h4 mb-2">Botones y Bisutería</h3>
+            <h3 class="h4 mb-2"><a href="">Botones y Bisutería</a></h3>
             <p class="small mb-0">Complementos perfectos para tus trabajos de costura</p>
           </div>
         </div>
@@ -269,7 +269,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
             </div>
           </div>
           <div class="content">
-           <h3 class="h4 mb-2">Cintas y Lazos</h3>
+           <h3 class="h4 mb-2"><a href="">Cintas y Lazos</a></h3>
             <p class="small mb-0">Variedad de cintas decorativas para tus creaciones</p>
         
           </div>
@@ -278,7 +278,6 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
       </div>
     
     </section>
-   
      
   <?php require '_partials/footer.php';?> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
