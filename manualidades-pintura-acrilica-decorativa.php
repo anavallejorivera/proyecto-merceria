@@ -82,89 +82,97 @@ require '_partials/header.php';?>
     <div class="tabs-producto-container">
       <ul class="nav nav-tabs tabs-producto" id="tabsProducto" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="paraque-tab" data-bs-toggle="tab" data-bs-target="#paraque" type="button" role="tab">Para que sirve</button>
+          <button class="nav-link active" id="paraque-tab" data-bs-toggle="tab" data-bs-target="#paraque" type="button" role="tab">
+            Para qué sirve
+          </button>
         </li>
+
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="caracteristicas-tab" data-bs-toggle="tab" data-bs-target="#caracteristicas" type="button" role="tab">Características</button>
+          <button class="nav-link" id="caracteristicas-tab" data-bs-toggle="tab" data-bs-target="#caracteristicas" type="button" role="tab">
+            Características
+          </button>
         </li>
+
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="consejos-tab" data-bs-toggle="tab" data-bs-target="#consejos" type="button" role="tab">Consejos</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="ideal-tab" data-bs-toggle="tab" data-bs-target="#ideal" type="button" role="tab">Ideal para</button>
+          <button class="nav-link" id="tips-tab" data-bs-toggle="tab" data-bs-target="#tips" type="button" role="tab">
+            Cómo usarla (Tips)
+          </button>
         </li>
       </ul>
 
       <div class="tab-content tab-content-producto" id="tabsProductoContent">
+        
+        <!-- PARA QUÉ SIRVE -->
         <div class="tab-pane fade show active" id="paraque" role="tabpanel">
           <ul>
-            <li>Madera</li>
-            <li>Papel y cartón</li>
-            <li>Lienzo</li>
-            <li>Goma EVA</li>
-            <li>Cerámica y escayola</li>
-            <li>Soportes decorativos</li>
+            <li>Pintar y decorar madera</li>
+            <li>Manualidades en papel y cartón</li>
+            <li>Proyectos sobre lienzo</li>
+            <li>Trabajos creativos con goma EVA</li>
+            <li>Decoración en cerámica y escayola</li>
+            <li>Personalización de soportes decorativos</li>
           </ul>
         </div>
+
+        <!-- CARACTERÍSTICAS -->
         <div class="tab-pane fade" id="caracteristicas" role="tabpanel">
           <ul>
             <li>Secado rápido</li>
             <li>Colores intensos y uniformes</li>
             <li>Buena cobertura con pocas capas</li>
             <li>Acabado resistente una vez seco</li>
-            <li>Fácil aplicación con pincel, rodillo o esponja</li>
+            <li>Aplicación fácil con pincel, rodillo o esponja</li>
             <li>Se puede mezclar para crear nuevos tonos</li>
           </ul>
         </div>
-        <div class="tab-pane fade" id="consejos" role="tabpanel">
+
+        <!-- CÓMO USARLA (TIPS) -->
+        <div class="tab-pane fade" id="tips" role="tabpanel">
           <ul>
-            <li>Agitar bien antes de usar</li>
-            <li>Aplicar sobre superficies limpias y secas</li>
-            <li>Usar pinceles o aplicadores adecuados al detalle del trabajo</li>
-            <li>Dejar secar completamente entre capas</li>
-            <li>Sellar el trabajo final si se desea mayor durabilidad</li>
+            <li>Agita bien antes de usar</li>
+            <li>Aplica sobre superficies limpias y secas</li>
+            <li>Da capas finas y deja secar entre ellas</li>
+            <li>Usa el aplicador adecuado: pincel, rodillo o esponja</li>
+            <li>Para mayor durabilidad, aplica un barniz o sellador final</li>
           </ul>
         </div>
-        <div class="tab-pane fade" id="ideal" role="tabpanel">
-          <ul>
-            <li>Manualidades y decoración del hogar</li>
-            <li>Proyectos escolares y creativos</li>
-            <li>Técnicas como decoupage o stencil</li>
-            <li>Regalos personalizados</li>
-            <li>Trabajos artesanales y DIY</li>
-          </ul>
-        </div>
+
       </div>
     </div>
 
     <!-- Acordeón (móvil) -->
     <div class="accordion accordion-producto-container" id="accordionProductoMobile">
+
+      <!-- PARA QUÉ SIRVE -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingParaque">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseParaque">
-            Para que sirve
+            Para qué sirve
           </button>
         </h2>
+
         <div id="collapseParaque" class="accordion-collapse collapse show" data-bs-parent="#accordionProductoMobile">
           <div class="accordion-body">
             <ul>
-              <li>Madera</li>
-              <li>Papel y cartón</li>
-              <li>Lienzo</li>
-              <li>Goma EVA</li>
-              <li>Cerámica y escayola</li>
-              <li>Soportes decorativos</li>
+              <li>Pintar y decorar madera</li>
+              <li>Manualidades en papel y cartón</li>
+              <li>Proyectos sobre lienzo</li>
+              <li>Trabajos creativos con goma EVA</li>
+              <li>Decoración en cerámica y escayola</li>
+              <li>Personalización de soportes decorativos</li>
             </ul>
           </div>
         </div>
       </div>
 
+      <!-- CARACTERÍSTICAS -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingCaracteristicas">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCaracteristicas">
             Características
           </button>
         </h2>
+
         <div id="collapseCaracteristicas" class="accordion-collapse collapse" data-bs-parent="#accordionProductoMobile">
           <div class="accordion-body">
             <ul>
@@ -172,54 +180,39 @@ require '_partials/header.php';?>
               <li>Colores intensos y uniformes</li>
               <li>Buena cobertura con pocas capas</li>
               <li>Acabado resistente una vez seco</li>
-              <li>Fácil aplicación con pincel, rodillo o esponja</li>
+              <li>Aplicación fácil con pincel, rodillo o esponja</li>
               <li>Se puede mezclar para crear nuevos tonos</li>
             </ul>
           </div>
         </div>
       </div>
 
+      <!-- CÓMO USARLA (TIPS) -->
       <div class="accordion-item">
-        <h2 class="accordion-header" id="headingConsejos">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConsejos">
-            Consejos
+        <h2 class="accordion-header" id="headingTips">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTips">
+            Cómo usarla (Tips)
           </button>
         </h2>
-        <div id="collapseConsejos" class="accordion-collapse collapse" data-bs-parent="#accordionProductoMobile">
+
+        <div id="collapseTips" class="accordion-collapse collapse" data-bs-parent="#accordionProductoMobile">
           <div class="accordion-body">
             <ul>
-              <li>Agitar bien antes de usar</li>
-              <li>Aplicar sobre superficies limpias y secas</li>
-              <li>Usar pinceles o aplicadores adecuados al detalle del trabajo</li>
-              <li>Dejar secar completamente entre capas</li>
-              <li>Sellar el trabajo final si se desea mayor durabilidad</li>
+              <li>Agita bien antes de usar</li>
+              <li>Aplica sobre superficies limpias y secas</li>
+              <li>Da capas finas y deja secar entre ellas</li>
+              <li>Usa el aplicador adecuado: pincel, rodillo o esponja</li>
+              <li>Para mayor durabilidad, aplica un barniz o sellador final</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingIdeal">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIdeal">
-            Ideal para
-          </button>
-        </h2>
-        <div id="collapseIdeal" class="accordion-collapse collapse" data-bs-parent="#accordionProductoMobile">
-          <div class="accordion-body">
-            <ul>
-              <li>Manualidades y decoración del hogar</li>
-              <li>Proyectos escolares y creativos</li>
-              <li>Técnicas como decoupage o stencil</li>
-              <li>Regalos personalizados</li>
-              <li>Trabajos artesanales y DIY</li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
 
   </div>
 </section>
+
 
 
 
