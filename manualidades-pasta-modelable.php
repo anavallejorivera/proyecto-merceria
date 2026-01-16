@@ -1,35 +1,26 @@
-
 <?php 
- $title = "Larraz | Catálogo > Manualidades > Pintura Acrílica Decorativa";
- $description = 'Página de Productos de Mercería';
-require '_partials/header.php';?>
-<?php require '_partials/nav.php';?>
-
-
-<!-- AQUÍ IRÁ LA MIGA DE PAN -->
-<?php require '_partials/breadcrumb.php'; ?>
-
-
+$title = "Larraz | Catálogo > Manualidades > Pasta Modelable";
+$description = 'Página de Productos de Mercería';
+require '_partials/header.php'; 
+require '_partials/nav.php';
+require '_partials/breadcrumb.php';
+?>
 
 <!-- Encabezado de la sección de Producto -->
 <div class="producto-header text-center mb-2 producto-compactamd container-lg">
   <div class="pt-5 w-75 mx-auto">
-    <h2 class="titulo-producto mb-2">Pintura Acrílica Decorativa</h2>
+    <h2 class="titulo-producto mb-2">Pasta Modelable</h2>
     <p class="subtitulo-producto mb-1 lead">
-      La pintura acrílica decorativa es un material versátil y fácil de usar, ideal para proyectos de manualidades, decoración y DIY. Destaca por su secado rápido, su alta cobertura y su excelente adherencia sobre múltiples superficies.
+      La pasta modelable es un material creativo y muy fácil de trabajar, perfecto para manualidades, decoración y proyectos DIY. Permite dar forma a figuras, adornos y detalles personalizados, logrando acabados originales tanto en casa como en talleres escolares.
     </p>
   </div>
 </div>
 
-
-
-
-
-
+<!-- Carrusel -->
 <section class="producto-carousel container producto-compacta">
   <div class="carousel-wrapper mx-auto">
     <div id="carouselProductoDetalle" class="carousel slide" data-bs-ride="carousel">
-      
+
       <!-- Indicadores -->
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselProductoDetalle" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -40,19 +31,13 @@ require '_partials/header.php';?>
       <!-- Slides -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="assets/img/catalogo/manualidades/pintura-acrilica/gama-completa-tubos-pintura-acrilica.jpg" class="d-block w-100 rounded" alt="Colores Vibrantes en Tubo">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
+          <img src="assets/img/catalogo/manualidades/pasta-modelable/pack-pasta-moldeable-bloque-blanco.jpg" class="d-block w-100 rounded" alt="Bloque de Pasta Modelable">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/catalogo/manualidades/pintura-acrilica/set-tarros-pintura-acrilica-decorativa.jpg" class="d-block w-100 rounded" alt="Tarros de Alta Cobertura">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
+          <img src="assets/img/catalogo/manualidades/pasta-modelable/set-herramientas-modelado-manualidades.jpg" class="d-block w-100 rounded" alt="Herramientas de Modelado">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/catalogo/manualidades/pintura-acrilica/kit-pinceles-varios-tamanos-manualidades.jpg" class="d-block w-100 rounded" alt="Pinceles de Precisión">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
+          <img src="assets/img/catalogo/manualidades/pasta-modelable/figuras-decorativas-pasta-secado-aire.jpg" class="d-block w-100 rounded" alt="Figuras Decorativas de Pasta">
         </div>
       </div>
 
@@ -70,102 +55,80 @@ require '_partials/header.php';?>
   </div>
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
+<!-- Tabs y Acordeón -->
 <section class="container producto-compacta">
   <div class="w-75 mx-auto">
 
-    <!-- Tabs (desktop) -->
+    <!-- Tabs para escritorio -->
     <div class="tabs-producto-container">
       <ul class="nav nav-tabs tabs-producto" id="tabsProducto" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="paraque-tab" data-bs-toggle="tab" data-bs-target="#paraque" type="button" role="tab">
-            Para qué sirve
-          </button>
+          <button class="nav-link active" id="paraque-tab" data-bs-toggle="tab" data-bs-target="#paraque" type="button" role="tab">Para qué sirve</button>
         </li>
-
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="caracteristicas-tab" data-bs-toggle="tab" data-bs-target="#caracteristicas" type="button" role="tab">
-            Características
-          </button>
+          <button class="nav-link" id="caracteristicas-tab" data-bs-toggle="tab" data-bs-target="#caracteristicas" type="button" role="tab">Características</button>
         </li>
-
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="tips-tab" data-bs-toggle="tab" data-bs-target="#tips" type="button" role="tab">
-            Tips
-          </button>
+          <button class="nav-link" id="tips-tab" data-bs-toggle="tab" data-bs-target="#tips" type="button" role="tab">Tips</button>
         </li>
       </ul>
 
       <div class="tab-content tab-content-producto" id="tabsProductoContent">
-        
         <!-- PARA QUÉ SIRVE -->
         <div class="tab-pane fade show active" id="paraque" role="tabpanel">
           <ul>
-            <li>Pintar y decorar madera</li>
-            <li>Manualidades en papel y cartón</li>
-            <li>Proyectos sobre lienzo</li>
-            <li>Trabajos creativos con goma EVA</li>
-            <li>Decoración en cerámica y escayola</li>
-            <li>Personalización de soportes decorativos</li>
+            <li>Crear figuras, formas y adornos decorativos</li>
+            <li>Hacer manualidades escolares y proyectos creativos</li>
+            <li>Elaborar miniaturas, detalles y piezas personalizadas</li>
+            <li>Realizar marcos, letras y elementos para decorar</li>
+            <li>Fabricar sellos o texturas con herramientas de modelado</li>
+            <li>Complementar proyectos de scrapbooking y decoración DIY</li>
           </ul>
         </div>
 
         <!-- CARACTERÍSTICAS -->
         <div class="tab-pane fade" id="caracteristicas" role="tabpanel">
           <ul>
-            <li>Secado rápido</li>
-            <li>Colores intensos y uniformes</li>
-            <li>Buena cobertura con pocas capas</li>
-            <li>Acabado resistente una vez seco</li>
-            <li>Aplicación fácil con pincel, rodillo o esponja</li>
-            <li>Se puede mezclar para crear nuevos tonos</li>
+            <li>Fácil de moldear y apta para principiantes</li>
+            <li>Permite alisar, cortar y dar forma con precisión</li>
+            <li>Se puede trabajar con herramientas sencillas (rodillo, estecas, moldes)</li>
+            <li>Acabado suave y personalizable</li>
+            <li>Se puede pintar o decorar una vez terminada (según el tipo de pasta)</li>
+            <li>Ideal para trabajar en casa o en talleres creativos</li>
           </ul>
         </div>
 
-        <!-- CÓMO USARLA (TIPS) -->
+        <!-- TIPS -->
         <div class="tab-pane fade" id="tips" role="tabpanel">
           <ul>
-            <li>Agita bien antes de usar</li>
-            <li>Aplica sobre superficies limpias y secas</li>
-            <li>Da capas finas y deja secar entre ellas</li>
-            <li>Usa el aplicador adecuado: pincel, rodillo o esponja</li>
-            <li>Para mayor durabilidad, aplica un barniz o sellador final</li>
+            <li>Amasa bien antes de empezar para que sea más flexible</li>
+            <li>Trabaja sobre una superficie limpia para evitar marcas o suciedad</li>
+            <li>Usa rodillo para conseguir láminas uniformes</li>
+            <li>Si se pega, espolvorea un poco de harina/maicena o usa papel vegetal</li>
+            <li>Para detalles finos, utiliza herramientas de modelado o palillos</li>
+            <li>Deja secar completamente antes de pintar o barnizar la pieza</li>
           </ul>
         </div>
-
       </div>
     </div>
 
-    <!-- Acordeón (móvil) -->
+    <!-- Acordeón para móvil -->
     <div class="accordion accordion-producto-container" id="accordionProductoMobile">
 
       <!-- PARA QUÉ SIRVE -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingParaque">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseParaque">
-            Para qué sirve
-          </button>
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseParaque">Para qué sirve</button>
         </h2>
-
         <div id="collapseParaque" class="accordion-collapse collapse show" data-bs-parent="#accordionProductoMobile">
           <div class="accordion-body">
             <ul>
-              <li>Pintar y decorar madera</li>
-              <li>Manualidades en papel y cartón</li>
-              <li>Proyectos sobre lienzo</li>
-              <li>Trabajos creativos con goma EVA</li>
-              <li>Decoración en cerámica y escayola</li>
-              <li>Personalización de soportes decorativos</li>
+              <li>Crear figuras, formas y adornos decorativos</li>
+              <li>Hacer manualidades escolares y proyectos creativos</li>
+              <li>Elaborar miniaturas, detalles y piezas personalizadas</li>
+              <li>Realizar marcos, letras y elementos para decorar</li>
+              <li>Fabricar sellos o texturas con herramientas de modelado</li>
+              <li>Complementar proyectos de scrapbooking y decoración DIY</li>
             </ul>
           </div>
         </div>
@@ -174,69 +137,46 @@ require '_partials/header.php';?>
       <!-- CARACTERÍSTICAS -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingCaracteristicas">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCaracteristicas">
-            Características
-          </button>
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCaracteristicas">Características</button>
         </h2>
-
         <div id="collapseCaracteristicas" class="accordion-collapse collapse" data-bs-parent="#accordionProductoMobile">
           <div class="accordion-body">
             <ul>
-              <li>Secado rápido</li>
-              <li>Colores intensos y uniformes</li>
-              <li>Buena cobertura con pocas capas</li>
-              <li>Acabado resistente una vez seco</li>
-              <li>Aplicación fácil con pincel, rodillo o esponja</li>
-              <li>Se puede mezclar para crear nuevos tonos</li>
+              <li>Fácil de moldear y apta para principiantes</li>
+              <li>Permite alisar, cortar y dar forma con precisión</li>
+              <li>Se puede trabajar con herramientas sencillas (rodillo, estecas, moldes)</li>
+              <li>Acabado suave y personalizable</li>
+              <li>Se puede pintar o decorar una vez terminada (según el tipo de pasta)</li>
+              <li>Ideal para trabajar en casa o en talleres creativos</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!-- CÓMO USARLA (TIPS) -->
+      <!-- TIPS -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingTips">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTips">
-            Tips
-          </button>
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTips">Tips</button>
         </h2>
-
         <div id="collapseTips" class="accordion-collapse collapse" data-bs-parent="#accordionProductoMobile">
           <div class="accordion-body">
             <ul>
-              <li>Agita bien antes de usar</li>
-              <li>Aplica sobre superficies limpias y secas</li>
-              <li>Da capas finas y deja secar entre ellas</li>
-              <li>Usa el aplicador adecuado: pincel, rodillo o esponja</li>
-              <li>Para mayor durabilidad, aplica un barniz o sellador final</li>
+              <li>Amasa bien antes de empezar para que sea más flexible</li>
+              <li>Trabaja sobre una superficie limpia para evitar marcas o suciedad</li>
+              <li>Usa rodillo para conseguir láminas uniformes</li>
+              <li>Si se pega, espolvorea un poco de harina/maicena o usa papel vegetal</li>
+              <li>Para detalles finos, utiliza herramientas de modelado o palillos</li>
+              <li>Deja secar completamente antes de pintar o barnizar la pieza</li>
             </ul>
           </div>
         </div>
       </div>
 
     </div>
-
   </div>
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php
-include '_partials/footer.php';
-?>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<?php include '_partials/footer.php'; ?>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
