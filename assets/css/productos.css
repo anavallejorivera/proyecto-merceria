@@ -135,6 +135,70 @@
     background-image: url('../img/catalogo/manualidades/soportes-decorar.png');
   }
   
+/* ================================
+   Fondos específicos: MERCERÍA
+   ================================ */
+
+   .bg-hilos-lanas::before {
+    background-image: url('../img/catalogo/merceria/hilos-y-lanas.jpg');
+  }
+  
+  .bg-agujas-ganchillos::before {
+    background-image: url('../img/catalogo/merceria/agujas-y-ganchillos.jpg');
+  }
+  
+  .bg-botones-cierres::before {
+    background-image: url('../img/catalogo/merceria/botones-y-cierres.jpg');
+  }
+  
+  .bg-cintas-elasticos::before {
+    background-image: url('../img/catalogo/merceria/cintas-y-elasticos.jpg');
+  }
+  
+  .bg-accesorios-costura::before {
+    background-image: url('../img/catalogo/merceria/accesorios-de-costura.jpg');
+  }
+  
+
+
+/* ===============================================
+   TEXTIL - FONDOS TARJETAS
+   =============================================== */
+
+   .bg-telas-por-tipo {
+    background-image: url("../img/catalogo/textil/telas-por-tipo.jpg");
+  }
+  
+  .bg-telas-por-uso {
+    background-image: url("../img/catalogo/textil/telas-por-uso.jpg");
+  }
+  
+  .bg-forros-y-guatas {
+    background-image: url("../img/catalogo/textil/forros-y-guantes.jpg");
+  }
+  
+  .bg-retales-varios {
+    background-image: url("../img/catalogo/textil/retales-varios.jpg");
+  }
+  
+  .bg-encajes-y-pasamaneria {
+    background-image: url("../img/catalogo/textil/encajes-y-pasamaneria.jpg");
+  }
+  
+/* ===============================================
+   FIX: Ajuste de imagen de fondo en tarjetas catalogo
+   =============================================== */
+
+   .card-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+
+
+
+
   /* -------------------------------------
      Estilos personalizados para Productos
   ---------------------------------------- */
