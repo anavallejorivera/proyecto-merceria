@@ -9,7 +9,7 @@ require '_partials/header.php';?>
 
   <!-- Slide/Sección 1 -->
   <article id="mercerialarraz" class="Lockup FirstLockup d-flex align-items-center">
-    <div class="Media observe" data-slide="1" aria-hidden="true">
+    <div class="Media observe container-lg" data-slide="1" aria-hidden="true">
       <img
         src="./assets/img/cat-textil.jpg"
         alt="Materiales de costura y manualidades sobre una mesa"
@@ -18,12 +18,16 @@ require '_partials/header.php';?>
       />
     </div>
 
-    <div class="Text d-grid gap-2">
-      <p class="eyebrow mb-0">Mercería Larraz</p>
+    <div class="container-lg text-center">
+      <div class="Text d-grid gap-2">
+      
 
-      <h1 class="subhead mb-0">Tu creatividad empieza aquí...</h1>
+     
+      <h1 class="eyebrow">Mercería Larraz</h1>
 
-      <p class="mb-0">
+      <h2 class="subhead">Tu creatividad empieza aquí...</h2>
+
+      <p class="">
       En el corazón de <span>Zaragoza</span>,<br />
 somos la mayor tienda de Aragón en manualidades, <span>mercería</span> y
 <span>creatividad</span> para todas las edades.
@@ -34,14 +38,14 @@ somos la mayor tienda de Aragón en manualidades, <span>mercería</span> y
       <span>Inspírate</span>, <span>crea</span> y <span>encuentra</span> el regalo perfecto.
 
       </p>
-
-      <a href="./quienes-somos.php" class="button wobble-top btn-cta btn align-self-start">Conócenos</a>
+      <a href="./quienes-somos.php" class="button wobble-top btn-cta btn conocenos-btn">Conócenos</a>
+       </div>
     </div>
   </article>
 
   <!-- Slide/Sección 2 -->
   <article id="manualidadestodos" class="Lockup SecondLockup d-flex align-items-center">
-    <div class="Media observe" data-slide="2" aria-hidden="true">
+    <div class="Media observe container-lg" data-slide="2" aria-hidden="true">
       <img
         src="./assets/img/hero-imagen.png"
         alt="Manualidades para todos"
@@ -49,8 +53,8 @@ somos la mayor tienda de Aragón en manualidades, <span>mercería</span> y
         decoding="async"
       />
     </div>
-
-    <div class="Text d-grid gap-2">
+<div class="container-lg text-center">
+    <div class="Text d-grid gap-2 container-lg">
       <p class="eyebrow mb-0">Mercería Larraz</p>
 
       <h2 class="subhead mb-0">Manualidades para todos</h2>
@@ -62,11 +66,12 @@ somos la mayor tienda de Aragón en manualidades, <span>mercería</span> y
 
       <a href="./quienes-somos.php" class="button wobble-top btn-cta btn align-self-start">Conócenos</a>
     </div>
+    </div>
   </article>
 
   <!-- Slide/Sección 3 -->
   <article id="textil-merceria" class="Lockup ThirdLockup d-flex align-items-center">
-    <div class="Media observe" data-slide="3" aria-hidden="true">
+    <div class="Media observe container-lg" data-slide="3" aria-hidden="true">
       <img
         src="./assets/img/hero-banner.jpg"
         alt="Textil y Mercería"
@@ -74,13 +79,13 @@ somos la mayor tienda de Aragón en manualidades, <span>mercería</span> y
         decoding="async"
       />
     </div>
-
-    <div class="Text d-grid gap-2">
+<div class="container-lg text-center">
+    <div class="Text d-grid gap-2 container-lg">
       <p class="eyebrow mb-0">Mercería Larraz</p>
 
       <h2 class="subhead mb-0">Textil y Mercería</h2>
 
-      <p class="mb-0">
+      <p class="">
       <span>Lanas</span>, <span>hilos</span>, <span>telas</span> y <span>accesorios de costura</span>. 
 Todo lo que necesitas para tus <span>labores textiles</span>.
 Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>mercería de calidad</span>.
@@ -88,6 +93,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
       </p>
 
       <a href="./quienes-somos.php" class="button wobble-top btn-cta btn align-self-start">Conócenos</a>
+    </div>
     </div>
   </article>
 
@@ -202,10 +208,10 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
           <div class="card-inner" style="--clr:#fff;">
             <div class="box">
               <div class="imgBox">
-                <img src="https://images.unsplash.com/photo-1618574760076-bae45d84041c?w=800" alt="Trust & Co.">
+                <img src="./assets/img/catalogo/merceria/hilos-y-lanas.jpg" alt="Lanas y Ovillos">
               </div>
               <div class="icon">
-                <a href="http://www.facebook.com" class="iconBox" ><svg class="icon__xl">
+                <a href="./merceria-hilos-y-lanas.php" class="iconBox" ><svg class="icon__xl">
                      <use href="assets/img/sprite.svg#arrowupright"></use>
                    </svg><span class="visually-hidden ">arrow-right</span></a>
               </div>
@@ -220,10 +226,10 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
           <div class="card-inner" style="--clr:#fff;">
             <div class="box">
               <div class="imgBox">
-                <img src="https://images.unsplash.com/photo-1618574760076-bae45d84041c?w=800" alt="Tonic">
+                <img src="./assets/img/catalogo/merceria/cintas-y-elasticos.jpg" alt="Cintas y Lazos">
               </div>
               <div class="icon">
-                <a href="http://www.facebook.com" class="iconBox" ><svg class="icon__xl">
+                <a href="./merceria-hilos-y-lanas.php" class="iconBox" ><svg class="icon__xl">
                      <use href="assets/img/sprite.svg#arrowupright"></use>
                    </svg><span class="visually-hidden ">arrow-right</span></a>
               </div>
@@ -239,10 +245,10 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
           <div class="card-inner" style="--clr:#fff;">
             <div class="box">
               <div class="imgBox">
-                <img src="https://images.unsplash.com/photo-1618574760076-bae45d84041c?w=800" alt="Shower Gel">
+                <img src="./assets/img/catalogo/merceria/botones-y-cierres.jpg" alt="Cintas y Lazos">
               </div>
               <div class="icon">
-                <a href="http://www.facebook.com" class="iconBox" ><svg class="icon__xl">
+                <a href="./merceria.php" class="iconBox" ><svg class="icon__xl">
                      <use href="assets/img/sprite.svg#arrowupright"></use>
                    </svg><span class="visually-hidden ">arrow-right</span></a>
               </div>
@@ -259,17 +265,17 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
           <div class="card-inner" style="--clr:#fff;">
             <div class="box">
               <div class="imgBox">
-                <img src="https://images.unsplash.com/photo-1618574760076-bae45d84041c?w=800" alt="Tonic">
+                <img src="./assets/img/catalogo/manualidades/sellos-decorativos.png" alt="Sellos Decorativos">
               </div>
               <div class="icon">
-                <a href="http://www.facebook.com" class="iconBox" ><svg class="icon__xl">
+                <a href="./textil.php" class="iconBox" ><svg class="icon__xl">
                      <use href="assets/img/sprite.svg#arrowupright"></use>
                    </svg><span class="visually-hidden ">arrow-right</span></a>
               </div>
             </div>
           </div>
           <div class="content">
-           <h3 class="h4 mb-2">Cintas y Lazos</h3>
+           <h3 class="h4 mb-2">Sellos Decorativos</h3>
             <p class="small mb-0">Variedad de cintas decorativas para tus creaciones</p>
         
           </div>
