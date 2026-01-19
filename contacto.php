@@ -22,31 +22,37 @@ require '_partials/header.php';?>
             <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
                 <h5 class="titulo-catalogo mb-4 text-footer">Contacta con nosotros</h5>
                 <form>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                <label for="name">Nombre</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                <label for="email">Email</label>
-                            </div>
-                        </div>
-            
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control label-mensaje" placeholder="Leave a message here" id="message"></textarea>
-                                <label for="message" class="label-mensaje">Mensaje</label>
-                            </div>
-                        </div>
-                        <div class="col-12 text-end">
-                            <button class="btn btn-cta py-3 px-5 " type="submit">Enviar</button>
-                        </div>
-                    </div>
-                </form>
+  <div class="row g-3">
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="name" placeholder="Your Name">
+        <label for="name">Nombre</label>
+        <div class="invalid-feedback">Por favor, introduce un nombre válido (mínimo 2 caracteres).</div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="email" class="form-control" id="email" placeholder="Your Email">
+        <label for="email">Email</label>
+        <div class="invalid-feedback">Introduce un correo electrónico válido.</div>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="form-floating">
+        <textarea class="form-control label-mensaje" placeholder="Leave a message here" id="message" style="height: 150px;"></textarea>
+        <label for="message" class="label-mensaje">Mensaje</label>
+        <div class="invalid-feedback">El mensaje debe tener al menos 10 caracteres.</div>
+      </div>
+    </div>
+
+    <div class="col-12 text-end">
+      <button class="btn btn-cta py-3 px-5" type="submit">Enviar</button>
+    </div>
+  </div>
+</form>
+
             </div>
 
 
@@ -98,6 +104,47 @@ require '_partials/header.php';?>
   <?php require '_partials/footer.php';?> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="./assets/js/script.js"></script>
+<script>
+  const form = document.querySelector("form");
+  const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email");
+  const messageInput = document.getElementById("message");
+
+  if (form && nameInput && emailInput && messageInput) {
+    form.addEventListener("submit", function (e) {
+      let isValid = true;
+
+      // Limpiar errores anteriores
+      [nameInput, emailInput, messageInput].forEach(input => {
+        input.classList.remove("is-invalid");
+      });
+
+      // Validar nombre
+      if (nameInput.value.trim().length < 2) {
+        nameInput.classList.add("is-invalid");
+        isValid = false;
+      }
+
+      // Validar email
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailInput.value.trim())) {
+        emailInput.classList.add("is-invalid");
+        isValid = false;
+      }
+
+      // Validar mensaje
+      if (messageInput.value.trim().length < 10) {
+        messageInput.classList.add("is-invalid");
+        isValid = false;
+      }
+
+      if (!isValid) {
+        e.preventDefault();
+      }
+    });
+  }
+</script>
+
   </body>
 
 </html>

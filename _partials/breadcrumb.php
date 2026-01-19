@@ -2,11 +2,11 @@
 // ============================================
 // BREADCRUMB DINÁMICO (Sección > Detalle)
 // Ejemplo:
-// manualidades-pintura-acrilica-decorativa.php
-// => Manualidades > Pintura Acrílica Decorativa
+// merceria-lanas-y-bragas.php
+// => Merceria > Lanas y bragas
 // ============================================
 
-$filename = basename($_SERVER['PHP_SELF'], '.php'); 
+$filename = basename($_SERVER['PHP_SELF'], '.php');
 $parts = explode('-', $filename);
 
 // Sección = primera parte (manualidades, merceria, textil...)
@@ -20,14 +20,23 @@ if (count($parts) > 1) {
   $detalle_slug = implode(' ', array_slice($parts, 1));
 }
 
-// Title Case
+// Formato: Solo primera palabra con mayúscula inicial
 function toTitleCase($text) {
   $text = str_replace(['_', '-'], ' ', $text);
   $text = strtolower($text);
-  $words = explode(' ', $text);
-  $words = array_map(function($w) {
-    return $w ? ucfirst($w) : '';
-  }, $words);
+  $words = preg_split('/\s+/', trim($text));
+
+  foreach ($words as $i => $w) {
+    if ($w === '') continue;
+
+    if ($i === 0) {
+      $words[$i] = ucfirst($w);
+    } else {
+      // Mantener "y" en minúscula (y el resto ya está en minúscula)
+      $words[$i] = ($w === 'y') ? 'y' : $w;
+    }
+  }
+
   return trim(implode(' ', $words));
 }
 
