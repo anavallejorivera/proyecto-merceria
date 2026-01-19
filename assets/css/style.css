@@ -96,10 +96,6 @@
   background: var(--color-fondo) !important;
 }
 
-  .navbar {
-    box-shadow: var(--sombra);
-  }
-
   .dropdown-menu {
     background-color: var(--color-fondo);
     border-color: rgba(255, 255, 255, 0.1);
@@ -497,11 +493,16 @@ section.Hero {
 }
 
 .Text {
-  padding: 3rem 0;
+ padding: 3rem 0;
   max-width: 520px;
   font-family: "FiraSans-light", sans-serif;
     color: var(--color-texto);
     line-height: 1.6;
+   
+}
+
+.ind-tex{
+z-index: 9999;
 }
 .eyebrow {
   font-weight: var(--fw-6);
