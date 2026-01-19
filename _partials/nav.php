@@ -12,8 +12,18 @@
            </li>
          </ul>
          <!-- Redes sociales -->
-         <ul class="d-flex justify-content-center gap-2 list-unstyled 
-           border-top border-md-top-0 pt-1 pt-md-0">
+        <ul class="d-flex justify-content-center align-items-center gap-2 list-unstyled border-top border-md-0 pt-1 pt-md-2 pb-1 pb-md-1 mb-1 mb-md-0">
+
+
+           <li>
+             <a href="quienes-somos.php" target="_blank" class="text-decoration-none mb-2">Nosotros</a>
+           </li>
+           <li><a href="./contacto.php" target="" rel="noopener noreferrer" title="contacto" class="text-decoration-none">
+               <svg class="icon__xl">
+                 <use href="assets/img/sprite.svg#letter"></use>
+               </svg>
+               <span class="visually-hidden">contacto</span>
+             </a></li>
            <li><a href="http://www.facebook.com" target="_blank"><svg class="icon__xl">
                  <use href="assets/img/sprite.svg#rrssfacebook"></use>
                </svg><span class="visually-hidden">facebook</span></a></li>
@@ -26,6 +36,7 @@
                </svg>
                <span class="visually-hidden">X</span>
              </a></li>
+        
          </ul>
        </div>
      </div>
@@ -51,9 +62,6 @@
              <a class="nav-link" href="./textil.php">Textil</a>
            </li>
            <li>
-           <a class="nav-link" href="./quienes-somos.php">Nosotros</a>
-           <li class="nav-item">
-           </li>
            <li class="nav-item">
              <a class="nav-link cta" href="./contacto.php">Contacto</a>
            </li>

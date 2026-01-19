@@ -88,7 +88,7 @@
   background: var(--color-fondo);
 }
 
-/* 2) La navbar (por si Bootstrap aplica cosas raras) */
+/* 2) La navbar */
 #home .navbar{
   position: sticky;
   top: 0;
@@ -172,7 +172,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "FiraSans-regular", sans-serif;
+  font-family: "FiraSans-light", sans-serif;
   font-weight: 500;
   color: var(--color-texto);
   background-color: var(--color-fondo);
@@ -180,14 +180,13 @@ body {
   letter-spacing: 0.3px;
 }
 
-h2 {
-  font-family: "FiraSans-bold";
+h2, h1{
+  font-family: "FiraSans-Light", sans-serif;
   font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
   margin-bottom: 1.5rem;
 }
 
 p {
-  font-family: "FiraSans-light";
   margin-bottom: 1rem;
   line-height: 1.7;
 }
@@ -208,6 +207,7 @@ img {
   width: 100%;
   height: auto;
 }
+
 /* ===============================================
    NAVBAR (STICKY SIN ROMPER HERO)
    =============================================== */
@@ -448,7 +448,7 @@ section {
   }
 }
 
-/* ✅ el hero NO debe heredar padding global */
+/* excepción: no padding en hero */
 section.Hero {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -459,7 +459,7 @@ section.Hero {
    =============================================== */
 
    .Hero h2 {
-    font-family: "FiraSans-bold", sans-serif;
+    font-family: "FiraSans-semibold", sans-serif;
     color: var(--color-footer);
   }
   
@@ -498,12 +498,10 @@ section.Hero {
 .Text {
   padding: 3rem 0;
   max-width: 520px;
-  margin: 0 auto;
   font-family: "FiraSans-light", sans-serif;
     color: var(--color-texto);
     line-height: 1.6;
 }
-
 .eyebrow {
   font-weight: var(--fw-6);
   letter-spacing: 0.02em;
@@ -520,7 +518,6 @@ section.Hero {
 }
 
 .Text p {
-  margin: 0;
   font-size: var(--fs-3);
   max-width: var(--content-max);
 }
@@ -793,10 +790,7 @@ section.Hero {
   background: hsla(15, 100%, 25%, 0.8);
   color: var(--color-fondo);
 }
-.nosotros span {
-  font-family: "FiraSans-semibold", sans-serif;
-  color: var(--color-texto);
-}
+
 .nosotros h5 {
   font-family: "FiraSans-bold", sans-serif;
 }
@@ -836,13 +830,12 @@ section.Hero {
 }
 
 
-
 /* ===============================================
    DESTACADOS (cards con overflow)
    =============================================== */
 
-   .destacados h2 {
-    font-family: "FiraSans-bold", sans-serif;
+   .destacados .h4 {
+    font-family: "FiraSans-semibold", sans-serif;
     color: var(--color-footer);
   }
   

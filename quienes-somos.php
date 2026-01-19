@@ -41,7 +41,7 @@ require '_partials/header.php'; ?>
         </svg>
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1 class="h2 ">Quienes Somos</h1>
+            <h1 class="">Quienes Somos</h1>
             <p class="small text-light">
               Nuestra historia
             </p>
@@ -64,7 +64,7 @@ require '_partials/header.php'; ?>
         </svg>
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1 class="h2 ">Quienes Somos</h1>
+            <h1 class="">Quienes Somos</h1>
             <p class="small text-light">
               Nuestra historia
             </p>
@@ -87,7 +87,7 @@ require '_partials/header.php'; ?>
         </svg>
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1 class="h2">Quienes Somos</h1>
+            <h1 class="">Quienes Somos</h1>
             <p class="small text-light">
               Nuestra historia
             </p>
@@ -117,7 +117,7 @@ require '_partials/header.php'; ?>
 
     <!-- START THE FEATURETTES -->
 
-    <div class="row featurette about">
+    <div class="row featurette">
       <div class="col-12 col-lg-7 pe-5">
         <h2 class="featurette-heading lh-1 title-red">
           Nuestra Historia
@@ -154,7 +154,7 @@ require '_partials/header.php'; ?>
             <path d="M4 11H2v3h2zm5-4H7v7h2zm5-5v12h-2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z" />
           </svg>
         </div>
-        <h2 class="title-red pt-3">Visión</h2>
+        <h2 class=" title-red pt-3">Visión</h2>
         <p class="lead px-3">
           Ser reconocida como la tienda de referencia en España en manualidades textiles, mercería y artes creativas, destacando por nuestra capacidad de adaptación, nuestra trayectoria centenaria.
         </p>
@@ -162,7 +162,7 @@ require '_partials/header.php'; ?>
     </div>
     <!-- /.row -->
     <hr class="featurette-divider" />
-    <div class="row featurette about">
+    <div class="row featurette">
       <div class="col-12 col-lg-7 order-md-2 ps-lg-5 ps-sm-0 pt-3 pt-lg-0">
         <h2 class="featurette-heading lh-1 title-red">
           La Tienda
@@ -178,14 +178,14 @@ require '_partials/header.php'; ?>
       </div>
     </div>
     <hr class="featurette-divider" />
-    <div class="row featurette about">
+    <div class="row featurette">
       <div class="col-12 col-lg-7 pe-5">
         <h2 class="featurette-heading lh-1 title-red">
           Confianza, calidad y seguridad
         </h2>
-        <p class="lead"><span>- Confianza:</span> servimos a miles de clientes que confían en nosotros. Organismos oficiales como la Casa Real, ministerios, gobiernos autonómicos y ayuntamientos, compañías multinacionales y marcas reconocidas, clubes y federaciones deportivas, Ejército, Guardia Civil y otros cuerpos de seguridad, cofradías, partidos políticos y sindicatos, etc.</p>
-        <p class="lead">También distribuyen nuestros productos empresas como agencias de publicidad, tiendas de banderas y artículos personalizados, etc.<br /><span class="">- Calidad:</span> el conocimiento acumulado durante nuestra larga existencia nos permite ofrecer una amplia variedad de productos con la máxima calidad.</p>
-        <p class="lead">Algunos de nuestros productos son los de mayor calidad en España.<br /><span class="">- Seguridad:</span> satisfacemos las necesidades de nuestros clientes y cumplimos las fechas de entrega demandadas.</p>
+        <p class="lead"><span class="fw-bold">- Confianza:</span> servimos a miles de clientes que confían en nosotros. Organismos oficiales como la Casa Real, ministerios, gobiernos autonómicos y ayuntamientos, compañías multinacionales y marcas reconocidas, clubes y federaciones deportivas, Ejército, Guardia Civil y otros cuerpos de seguridad, cofradías, partidos políticos y sindicatos, etc.</p>
+        <p class="lead">También distribuyen nuestros productos empresas como agencias de publicidad, tiendas de banderas y artículos personalizados, etc.<br /><span class="fw-bold">- Calidad:</span> el conocimiento acumulado durante nuestra larga existencia nos permite ofrecer una amplia variedad de productos con la máxima calidad.</p>
+        <p class="lead">Algunos de nuestros productos son los de mayor calidad en España.<br /><span class="fw-bold">- Seguridad:</span> satisfacemos las necesidades de nuestros clientes y cumplimos las fechas de entrega demandadas.</p>
       </div>
       <div class="col-12 col-lg-5 pe-5
         ">

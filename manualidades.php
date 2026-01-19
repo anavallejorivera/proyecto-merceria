@@ -60,7 +60,7 @@ require '_partials/header.php';?>
             Pasta modelable
           </h5>
           <!-- Enlace solo en el texto -->
-          <a href="#" class="fw-semibold text-white text-decoration-none">
+          <a href="manualidades-pasta-modelable.php" class="fw-semibold text-white text-decoration-none">
             EXPLORAR PRODUCTOS →
           </a>
         </div>
@@ -83,7 +83,7 @@ require '_partials/header.php';?>
             Sellos decorativos
           </h5>
           <!-- Enlace solo en el texto -->
-          <a href="#" class="fw-semibold text-white text-decoration-none">
+          <a href="manualidades-sellos-decorativos.php" class="fw-semibold text-white text-decoration-none">
             EXPLORAR PRODUCTOS →
           </a>
         </div>
@@ -106,7 +106,7 @@ require '_partials/header.php';?>
             Plantillas (stencils)
           </h5>
           <!-- Enlace solo en el texto -->
-          <a href="#" class="fw-semibold text-white text-decoration-none">
+          <a href="manualidades-plantillas.php" class="fw-semibold text-white text-decoration-none">
             EXPLORAR PRODUCTOS →
           </a>
         </div>
@@ -129,7 +129,7 @@ require '_partials/header.php';?>
             Goma EVA
           </h5>
           <!-- Enlace solo en el texto -->
-          <a href="#" class="fw-semibold text-white text-decoration-none">
+          <a href="manualidades-goma-eva.php" class="fw-semibold text-white text-decoration-none">
             EXPLORAR PRODUCTOS →
           </a>
         </div>
@@ -152,7 +152,7 @@ require '_partials/header.php';?>
             Soportes para decorar
           </h5>
           <!-- Enlace solo en el texto -->
-          <a href="#" class="fw-semibold text-white text-decoration-none">
+          <a href="manualidades-soportes-para-decorar.php" class="fw-semibold text-white text-decoration-none">
             EXPLORAR PRODUCTOS →
           </a>
         </div>

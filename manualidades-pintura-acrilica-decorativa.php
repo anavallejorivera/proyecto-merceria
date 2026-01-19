@@ -5,11 +5,17 @@
 require '_partials/header.php';?>
 <?php require '_partials/nav.php';?>
 
+
+<!-- AQUÍ IRÁ LA MIGA DE PAN -->
+<?php require '_partials/breadcrumb.php'; ?>
+
+
+
 <!-- Encabezado de la sección de Producto -->
 <div class="producto-header text-center mb-2 producto-compactamd container-lg">
   <div class="pt-5 w-75 mx-auto">
     <h2 class="titulo-producto mb-2">Pintura Acrílica Decorativa</h2>
-    <p class="subtitulo-producto mb-1">
+    <p class="subtitulo-producto mb-1 lead">
       La pintura acrílica decorativa es un material versátil y fácil de usar, ideal para proyectos de manualidades, decoración y DIY. Destaca por su secado rápido, su alta cobertura y su excelente adherencia sobre múltiples superficies.
     </p>
   </div>
@@ -95,7 +101,7 @@ require '_partials/header.php';?>
 
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="tips-tab" data-bs-toggle="tab" data-bs-target="#tips" type="button" role="tab">
-            Cómo usarla (Tips)
+            Tips
           </button>
         </li>
       </ul>
@@ -191,7 +197,7 @@ require '_partials/header.php';?>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingTips">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTips">
-            Cómo usarla (Tips)
+            Tips
           </button>
         </h2>
 
