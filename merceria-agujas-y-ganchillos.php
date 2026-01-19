@@ -1,6 +1,6 @@
 <?php 
-$title = "Larraz | Catálogo > Manualidades > Goma EVA";
-$description = 'Página de Productos de Mercería';
+$title = "Larraz | Catálogo > Mercería > Agujas y Ganchillos";
+$description = 'Herramientas esenciales para costura y tejido: Agujas y Ganchillos';
 require '_partials/header.php'; 
 require '_partials/nav.php';
 require '_partials/breadcrumb.php';
@@ -9,9 +9,11 @@ require '_partials/breadcrumb.php';
 <!-- Encabezado de la sección de Producto -->
 <div class="producto-header text-center mb-2 producto-compactamd container-lg">
   <div class="pt-5 w-75 mx-auto">
-    <h2 class="titulo-producto mb-2">Goma EVA</h2>
+    <h2 class="titulo-producto mb-2">Agujas y Ganchillos</h2>
     <p class="subtitulo-producto mb-1 lead">
-      La goma EVA es uno de los materiales más populares en manualidades por su ligereza, flexibilidad y facilidad de uso. Es ideal para crear figuras, decoraciones y proyectos creativos tanto infantiles como para trabajos DIY, ya que se recorta y se pega con mucha facilidad.
+      Las agujas y ganchillos son herramientas esenciales para dar vida a proyectos de costura y tejido, desde los más sencillos hasta los más detallados.<br>
+      Con ellos puedes crear prendas, accesorios y decoraciones hechas a mano, trabajando con precisión y comodidad en cada punto.<br><br>
+      Ideales tanto para principiantes como para quienes disfrutan tejiendo y cosiendo con un acabado cuidado y profesional.
     </p>
   </div>
 </div>
@@ -27,21 +29,29 @@ require '_partials/breadcrumb.php';
         <button type="button" data-bs-target="#carouselProductoDetalle" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselProductoDetalle" data-bs-slide-to="2" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#carouselProductoDetalle" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselProductoDetalle" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselProductoDetalle" data-bs-slide-to="5" aria-label="Slide 6"></button>
       </div>
 
       <!-- Slides -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="assets/img/catalogo/manualidades/goma-eva/pack-laminas-goma-eva-multicolor.jpg" class="d-block w-100 rounded" alt="Pack de láminas de goma EVA multicolor">
+          <img src="assets/img/catalogo/merceria/agujas-y-ganchillo/agujas-punto-madera.png" class="d-block w-100 rounded" alt="Agujas de punto de madera">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/catalogo/manualidades/goma-eva/set-herramientas-tijeras-barras-silicona.jpg" class="d-block w-100 rounded" alt="Set de herramientas para trabajar con goma EVA">
+          <img src="assets/img/catalogo/merceria/agujas-y-ganchillo/cinta-metrica-pequena.png" class="d-block w-100 rounded" alt="Cinta métrica pequeña para costura">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/catalogo/manualidades/goma-eva/marco-fotos-decorado-figuras-infantiles.jpg" class="d-block w-100 rounded" alt="Marco de fotos decorado con figuras de goma EVA">
+          <img src="assets/img/catalogo/merceria/agujas-y-ganchillo/ganchillo-ergonomico.png" class="d-block w-100 rounded" alt="Ganchillo ergonómico para tejer cómodamente">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/catalogo/manualidades/goma-eva/ramo-flores-foami-manualidades.jpg" class="d-block w-100 rounded" alt="Ramo de flores hechas con goma EVA">
+          <img src="assets/img/catalogo/merceria/agujas-y-ganchillo/ganchillos-colores.png" class="d-block w-100 rounded" alt="Set de ganchillos de colores variados">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/catalogo/merceria/agujas-y-ganchillo/marcadores-puntos.png" class="d-block w-100 rounded" alt="Marcadores de puntos para tejido">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/catalogo/merceria/agujas-y-ganchillo/set-agujas-estuche.png" class="d-block w-100 rounded" alt="Set de agujas en estuche">
         </div>
       </div>
 
@@ -81,36 +91,36 @@ require '_partials/breadcrumb.php';
         <!-- PARA QUÉ SIRVE -->
         <div class="tab-pane fade show active" id="paraque" role="tabpanel">
           <ul>
-            <li>Crear figuras y decoraciones para manualidades infantiles</li>
-            <li>Hacer flores, marcos, letras y adornos personalizados</li>
-            <li>Decorar carpetas, cuadernos y proyectos escolares</li>
-            <li>Preparar disfraces, complementos y accesorios DIY</li>
-            <li>Realizar llaveros, imanes y elementos decorativos ligeros</li>
-            <li>Dar volumen y color a proyectos creativos de forma fácil</li>
+            <li>Tejer prendas y accesorios con agujas de punto</li>
+            <li>Realizar proyectos de ganchillo como gorros, bolsos o amigurumis</li>
+            <li>Coser a mano arreglos, remates y pequeñas reparaciones</li>
+            <li>Bordar detalles decorativos en tela o ropa</li>
+            <li>Unir piezas tejidas y rematar costuras con aguja lanera</li>
+            <li>Sujetar puntos y marcar vueltas con accesorios auxiliares</li>
           </ul>
         </div>
 
         <!-- CARACTERÍSTICAS -->
         <div class="tab-pane fade" id="caracteristicas" role="tabpanel">
           <ul>
-            <li>Material ligero, flexible y muy fácil de cortar</li>
-            <li>Disponible en muchos colores y grosores diferentes</li>
-            <li>Se puede pegar con silicona caliente, pegamento o cinta de doble cara</li>
-            <li>Apta para trabajos infantiles por su facilidad de manejo</li>
-            <li>Permite crear capas para dar relieve y profundidad</li>
-            <li>Se puede combinar con rotuladores, purpurina y otros materiales</li>
+            <li>Disponibles en diferentes grosores para adaptarse a cada tipo de hilo o lana</li>
+            <li>Agujas para coser, bordar y lana en varios tamaños</li>
+            <li>Ganchillos cómodos para tejer con facilidad y buena sujeción</li>
+            <li>Materiales resistentes y ligeros, perfectos para uso continuo</li>
+            <li>Permiten trabajar con precisión tanto en piezas grandes como en detalles pequeños</li>
+            <li>Accesorios útiles como marcadores y cintas métricas para mejorar el proceso</li>
           </ul>
         </div>
 
         <!-- TIPS -->
         <div class="tab-pane fade" id="tips" role="tabpanel">
           <ul>
-            <li>Marca las piezas primero con lápiz antes de recortar</li>
-            <li>Usa tijeras afiladas o cúter para cortes más limpios</li>
-            <li>Para pegar, aplica poca silicona y presiona unos segundos</li>
-            <li>Si quieres volumen, superpone capas de goma EVA</li>
-            <li>Guarda las láminas en plano para que no se doblen</li>
-            <li>Para un acabado más pro, combina colores y añade detalles con rotulador</li>
+            <li>Usa el grosor de aguja o ganchillo recomendado en la etiqueta del ovillo</li>
+            <li>Si eres principiante, empieza con lana media y ganchillo cómodo de sujetar</li>
+            <li>Para evitar que se te cansen las manos, descansa y estira cada cierto tiempo</li>
+            <li>Guarda agujas y ganchillos en estuches para no perderlos ni dañarlos</li>
+            <li>Utiliza marcadores para no perder puntos o controlar aumentos y vueltas</li>
+            <li>Haz una muestra pequeña antes de empezar para comprobar el tamaño final</li>
           </ul>
         </div>
       </div>
@@ -127,12 +137,12 @@ require '_partials/breadcrumb.php';
         <div id="collapseParaque" class="accordion-collapse collapse show" data-bs-parent="#accordionProductoMobile">
           <div class="accordion-body">
             <ul>
-              <li>Crear figuras y decoraciones para manualidades infantiles</li>
-              <li>Hacer flores, marcos, letras y adornos personalizados</li>
-              <li>Decorar carpetas, cuadernos y proyectos escolares</li>
-              <li>Preparar disfraces, complementos y accesorios DIY</li>
-              <li>Realizar llaveros, imanes y elementos decorativos ligeros</li>
-              <li>Dar volumen y color a proyectos creativos de forma fácil</li>
+              <li>Tejer prendas y accesorios con agujas de punto</li>
+              <li>Realizar proyectos de ganchillo como gorros, bolsos o amigurumis</li>
+              <li>Coser a mano arreglos, remates y pequeñas reparaciones</li>
+              <li>Bordar detalles decorativos en tela o ropa</li>
+              <li>Unir piezas tejidas y rematar costuras con aguja lanera</li>
+              <li>Sujetar puntos y marcar vueltas con accesorios auxiliares</li>
             </ul>
           </div>
         </div>
@@ -146,12 +156,12 @@ require '_partials/breadcrumb.php';
         <div id="collapseCaracteristicas" class="accordion-collapse collapse" data-bs-parent="#accordionProductoMobile">
           <div class="accordion-body">
             <ul>
-              <li>Material ligero, flexible y muy fácil de cortar</li>
-              <li>Disponible en muchos colores y grosores diferentes</li>
-              <li>Se puede pegar con silicona caliente, pegamento o cinta de doble cara</li>
-              <li>Apta para trabajos infantiles por su facilidad de manejo</li>
-              <li>Permite crear capas para dar relieve y profundidad</li>
-              <li>Se puede combinar con rotuladores, purpurina y otros materiales</li>
+              <li>Disponibles en diferentes grosores para adaptarse a cada tipo de hilo o lana</li>
+              <li>Agujas para coser, bordar y lana en varios tamaños</li>
+              <li>Ganchillos cómodos para tejer con facilidad y buena sujeción</li>
+              <li>Materiales resistentes y ligeros, perfectos para uso continuo</li>
+              <li>Permiten trabajar con precisión tanto en piezas grandes como en detalles pequeños</li>
+              <li>Accesorios útiles como marcadores y cintas métricas para mejorar el proceso</li>
             </ul>
           </div>
         </div>
@@ -165,12 +175,12 @@ require '_partials/breadcrumb.php';
         <div id="collapseTips" class="accordion-collapse collapse" data-bs-parent="#accordionProductoMobile">
           <div class="accordion-body">
             <ul>
-              <li>Marca las piezas primero con lápiz antes de recortar</li>
-              <li>Usa tijeras afiladas o cúter para cortes más limpios</li>
-              <li>Para pegar, aplica poca silicona y presiona unos segundos</li>
-              <li>Si quieres volumen, superpone capas de goma EVA</li>
-              <li>Guarda las láminas en plano para que no se doblen</li>
-              <li>Para un acabado más pro, combina colores y añade detalles con rotulador</li>
+              <li>Usa el grosor de aguja o ganchillo recomendado en la etiqueta del ovillo</li>
+              <li>Si eres principiante, empieza con lana media y ganchillo cómodo de sujetar</li>
+              <li>Para evitar que se te cansen las manos, descansa y estira cada cierto tiempo</li>
+              <li>Guarda agujas y ganchillos en estuches para no perderlos ni dañarlos</li>
+              <li>Utiliza marcadores para no perder puntos o controlar aumentos y vueltas</li>
+              <li>Haz una muestra pequeña antes de empezar para comprobar el tamaño final</li>
             </ul>
           </div>
         </div>

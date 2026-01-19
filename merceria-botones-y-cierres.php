@@ -1,6 +1,6 @@
 <?php 
-$title = "Larraz | Catálogo > Manualidades > Goma EVA";
-$description = 'Página de Productos de Mercería';
+$title = "Larraz | Catálogo > Mercería > Botones y Cierres";
+$description = 'Detalles funcionales y decorativos: botones, cierres, cremalleras, broches';
 require '_partials/header.php'; 
 require '_partials/nav.php';
 require '_partials/breadcrumb.php';
@@ -9,9 +9,11 @@ require '_partials/breadcrumb.php';
 <!-- Encabezado de la sección de Producto -->
 <div class="producto-header text-center mb-2 producto-compactamd container-lg">
   <div class="pt-5 w-75 mx-auto">
-    <h2 class="titulo-producto mb-2">Goma EVA</h2>
+    <h2 class="titulo-producto mb-2">Botones y Cierres</h2>
     <p class="subtitulo-producto mb-1 lead">
-      La goma EVA es uno de los materiales más populares en manualidades por su ligereza, flexibilidad y facilidad de uso. Es ideal para crear figuras, decoraciones y proyectos creativos tanto infantiles como para trabajos DIY, ya que se recorta y se pega con mucha facilidad.
+      Los botones y cierres son ese detalle imprescindible que marca la diferencia en cualquier prenda o complemento.<br>
+      Sirven tanto para dar un acabado funcional como para aportar un toque decorativo, permitiendo ajustar, cerrar o transformar prendas y accesorios de forma práctica y elegante.<br><br>
+      Ideales para arreglos, confección desde cero y personalización, con opciones para todos los estilos y necesidades.
     </p>
   </div>
 </div>
@@ -32,16 +34,16 @@ require '_partials/breadcrumb.php';
       <!-- Slides -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="assets/img/catalogo/manualidades/goma-eva/pack-laminas-goma-eva-multicolor.jpg" class="d-block w-100 rounded" alt="Pack de láminas de goma EVA multicolor">
+          <img src="assets/img/catalogo/merceria/botones-cierres/botones-surtidos.png" class="d-block w-100 rounded" alt="Botones surtidos de varios colores y tamaños">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/catalogo/manualidades/goma-eva/set-herramientas-tijeras-barras-silicona.jpg" class="d-block w-100 rounded" alt="Set de herramientas para trabajar con goma EVA">
+          <img src="assets/img/catalogo/merceria/botones-cierres/corchetes-presion.png" class="d-block w-100 rounded" alt="Corchetes de presión metálicos">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/catalogo/manualidades/goma-eva/marco-fotos-decorado-figuras-infantiles.jpg" class="d-block w-100 rounded" alt="Marco de fotos decorado con figuras de goma EVA">
+          <img src="assets/img/catalogo/merceria/botones-cierres/cremallera-gris.png" class="d-block w-100 rounded" alt="Cremallera gris de plástico">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/catalogo/manualidades/goma-eva/ramo-flores-foami-manualidades.jpg" class="d-block w-100 rounded" alt="Ramo de flores hechas con goma EVA">
+          <img src="assets/img/catalogo/merceria/botones-cierres/hebillas-metalicas.png" class="d-block w-100 rounded" alt="Hebillas metálicas para cierres de cinturones o bolsos">
         </div>
       </div>
 
@@ -81,36 +83,36 @@ require '_partials/breadcrumb.php';
         <!-- PARA QUÉ SIRVE -->
         <div class="tab-pane fade show active" id="paraque" role="tabpanel">
           <ul>
-            <li>Crear figuras y decoraciones para manualidades infantiles</li>
-            <li>Hacer flores, marcos, letras y adornos personalizados</li>
-            <li>Decorar carpetas, cuadernos y proyectos escolares</li>
-            <li>Preparar disfraces, complementos y accesorios DIY</li>
-            <li>Realizar llaveros, imanes y elementos decorativos ligeros</li>
-            <li>Dar volumen y color a proyectos creativos de forma fácil</li>
+            <li>Cerrar chaquetas, camisas, bolsos y prendas de todo tipo</li>
+            <li>Sustituir botones perdidos o reparar cierres dañados</li>
+            <li>Ajustar prendas con cierres cómodos y resistentes</li>
+            <li>Personalizar ropa con botones decorativos y diferentes acabados</li>
+            <li>Crear complementos y accesorios textiles con cierres seguros</li>
+            <li>Añadir broches y corchetes a prendas infantiles o proyectos DIY</li>
           </ul>
         </div>
 
         <!-- CARACTERÍSTICAS -->
         <div class="tab-pane fade" id="caracteristicas" role="tabpanel">
           <ul>
-            <li>Material ligero, flexible y muy fácil de cortar</li>
-            <li>Disponible en muchos colores y grosores diferentes</li>
-            <li>Se puede pegar con silicona caliente, pegamento o cinta de doble cara</li>
-            <li>Apta para trabajos infantiles por su facilidad de manejo</li>
-            <li>Permite crear capas para dar relieve y profundidad</li>
-            <li>Se puede combinar con rotuladores, purpurina y otros materiales</li>
+            <li>Gran variedad de botones: clásicos, decorativos, grandes y pequeños</li>
+            <li>Diferentes materiales y estilos para combinar con cualquier tejido</li>
+            <li>Cierres prácticos como cremalleras, corchetes y broches de presión</li>
+            <li>Opciones resistentes para uso diario y prendas de mucho movimiento</li>
+            <li>Disponible en distintos colores para que el acabado quede integrado</li>
+            <li>Elementos fáciles de coser o colocar según el tipo de cierre</li>
           </ul>
         </div>
 
         <!-- TIPS -->
         <div class="tab-pane fade" id="tips" role="tabpanel">
           <ul>
-            <li>Marca las piezas primero con lápiz antes de recortar</li>
-            <li>Usa tijeras afiladas o cúter para cortes más limpios</li>
-            <li>Para pegar, aplica poca silicona y presiona unos segundos</li>
-            <li>Si quieres volumen, superpone capas de goma EVA</li>
-            <li>Guarda las láminas en plano para que no se doblen</li>
-            <li>Para un acabado más pro, combina colores y añade detalles con rotulador</li>
+            <li>Antes de elegir, mide el diámetro del botón y el tamaño del ojal</li>
+            <li>Si cambias un botón, intenta sustituirlos todos para que queden iguales</li>
+            <li>Para cremalleras, comprueba largo y tipo (separable o cerrada)</li>
+            <li>Refuerza el hilo en botones de abrigos o prendas gruesas</li>
+            <li>Si es para ropa infantil, mejor cierres cómodos y resistentes</li>
+            <li>Guarda botones sueltos por colores en bolsitas para encontrarlos rápido</li>
           </ul>
         </div>
       </div>
@@ -127,12 +129,12 @@ require '_partials/breadcrumb.php';
         <div id="collapseParaque" class="accordion-collapse collapse show" data-bs-parent="#accordionProductoMobile">
           <div class="accordion-body">
             <ul>
-              <li>Crear figuras y decoraciones para manualidades infantiles</li>
-              <li>Hacer flores, marcos, letras y adornos personalizados</li>
-              <li>Decorar carpetas, cuadernos y proyectos escolares</li>
-              <li>Preparar disfraces, complementos y accesorios DIY</li>
-              <li>Realizar llaveros, imanes y elementos decorativos ligeros</li>
-              <li>Dar volumen y color a proyectos creativos de forma fácil</li>
+              <li>Cerrar chaquetas, camisas, bolsos y prendas de todo tipo</li>
+              <li>Sustituir botones perdidos o reparar cierres dañados</li>
+              <li>Ajustar prendas con cierres cómodos y resistentes</li>
+              <li>Personalizar ropa con botones decorativos y diferentes acabados</li>
+              <li>Crear complementos y accesorios textiles con cierres seguros</li>
+              <li>Añadir broches y corchetes a prendas infantiles o proyectos DIY</li>
             </ul>
           </div>
         </div>
@@ -146,12 +148,12 @@ require '_partials/breadcrumb.php';
         <div id="collapseCaracteristicas" class="accordion-collapse collapse" data-bs-parent="#accordionProductoMobile">
           <div class="accordion-body">
             <ul>
-              <li>Material ligero, flexible y muy fácil de cortar</li>
-              <li>Disponible en muchos colores y grosores diferentes</li>
-              <li>Se puede pegar con silicona caliente, pegamento o cinta de doble cara</li>
-              <li>Apta para trabajos infantiles por su facilidad de manejo</li>
-              <li>Permite crear capas para dar relieve y profundidad</li>
-              <li>Se puede combinar con rotuladores, purpurina y otros materiales</li>
+              <li>Gran variedad de botones: clásicos, decorativos, grandes y pequeños</li>
+              <li>Diferentes materiales y estilos para combinar con cualquier tejido</li>
+              <li>Cierres prácticos como cremalleras, corchetes y broches de presión</li>
+              <li>Opciones resistentes para uso diario y prendas de mucho movimiento</li>
+              <li>Disponible en distintos colores para que el acabado quede integrado</li>
+              <li>Elementos fáciles de coser o colocar según el tipo de cierre</li>
             </ul>
           </div>
         </div>
@@ -165,12 +167,12 @@ require '_partials/breadcrumb.php';
         <div id="collapseTips" class="accordion-collapse collapse" data-bs-parent="#accordionProductoMobile">
           <div class="accordion-body">
             <ul>
-              <li>Marca las piezas primero con lápiz antes de recortar</li>
-              <li>Usa tijeras afiladas o cúter para cortes más limpios</li>
-              <li>Para pegar, aplica poca silicona y presiona unos segundos</li>
-              <li>Si quieres volumen, superpone capas de goma EVA</li>
-              <li>Guarda las láminas en plano para que no se doblen</li>
-              <li>Para un acabado más pro, combina colores y añade detalles con rotulador</li>
+              <li>Antes de elegir, mide el diámetro del botón y el tamaño del ojal</li>
+              <li>Si cambias un botón, intenta sustituirlos todos para que queden iguales</li>
+              <li>Para cremalleras, comprueba largo y tipo (separable o cerrada)</li>
+              <li>Refuerza el hilo en botones de abrigos o prendas gruesas</li>
+              <li>Si es para ropa infantil, mejor cierres cómodos y resistentes</li>
+              <li>Guarda botones sueltos por colores en bolsitas para encontrarlos rápido</li>
             </ul>
           </div>
         </div>
