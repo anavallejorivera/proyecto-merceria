@@ -42,7 +42,7 @@
   --z-pagination: 1000;
 
   /* layout visual hero */
-  --visual-w: 62%;
+  --visual-w: 50%;
   --img-size: 400px;
 }
 
@@ -549,7 +549,6 @@ z-index: 9999;
     max-width: 520px;
     padding: 0;
     margin-left: var(--visual-w);
-    padding-left: var(--s-6);
   }
 
   .Media {
@@ -1168,3 +1167,5 @@ footer a:hover svg {
 #message {
   height: 214px;
 }
+
+
