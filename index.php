@@ -5,10 +5,10 @@
 require '_partials/header.php';?>
 <?php require '_partials/nav.php';?>
     <!-- HERO -->
-<section class="Hero p-0 w-100" aria-label="Presentación Mercería Larraz">
+<section class="Hero p-0 w-100 container-lg" aria-label="Presentación Mercería Larraz">
 
   <!-- Slide/Sección 1 -->
-  <article id="mercerialarraz" class="Lockup FirstLockup d-flex align-items-center">
+  <article id="mercerialarraz" class="Lockup FirstLockup d-flex align-items-center container-lg">
     <div class="Media observe container-lg" data-slide="1" aria-hidden="true">
       <img
         src="./assets/img/cat-textil.jpg"
@@ -18,8 +18,8 @@ require '_partials/header.php';?>
       />
     </div>
 
-    <div class="container-lg text-center">
-      <div class="Text d-grid gap-2">
+    <div class="text-center container-lg">
+      <div class="Text d-grid gap-2 container-lg">
       
 
      

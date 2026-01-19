@@ -16,7 +16,7 @@
 
 
            <li>
-             <a href="quienes-somos.php" target="_blank" class="text-decoration-none mb-2">Nosotros</a>
+             <a href="quienes-somos.php" target="" class="text-decoration-none mb-2">Nosotros</a>
            </li>
            <li><a href="./contacto.php" target="" rel="noopener noreferrer" title="contacto" class="text-decoration-none">
                <svg class="icon__xl">

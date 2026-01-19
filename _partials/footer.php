@@ -40,8 +40,8 @@
      <div class="row mb-4 text-center text-md-start justify-content-center">
 
        <!-- About -->
-       <div class="col-sm-10 col-md-3 mb-4">
-         <div class="d-flex justify-content-center justify-content-md-start align-items-center gap-3 mb-3">
+       <div class="col-sm-10 col-md-12 col-lg-4 mb-4 row">
+         <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 mb-3 col-md col-lg-12">
            <div class="rounded-circle d-flex align-items-center justify-content-center">
              <a href="./index.php" rel="noopener noreferrer" title="Home"></a>
                <img src="assets/img/logolarraz.svg" alt="Inicio" class="logo">
@@ -52,20 +52,21 @@
              <p class="small mb-0">Desde 1866</p>
            </div>
          </div>
-
+<div class="col-md col-lg-12">
          <p class="small">
            Entra en nuestra tienda especializada en banderas, mástiles y todo lo
            necesario para exhibirlas con orgullo.
          </p>
          <a href="http://www.larraz.es" target="_blank">www.larraz.es</a>
+         </div>
        </div>
 
        <!-- Contact -->
-       <div class="col-sm-6 col-md-3 mb-4 pt-2 pt-md-4">
-         <h6 class="mb-3" id="contacto"><a href="./contacto.php">Contacto</a></h6>
+       <div class="offset-sm-1 col-md offset-lg-0 col-lg mb-4 pt-2 pt-md-4">
+         <h6 class="mb-3" id="contacto">Contacto</h6>
 
          <ul class="list-unstyled small">
-           <li class="d-flex justify-content-center justify-content-md-start align-items-start mb-2">
+           <li class="d-flex justify-content-center justify-content-md-start align-items-start mb-3">
              <svg class="me-2" width="18" height="18">
                <use href="assets/img/sprite.svg#location"></use>
              </svg>
@@ -75,7 +76,7 @@
              </div>
            </li>
 
-           <li class="d-flex justify-content-center justify-content-md-start align-items-center mb-2">
+           <li class="d-flex justify-content-center justify-content-md-start align-items-center mb-3">
              <svg class="me-2" width="18" height="18">
                <use href="assets/img/sprite.svg#phoneleft"></use>
              </svg>
@@ -93,10 +94,11 @@
              </a>
            </li>
          </ul>
+        
        </div>
 
        <!-- Horario -->
-       <div class="col-sm-6 col-md-3 mb-4 pt-2 pt-md-4">
+       <div class="col-md col-lg mb-4 pt-2 pt-md-4">
          <h6 class="mb-3">
            <svg class="me-2" width="18" height="18">
              <use href="assets/img/sprite.svg#clock"></use>
@@ -115,7 +117,7 @@
        </div>
 
        <!-- Quick Links & Social -->
-       <div class="col-sm-6 col-md-2 mb-4 pt-2 pt-md-4">
+       <div class="col-md col-lg mb-4 pt-2 pt-md-4">
          <h6 class="mb-3">Enlaces Rápidos</h6>
 
          <ul class="list-unstyled small mb-3">
@@ -125,9 +127,8 @@
            <li><a href="./textil.php" class="text-decoration-none">Textil</a></li>
            <li><a href="./merceria.php" class="text-decoration-none">Mercería</a></li>
          </ul>
-
-         <h6 class="small mb-2 pt-4">Síguenos:</h6>
-         <ul class="d-flex justify-content-center justify-content-md-start gap-2 list-unstyled">
+ <!-- <h6 class="small mb-2 pt-2">Síguenos:</h6> -->
+ <ul class="d-flex justify-content-center justify-content-md-start gap-2 list-unstyled">
            <li>
              <a href="http://www.facebook.com" target="_blank">
                <svg class="icon__xl">
@@ -153,6 +154,7 @@
              </a>
            </li>
          </ul>
+        
        </div>
 
      </div>
