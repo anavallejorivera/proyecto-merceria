@@ -1,6 +1,6 @@
 <?php 
-$title = "Larraz | Catálogo > Manualidades > Goma EVA";
-$description = 'Página de Productos de Mercería';
+$title = "Larraz | Catálogo > Mercería > Cintas y Elásticos";
+$description = 'Elementos esenciales para ajustar, decorar y rematar: cintas, lazos y elásticos';
 require '_partials/header.php'; 
 require '_partials/nav.php';
 require '_partials/breadcrumb.php';
@@ -9,9 +9,11 @@ require '_partials/breadcrumb.php';
 <!-- Encabezado de la sección de Producto -->
 <div class="producto-header text-center mb-2 producto-compactamd container-lg">
   <div class="pt-5 w-75 mx-auto">
-    <h2 class="titulo-producto mb-2">Goma EVA</h2>
+    <h2 class="titulo-producto mb-2">Cintas y Elásticos</h2>
     <p class="subtitulo-producto mb-1 lead">
-      La goma EVA es uno de los materiales más populares en manualidades por su ligereza, flexibilidad y facilidad de uso. Es ideal para crear figuras, decoraciones y proyectos creativos tanto infantiles como para trabajos DIY, ya que se recorta y se pega con mucha facilidad.
+      Las cintas y elásticos son básicos indispensables en mercería para rematar, ajustar y decorar cualquier proyecto de costura.<br>
+      Desde cintas de raso y decorativas hasta elásticos resistentes para prendas y complementos, son perfectos para dar un acabado limpio, práctico y con estilo.<br><br>
+      Ideales tanto para confección como para arreglos rápidos, DIY y personalización de ropa y accesorios.
     </p>
   </div>
 </div>
@@ -26,22 +28,18 @@ require '_partials/breadcrumb.php';
         <button type="button" data-bs-target="#carouselProductoDetalle" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselProductoDetalle" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselProductoDetalle" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselProductoDetalle" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
 
       <!-- Slides -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="assets/img/catalogo/manualidades/goma-eva/pack-laminas-goma-eva-multicolor.jpg" class="d-block w-100 rounded" alt="Pack de láminas de goma EVA multicolor">
+          <img src="assets/img/catalogo/merceria/cintas-elasticos/cinta-raso-roja.png" class="d-block w-100 rounded" alt="Cinta de raso roja decorativa">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/catalogo/manualidades/goma-eva/set-herramientas-tijeras-barras-silicona.jpg" class="d-block w-100 rounded" alt="Set de herramientas para trabajar con goma EVA">
+          <img src="assets/img/catalogo/merceria/cintas-elasticos/goma-elastica-blanca.png" class="d-block w-100 rounded" alt="Goma elástica blanca para prendas">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/catalogo/manualidades/goma-eva/marco-fotos-decorado-figuras-infantiles.jpg" class="d-block w-100 rounded" alt="Marco de fotos decorado con figuras de goma EVA">
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/catalogo/manualidades/goma-eva/ramo-flores-foami-manualidades.jpg" class="d-block w-100 rounded" alt="Ramo de flores hechas con goma EVA">
+          <img src="assets/img/catalogo/merceria/cintas-elasticos/metro-flexometro.png" class="d-block w-100 rounded" alt="Metro o flexómetro para costura">
         </div>
       </div>
 
@@ -81,36 +79,36 @@ require '_partials/breadcrumb.php';
         <!-- PARA QUÉ SIRVE -->
         <div class="tab-pane fade show active" id="paraque" role="tabpanel">
           <ul>
-            <li>Crear figuras y decoraciones para manualidades infantiles</li>
-            <li>Hacer flores, marcos, letras y adornos personalizados</li>
-            <li>Decorar carpetas, cuadernos y proyectos escolares</li>
-            <li>Preparar disfraces, complementos y accesorios DIY</li>
-            <li>Realizar llaveros, imanes y elementos decorativos ligeros</li>
-            <li>Dar volumen y color a proyectos creativos de forma fácil</li>
+            <li>Ajustar prendas como faldas, pantalones o ropa deportiva con elásticos</li>
+            <li>Rematar bordes y dar acabado a prendas y proyectos textiles</li>
+            <li>Decorar lazos, regalos, accesorios y detalles de costura creativa</li>
+            <li>Crear cinturillas, frunces y adaptaciones cómodas en ropa</li>
+            <li>Hacer complementos como coleteros, diademas o adornos para el pelo</li>
+            <li>Añadir tiras y cintas decorativas a ropa, bolsos o manualidades</li>
           </ul>
         </div>
 
         <!-- CARACTERÍSTICAS -->
         <div class="tab-pane fade" id="caracteristicas" role="tabpanel">
           <ul>
-            <li>Material ligero, flexible y muy fácil de cortar</li>
-            <li>Disponible en muchos colores y grosores diferentes</li>
-            <li>Se puede pegar con silicona caliente, pegamento o cinta de doble cara</li>
-            <li>Apta para trabajos infantiles por su facilidad de manejo</li>
-            <li>Permite crear capas para dar relieve y profundidad</li>
-            <li>Se puede combinar con rotuladores, purpurina y otros materiales</li>
+            <li>Variedad de cintas: lisas, estampadas, de raso y decorativas</li>
+            <li>Elásticos en distintos anchos para cada tipo de prenda o ajuste</li>
+            <li>Materiales resistentes y flexibles, pensados para uso continuo</li>
+            <li>Disponible en diferentes colores para combinar con cada proyecto</li>
+            <li>Perfectos para acabados profesionales y remates limpios</li>
+            <li>Opciones tanto funcionales (ajuste) como decorativas (detalle final)</li>
           </ul>
         </div>
 
         <!-- TIPS -->
         <div class="tab-pane fade" id="tips" role="tabpanel">
           <ul>
-            <li>Marca las piezas primero con lápiz antes de recortar</li>
-            <li>Usa tijeras afiladas o cúter para cortes más limpios</li>
-            <li>Para pegar, aplica poca silicona y presiona unos segundos</li>
-            <li>Si quieres volumen, superpone capas de goma EVA</li>
-            <li>Guarda las láminas en plano para que no se doblen</li>
-            <li>Para un acabado más pro, combina colores y añade detalles con rotulador</li>
+            <li>Elige el ancho del elástico según la prenda: más ancho = más sujeción</li>
+            <li>Antes de coser, prueba la medida rodeando la zona para ajustar bien</li>
+            <li>Para que el elástico dure, evita estirarlo al máximo al coserlo</li>
+            <li>Si es cinta decorativa, sella la punta con calor suave para que no se deshilache</li>
+            <li>Usa alfileres o pinzas para sujetar bien la cinta antes de coser</li>
+            <li>Guarda cintas enrolladas para que no se arruguen ni se enreden</li>
           </ul>
         </div>
       </div>
@@ -127,12 +125,12 @@ require '_partials/breadcrumb.php';
         <div id="collapseParaque" class="accordion-collapse collapse show" data-bs-parent="#accordionProductoMobile">
           <div class="accordion-body">
             <ul>
-              <li>Crear figuras y decoraciones para manualidades infantiles</li>
-              <li>Hacer flores, marcos, letras y adornos personalizados</li>
-              <li>Decorar carpetas, cuadernos y proyectos escolares</li>
-              <li>Preparar disfraces, complementos y accesorios DIY</li>
-              <li>Realizar llaveros, imanes y elementos decorativos ligeros</li>
-              <li>Dar volumen y color a proyectos creativos de forma fácil</li>
+              <li>Ajustar prendas como faldas, pantalones o ropa deportiva con elásticos</li>
+              <li>Rematar bordes y dar acabado a prendas y proyectos textiles</li>
+              <li>Decorar lazos, regalos, accesorios y detalles de costura creativa</li>
+              <li>Crear cinturillas, frunces y adaptaciones cómodas en ropa</li>
+              <li>Hacer complementos como coleteros, diademas o adornos para el pelo</li>
+              <li>Añadir tiras y cintas decorativas a ropa, bolsos o manualidades</li>
             </ul>
           </div>
         </div>
@@ -146,12 +144,12 @@ require '_partials/breadcrumb.php';
         <div id="collapseCaracteristicas" class="accordion-collapse collapse" data-bs-parent="#accordionProductoMobile">
           <div class="accordion-body">
             <ul>
-              <li>Material ligero, flexible y muy fácil de cortar</li>
-              <li>Disponible en muchos colores y grosores diferentes</li>
-              <li>Se puede pegar con silicona caliente, pegamento o cinta de doble cara</li>
-              <li>Apta para trabajos infantiles por su facilidad de manejo</li>
-              <li>Permite crear capas para dar relieve y profundidad</li>
-              <li>Se puede combinar con rotuladores, purpurina y otros materiales</li>
+              <li>Variedad de cintas: lisas, estampadas, de raso y decorativas</li>
+              <li>Elásticos en distintos anchos para cada tipo de prenda o ajuste</li>
+              <li>Materiales resistentes y flexibles, pensados para uso continuo</li>
+              <li>Disponible en diferentes colores para combinar con cada proyecto</li>
+              <li>Perfectos para acabados profesionales y remates limpios</li>
+              <li>Opciones tanto funcionales (ajuste) como decorativas (detalle final)</li>
             </ul>
           </div>
         </div>
@@ -165,12 +163,12 @@ require '_partials/breadcrumb.php';
         <div id="collapseTips" class="accordion-collapse collapse" data-bs-parent="#accordionProductoMobile">
           <div class="accordion-body">
             <ul>
-              <li>Marca las piezas primero con lápiz antes de recortar</li>
-              <li>Usa tijeras afiladas o cúter para cortes más limpios</li>
-              <li>Para pegar, aplica poca silicona y presiona unos segundos</li>
-              <li>Si quieres volumen, superpone capas de goma EVA</li>
-              <li>Guarda las láminas en plano para que no se doblen</li>
-              <li>Para un acabado más pro, combina colores y añade detalles con rotulador</li>
+              <li>Elige el ancho del elástico según la prenda: más ancho = más sujeción</li>
+              <li>Antes de coser, prueba la medida rodeando la zona para ajustar bien</li>
+              <li>Para que el elástico dure, evita estirarlo al máximo al coserlo</li>
+              <li>Si es cinta decorativa, sella la punta con calor suave para que no se deshilache</li>
+              <li>Usa alfileres o pinzas para sujetar bien la cinta antes de coser</li>
+              <li>Guarda cintas enrolladas para que no se arruguen ni se enreden</li>
             </ul>
           </div>
         </div>

@@ -1,6 +1,6 @@
 <?php 
-$title = "Larraz | Catálogo > Manualidades > Goma EVA";
-$description = 'Página de Productos de Mercería';
+$title = "Larraz | Catálogo > Mercería > Accesorios de Costura";
+$description = 'Herramientas esenciales para precisión y comodidad en proyectos de costura';
 require '_partials/header.php'; 
 require '_partials/nav.php';
 require '_partials/breadcrumb.php';
@@ -9,9 +9,11 @@ require '_partials/breadcrumb.php';
 <!-- Encabezado de la sección de Producto -->
 <div class="producto-header text-center mb-2 producto-compactamd container-lg">
   <div class="pt-5 w-75 mx-auto">
-    <h2 class="titulo-producto mb-2">Goma EVA</h2>
+    <h2 class="titulo-producto mb-2">Accesorios de Costura</h2>
     <p class="subtitulo-producto mb-1 lead">
-      La goma EVA es uno de los materiales más populares en manualidades por su ligereza, flexibilidad y facilidad de uso. Es ideal para crear figuras, decoraciones y proyectos creativos tanto infantiles como para trabajos DIY, ya que se recorta y se pega con mucha facilidad.
+      Los accesorios de costura son las herramientas que hacen que cualquier proyecto sea más cómodo, rápido y preciso.<br>
+      Desde tijeras y cintas métricas hasta alfileres, dedales o marcadores, son imprescindibles para cortar, medir, sujetar y rematar con un acabado limpio.<br><br>
+      Tanto si estás empezando como si coses habitualmente, tener los accesorios adecuados marca la diferencia en el resultado final.
     </p>
   </div>
 </div>
@@ -23,25 +25,44 @@ require '_partials/breadcrumb.php';
 
       <!-- Indicadores -->
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselProductoDetalle" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselProductoDetalle" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselProductoDetalle" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselProductoDetalle" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <?php
+        $imgs = [
+          'alfiletero-tomate.png',
+          'caja-imperdibles.png',
+          'cinta-metrica.png',
+          'dedal-metalico.png',
+          'descosedor.png',
+          'tijeras-costura.png',
+          'tiza-sastre.png'
+        ];
+        foreach ($imgs as $i => $img) {
+          echo '<button type="button" data-bs-target="#carouselProductoDetalle" data-bs-slide-to="'.$i.'" '.($i === 0 ? 'class="active" aria-current="true"' : '').' aria-label="Slide '.($i + 1).'"></button>';
+        }
+        ?>
       </div>
 
       <!-- Slides -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="assets/img/catalogo/manualidades/goma-eva/pack-laminas-goma-eva-multicolor.jpg" class="d-block w-100 rounded" alt="Pack de láminas de goma EVA multicolor">
+          <img src="assets/img/catalogo/merceria/accesorios-costura/alfiletero-tomate.png" class="d-block w-100 rounded" alt="Alfiletero en forma de tomate">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/catalogo/manualidades/goma-eva/set-herramientas-tijeras-barras-silicona.jpg" class="d-block w-100 rounded" alt="Set de herramientas para trabajar con goma EVA">
+          <img src="assets/img/catalogo/merceria/accesorios-costura/caja-imperdibles.png" class="d-block w-100 rounded" alt="Caja con imperdibles variados">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/catalogo/manualidades/goma-eva/marco-fotos-decorado-figuras-infantiles.jpg" class="d-block w-100 rounded" alt="Marco de fotos decorado con figuras de goma EVA">
+          <img src="assets/img/catalogo/merceria/accesorios-costura/cinta-metrica.png" class="d-block w-100 rounded" alt="Cinta métrica flexible de costura">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/catalogo/manualidades/goma-eva/ramo-flores-foami-manualidades.jpg" class="d-block w-100 rounded" alt="Ramo de flores hechas con goma EVA">
+          <img src="assets/img/catalogo/merceria/accesorios-costura/dedal-metalico.png" class="d-block w-100 rounded" alt="Dedal metálico para costura a mano">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/catalogo/merceria/accesorios-costura/descosedor.png" class="d-block w-100 rounded" alt="Descosedor para trabajos de precisión">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/catalogo/merceria/accesorios-costura/tijeras-costura.png" class="d-block w-100 rounded" alt="Tijeras de costura profesional">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/catalogo/merceria/accesorios-costura/tiza-sastre.png" class="d-block w-100 rounded" alt="Tiza de sastre para marcar telas">
         </div>
       </div>
 
@@ -81,36 +102,36 @@ require '_partials/breadcrumb.php';
         <!-- PARA QUÉ SIRVE -->
         <div class="tab-pane fade show active" id="paraque" role="tabpanel">
           <ul>
-            <li>Crear figuras y decoraciones para manualidades infantiles</li>
-            <li>Hacer flores, marcos, letras y adornos personalizados</li>
-            <li>Decorar carpetas, cuadernos y proyectos escolares</li>
-            <li>Preparar disfraces, complementos y accesorios DIY</li>
-            <li>Realizar llaveros, imanes y elementos decorativos ligeros</li>
-            <li>Dar volumen y color a proyectos creativos de forma fácil</li>
+            <li>Medir patrones, dobladillos y cortes con precisión</li>
+            <li>Sujetar telas con alfileres y evitar que se muevan al coser</li>
+            <li>Cortar tela e hilos de forma limpia y cómoda</li>
+            <li>Rematar y ajustar detalles en prendas y proyectos textiles</li>
+            <li>Marcar líneas de costura y realizar pequeñas correcciones</li>
+            <li>Facilitar arreglos rápidos y trabajos de costura diaria</li>
           </ul>
         </div>
 
         <!-- CARACTERÍSTICAS -->
         <div class="tab-pane fade" id="caracteristicas" role="tabpanel">
           <ul>
-            <li>Material ligero, flexible y muy fácil de cortar</li>
-            <li>Disponible en muchos colores y grosores diferentes</li>
-            <li>Se puede pegar con silicona caliente, pegamento o cinta de doble cara</li>
-            <li>Apta para trabajos infantiles por su facilidad de manejo</li>
-            <li>Permite crear capas para dar relieve y profundidad</li>
-            <li>Se puede combinar con rotuladores, purpurina y otros materiales</li>
+            <li>Herramientas básicas e imprescindibles para cualquier costurero</li>
+            <li>Accesorios resistentes y pensados para uso frecuente</li>
+            <li>Facilitan el trabajo en costura a mano y también con máquina</li>
+            <li>Elementos de precisión como cintas métricas, marcadores y dedales</li>
+            <li>Incluyen piezas prácticas para ordenar y trabajar con más comodidad</li>
+            <li>Ideales para iniciación y también para proyectos más avanzados</li>
           </ul>
         </div>
 
         <!-- TIPS -->
         <div class="tab-pane fade" id="tips" role="tabpanel">
           <ul>
-            <li>Marca las piezas primero con lápiz antes de recortar</li>
-            <li>Usa tijeras afiladas o cúter para cortes más limpios</li>
-            <li>Para pegar, aplica poca silicona y presiona unos segundos</li>
-            <li>Si quieres volumen, superpone capas de goma EVA</li>
-            <li>Guarda las láminas en plano para que no se doblen</li>
-            <li>Para un acabado más pro, combina colores y añade detalles con rotulador</li>
+            <li>Usa tijeras solo para tela (no las mezcles con papel) para que no pierdan filo</li>
+            <li>Coloca los alfileres en el mismo sentido de costura para retirarlos fácilmente</li>
+            <li>Ten siempre un descosedor a mano: salva arreglos en segundos</li>
+            <li>Guarda agujas y alfileres en un alfiletero para evitar pérdidas</li>
+            <li>Mide dos veces antes de cortar: te ahorra errores y material</li>
+            <li>Si vas a coser a mano, usa dedal para proteger el dedo y coser más cómodo</li>
           </ul>
         </div>
       </div>
@@ -118,64 +139,57 @@ require '_partials/breadcrumb.php';
 
     <!-- Acordeón para móvil -->
     <div class="accordion accordion-producto-container" id="accordionProductoMobile">
-
-      <!-- PARA QUÉ SIRVE -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingParaque">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseParaque">Para qué sirve</button>
-        </h2>
-        <div id="collapseParaque" class="accordion-collapse collapse show" data-bs-parent="#accordionProductoMobile">
-          <div class="accordion-body">
-            <ul>
-              <li>Crear figuras y decoraciones para manualidades infantiles</li>
-              <li>Hacer flores, marcos, letras y adornos personalizados</li>
-              <li>Decorar carpetas, cuadernos y proyectos escolares</li>
-              <li>Preparar disfraces, complementos y accesorios DIY</li>
-              <li>Realizar llaveros, imanes y elementos decorativos ligeros</li>
-              <li>Dar volumen y color a proyectos creativos de forma fácil</li>
-            </ul>
+      <!-- Contenido duplicado de tabs (idéntico al anterior, solo con estructura acordeón) -->
+      <?php
+      $tabs = [
+        "Para qué sirve" => [
+          "Medir patrones, dobladillos y cortes con precisión",
+          "Sujetar telas con alfileres y evitar que se muevan al coser",
+          "Cortar tela e hilos de forma limpia y cómoda",
+          "Rematar y ajustar detalles en prendas y proyectos textiles",
+          "Marcar líneas de costura y realizar pequeñas correcciones",
+          "Facilitar arreglos rápidos y trabajos de costura diaria"
+        ],
+        "Características" => [
+          "Herramientas básicas e imprescindibles para cualquier costurero",
+          "Accesorios resistentes y pensados para uso frecuente",
+          "Facilitan el trabajo en costura a mano y también con máquina",
+          "Elementos de precisión como cintas métricas, marcadores y dedales",
+          "Incluyen piezas prácticas para ordenar y trabajar con más comodidad",
+          "Ideales para iniciación y también para proyectos más avanzados"
+        ],
+        "Tips" => [
+          "Usa tijeras solo para tela (no las mezcles con papel) para que no pierdan filo",
+          "Coloca los alfileres en el mismo sentido de costura para retirarlos fácilmente",
+          "Ten siempre un descosedor a mano: salva arreglos en segundos",
+          "Guarda agujas y alfileres en un alfiletero para evitar pérdidas",
+          "Mide dos veces antes de cortar: te ahorra errores y material",
+          "Si vas a coser a mano, usa dedal para proteger el dedo y coser más cómodo"
+        ]
+      ];
+      $i = 0;
+      foreach ($tabs as $title => $items) {
+        $collapseId = strtolower(str_replace(' ', '', $title));
+        echo '
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading'.$i.'">
+            <button class="accordion-button'.($i > 0 ? ' collapsed' : '').'" type="button" data-bs-toggle="collapse" data-bs-target="#collapse'.$i.'" aria-expanded="'.($i === 0 ? 'true' : 'false').'" aria-controls="collapse'.$i.'">
+              '.$title.'
+            </button>
+          </h2>
+          <div id="collapse'.$i.'" class="accordion-collapse collapse'.($i === 0 ? ' show' : '').'" data-bs-parent="#accordionProductoMobile">
+            <div class="accordion-body">
+              <ul>';
+                foreach ($items as $item) {
+                  echo '<li>'.$item.'</li>';
+                }
+        echo '    </ul>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <!-- CARACTERÍSTICAS -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingCaracteristicas">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCaracteristicas">Características</button>
-        </h2>
-        <div id="collapseCaracteristicas" class="accordion-collapse collapse" data-bs-parent="#accordionProductoMobile">
-          <div class="accordion-body">
-            <ul>
-              <li>Material ligero, flexible y muy fácil de cortar</li>
-              <li>Disponible en muchos colores y grosores diferentes</li>
-              <li>Se puede pegar con silicona caliente, pegamento o cinta de doble cara</li>
-              <li>Apta para trabajos infantiles por su facilidad de manejo</li>
-              <li>Permite crear capas para dar relieve y profundidad</li>
-              <li>Se puede combinar con rotuladores, purpurina y otros materiales</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- TIPS -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTips">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTips">Tips</button>
-        </h2>
-        <div id="collapseTips" class="accordion-collapse collapse" data-bs-parent="#accordionProductoMobile">
-          <div class="accordion-body">
-            <ul>
-              <li>Marca las piezas primero con lápiz antes de recortar</li>
-              <li>Usa tijeras afiladas o cúter para cortes más limpios</li>
-              <li>Para pegar, aplica poca silicona y presiona unos segundos</li>
-              <li>Si quieres volumen, superpone capas de goma EVA</li>
-              <li>Guarda las láminas en plano para que no se doblen</li>
-              <li>Para un acabado más pro, combina colores y añade detalles con rotulador</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
+        </div>';
+        $i++;
+      }
+      ?>
     </div>
   </div>
 </section>

@@ -1,6 +1,6 @@
 <?php 
-$title = "Larraz | Catálogo > Manualidades > Goma EVA";
-$description = 'Página de Productos de Mercería';
+$title = "Larraz | Catálogo > Mercería > Hilos y Lanas";
+$description = 'Página de Productos de Mercería: Hilos y Lanas';
 require '_partials/header.php'; 
 require '_partials/nav.php';
 require '_partials/breadcrumb.php';
@@ -9,9 +9,12 @@ require '_partials/breadcrumb.php';
 <!-- Encabezado de la sección de Producto -->
 <div class="producto-header text-center mb-2 producto-compactamd container-lg">
   <div class="pt-5 w-75 mx-auto">
-    <h2 class="titulo-producto mb-2">Goma EVA</h2>
+    <h2 class="titulo-producto mb-2">Hilos y Lanas</h2>
     <p class="subtitulo-producto mb-1 lead">
-      La goma EVA es uno de los materiales más populares en manualidades por su ligereza, flexibilidad y facilidad de uso. Es ideal para crear figuras, decoraciones y proyectos creativos tanto infantiles como para trabajos DIY, ya que se recorta y se pega con mucha facilidad.
+      Los hilos y lanas son la base de cualquier proyecto de costura, tejido y reparación textil.
+      Desde hilos finos para coser con precisión hasta ovillos y madejas para crear prendas y accesorios, son imprescindibles para dar forma a ideas tanto sencillas como avanzadas.
+      <br><br>
+      Perfectos para remendar, confeccionar, tejer y personalizar, con acabados resistentes y un resultado profesional.
     </p>
   </div>
 </div>
@@ -32,16 +35,16 @@ require '_partials/breadcrumb.php';
       <!-- Slides -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="assets/img/catalogo/manualidades/goma-eva/pack-laminas-goma-eva-multicolor.jpg" class="d-block w-100 rounded" alt="Pack de láminas de goma EVA multicolor">
+          <img src="assets/img/catalogo/merceria/hilos-lanas/cono-hilo-industrial-blanco.jpg" class="d-block w-100 rounded" alt="Cono de hilo industrial blanco">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/catalogo/manualidades/goma-eva/set-herramientas-tijeras-barras-silicona.jpg" class="d-block w-100 rounded" alt="Set de herramientas para trabajar con goma EVA">
+          <img src="assets/img/catalogo/merceria/hilos-lanas/madejas-lana-natural-beige.jpg" class="d-block w-100 rounded" alt="Madejas de lana natural color beige">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/catalogo/manualidades/goma-eva/marco-fotos-decorado-figuras-infantiles.jpg" class="d-block w-100 rounded" alt="Marco de fotos decorado con figuras de goma EVA">
+          <img src="assets/img/catalogo/merceria/hilos-lanas/ovillos-lana-colores-variados.jpg" class="d-block w-100 rounded" alt="Ovillos de lana de colores variados">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/catalogo/manualidades/goma-eva/ramo-flores-foami-manualidades.jpg" class="d-block w-100 rounded" alt="Ramo de flores hechas con goma EVA">
+          <img src="assets/img/catalogo/merceria/hilos-lanas/set-carretes-hilo-coser.jpg" class="d-block w-100 rounded" alt="Set de carretes de hilo para coser">
         </div>
       </div>
 
@@ -81,36 +84,36 @@ require '_partials/breadcrumb.php';
         <!-- PARA QUÉ SIRVE -->
         <div class="tab-pane fade show active" id="paraque" role="tabpanel">
           <ul>
-            <li>Crear figuras y decoraciones para manualidades infantiles</li>
-            <li>Hacer flores, marcos, letras y adornos personalizados</li>
-            <li>Decorar carpetas, cuadernos y proyectos escolares</li>
-            <li>Preparar disfraces, complementos y accesorios DIY</li>
-            <li>Realizar llaveros, imanes y elementos decorativos ligeros</li>
-            <li>Dar volumen y color a proyectos creativos de forma fácil</li>
+            <li>Coser a mano o a máquina prendas, arreglos y dobladillos</li>
+            <li>Tejer bufandas, gorros, mantas y accesorios de punto o ganchillo</li>
+            <li>Realizar remates, costuras de refuerzo y pequeños arreglos del día a día</li>
+            <li>Crear proyectos de bordado, decoración textil y manualidades con hilo</li>
+            <li>Trabajar piezas artesanales como amigurumis y tejidos creativos</li>
+            <li>Dar un acabado limpio y duradero a prendas y complementos</li>
           </ul>
         </div>
 
         <!-- CARACTERÍSTICAS -->
         <div class="tab-pane fade" id="caracteristicas" role="tabpanel">
           <ul>
-            <li>Material ligero, flexible y muy fácil de cortar</li>
-            <li>Disponible en muchos colores y grosores diferentes</li>
-            <li>Se puede pegar con silicona caliente, pegamento o cinta de doble cara</li>
-            <li>Apta para trabajos infantiles por su facilidad de manejo</li>
-            <li>Permite crear capas para dar relieve y profundidad</li>
-            <li>Se puede combinar con rotuladores, purpurina y otros materiales</li>
+            <li>Gran variedad de grosores: desde hilo fino hasta lana más gruesa</li>
+            <li>Diferentes formatos: carretes, conos industriales, ovillos y madejas</li>
+            <li>Disponible en muchos colores para combinar o contrastar diseños</li>
+            <li>Hilos resistentes para costura básica, arreglos y trabajos continuos</li>
+            <li>Lanas suaves ideales para prendas cálidas y proyectos hechos a mano</li>
+            <li>Permite elegir textura y acabado según el tipo de tejido y uso final</li>
           </ul>
         </div>
 
         <!-- TIPS -->
         <div class="tab-pane fade" id="tips" role="tabpanel">
           <ul>
-            <li>Marca las piezas primero con lápiz antes de recortar</li>
-            <li>Usa tijeras afiladas o cúter para cortes más limpios</li>
-            <li>Para pegar, aplica poca silicona y presiona unos segundos</li>
-            <li>Si quieres volumen, superpone capas de goma EVA</li>
-            <li>Guarda las láminas en plano para que no se doblen</li>
-            <li>Para un acabado más pro, combina colores y añade detalles con rotulador</li>
+            <li>Elige el grosor adecuado según aguja y tipo de tela o punto</li>
+            <li>Para costura a máquina, usa hilo resistente y ajusta la tensión antes</li>
+            <li>Si vas a tejer, prueba una pequeña muestra para ver el resultado final</li>
+            <li>Guarda ovillos y madejas en bolsas para evitar polvo y enredos</li>
+            <li>Evita la humedad para que la lana no se deforme ni pierda calidad</li>
+            <li>Si combinas colores, comprueba el tono con luz natural antes de empezar</li>
           </ul>
         </div>
       </div>
@@ -127,12 +130,12 @@ require '_partials/breadcrumb.php';
         <div id="collapseParaque" class="accordion-collapse collapse show" data-bs-parent="#accordionProductoMobile">
           <div class="accordion-body">
             <ul>
-              <li>Crear figuras y decoraciones para manualidades infantiles</li>
-              <li>Hacer flores, marcos, letras y adornos personalizados</li>
-              <li>Decorar carpetas, cuadernos y proyectos escolares</li>
-              <li>Preparar disfraces, complementos y accesorios DIY</li>
-              <li>Realizar llaveros, imanes y elementos decorativos ligeros</li>
-              <li>Dar volumen y color a proyectos creativos de forma fácil</li>
+              <li>Coser a mano o a máquina prendas, arreglos y dobladillos</li>
+              <li>Tejer bufandas, gorros, mantas y accesorios de punto o ganchillo</li>
+              <li>Realizar remates, costuras de refuerzo y pequeños arreglos del día a día</li>
+              <li>Crear proyectos de bordado, decoración textil y manualidades con hilo</li>
+              <li>Trabajar piezas artesanales como amigurumis y tejidos creativos</li>
+              <li>Dar un acabado limpio y duradero a prendas y complementos</li>
             </ul>
           </div>
         </div>
@@ -146,12 +149,12 @@ require '_partials/breadcrumb.php';
         <div id="collapseCaracteristicas" class="accordion-collapse collapse" data-bs-parent="#accordionProductoMobile">
           <div class="accordion-body">
             <ul>
-              <li>Material ligero, flexible y muy fácil de cortar</li>
-              <li>Disponible en muchos colores y grosores diferentes</li>
-              <li>Se puede pegar con silicona caliente, pegamento o cinta de doble cara</li>
-              <li>Apta para trabajos infantiles por su facilidad de manejo</li>
-              <li>Permite crear capas para dar relieve y profundidad</li>
-              <li>Se puede combinar con rotuladores, purpurina y otros materiales</li>
+              <li>Gran variedad de grosores: desde hilo fino hasta lana más gruesa</li>
+              <li>Diferentes formatos: carretes, conos industriales, ovillos y madejas</li>
+              <li>Disponible en muchos colores para combinar o contrastar diseños</li>
+              <li>Hilos resistentes para costura básica, arreglos y trabajos continuos</li>
+              <li>Lanas suaves ideales para prendas cálidas y proyectos hechos a mano</li>
+              <li>Permite elegir textura y acabado según el tipo de tejido y uso final</li>
             </ul>
           </div>
         </div>
@@ -165,12 +168,12 @@ require '_partials/breadcrumb.php';
         <div id="collapseTips" class="accordion-collapse collapse" data-bs-parent="#accordionProductoMobile">
           <div class="accordion-body">
             <ul>
-              <li>Marca las piezas primero con lápiz antes de recortar</li>
-              <li>Usa tijeras afiladas o cúter para cortes más limpios</li>
-              <li>Para pegar, aplica poca silicona y presiona unos segundos</li>
-              <li>Si quieres volumen, superpone capas de goma EVA</li>
-              <li>Guarda las láminas en plano para que no se doblen</li>
-              <li>Para un acabado más pro, combina colores y añade detalles con rotulador</li>
+              <li>Elige el grosor adecuado según aguja y tipo de tela o punto</li>
+              <li>Para costura a máquina, usa hilo resistente y ajusta la tensión antes</li>
+              <li>Si vas a tejer, prueba una pequeña muestra para ver el resultado final</li>
+              <li>Guarda ovillos y madejas en bolsas para evitar polvo y enredos</li>
+              <li>Evita la humedad para que la lana no se deforme ni pierda calidad</li>
+              <li>Si combinas colores, comprueba el tono con luz natural antes de empezar</li>
             </ul>
           </div>
         </div>
