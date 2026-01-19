@@ -20,8 +20,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-2XM6CYL676');
-</script>
-<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="c5aa0ab6-eb64-43c8-8d73-0eeae610455c" data-blockingmode="auto" type="text/javascript"></script>
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="c5aa0ab6-eb64-43c8-8d73-0eeae610455c" data-blockingmode="auto" type="text/javascript"></script>
 </head>
   </head>
   <body>
