@@ -76,3 +76,49 @@ document.addEventListener("DOMContentLoaded", () => {
   //   updateStickyText(); // Ejecutar al cargar
   // }
 });
+
+
+
+  // Validación del formulario de contacto
+  const form = document.querySelector("form");
+  const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email");
+  const messageInput = document.getElementById("message");
+
+  if (form && nameInput && emailInput && messageInput) {
+    form.addEventListener("submit", function (e) {
+      let isValid = true;
+
+      // Limpiar estados anteriores
+      [nameInput, emailInput, messageInput].forEach(input => {
+        input.classList.remove("is-invalid");
+      });
+
+      // Validar nombre (mínimo 2 caracteres)
+      if (nameInput.value.trim().length < 2) {
+        nameInput.classList.add("is-invalid");
+        isValid = false;
+      }
+
+      // Validar email con regex
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailInput.value.trim())) {
+        emailInput.classList.add("is-invalid");
+        isValid = false;
+      }
+
+      // Validar mensaje (mínimo 10 caracteres)
+      if (messageInput.value.trim().length < 10) {
+        messageInput.classList.add("is-invalid");
+        isValid = false;
+      }
+
+      if (!isValid) {
+        e.preventDefault(); // Detiene el envío
+      }
+    });
+  }
+
+
+
+  
