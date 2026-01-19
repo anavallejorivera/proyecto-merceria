@@ -83,6 +83,9 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault(); // Detiene el envío
       }
     });
+
+
+  
   }
 
 

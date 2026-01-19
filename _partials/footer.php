@@ -28,13 +28,13 @@
      </div>
    </div>
  </section>
-
-
- </main>
- <footer class="pt-4 pb-1">
+<div class="container-lg">
  <a href="#inicio" class="subir"><svg class="icon__xl">
             <use href="assets/img/sprite.svg#arrow-up"></use>
-        </svg><span class="visually-hidden">Inicio</a>
+        </svg><span class="visually-hidden">Inicio</a></div>
+ </main>
+ <footer class="pt-4 pb-1">
+
    <div class="container-lg">
 
      <div class="row mb-4 text-center text-md-start justify-content-center">
@@ -71,7 +71,7 @@
                <use href="assets/img/sprite.svg#location"></use>
              </svg>
              <div>
-               <p class="mb-0">Calle del Coso, 66-74</p>
+               <p class="mb-0">Calle del ejemplo, 00-00</p>
                <p class="mb-0">50001 Zaragoza, España</p>
              </div>
            </li>
@@ -81,7 +81,7 @@
                <use href="assets/img/sprite.svg#phoneleft"></use>
              </svg>
              <a href="tel:+34976000000" class="text-decoration-none">
-               +34 976 22 41 13
+               +34 000 00 00
              </a>
            </li>
 
@@ -90,7 +90,7 @@
                <use href="assets/img/sprite.svg#letter"></use>
              </svg>
              <a href="mailto:info@mundolarraz.es" class="text-decoration-none">
-               info@mundolarraz.es
+               info@ejemplo.es
              </a>
            </li>
          </ul>

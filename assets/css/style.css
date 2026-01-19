@@ -42,7 +42,7 @@
   --z-pagination: 1000;
 
   /* layout visual hero */
-  --visual-w: 50%;
+  --visual-w: 55%;
   --img-size: 400px;
 }
 
@@ -1167,5 +1167,7 @@ footer a:hover svg {
 #message {
   height: 214px;
 }
-
+/* ===============================================
+   COOKIES BANNER
+   =============================================== */
 

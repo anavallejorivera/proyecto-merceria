@@ -11,7 +11,18 @@
     <link rel="stylesheet" href="./assets/css/productos.css">
     <link rel="icon" type="image/svg+xml" href="assets/img/logolarraz.svg">
     <head>
+      
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2XM6CYL676"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2XM6CYL676');
+</script>
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="c5aa0ab6-eb64-43c8-8d73-0eeae610455c" data-blockingmode="auto" type="text/javascript"></script>
 </head>
   </head>
-  <body class="">
+  <body>
    

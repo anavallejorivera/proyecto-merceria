@@ -5,7 +5,7 @@
 require '_partials/header.php';?>
 <?php require '_partials/nav.php';?>
     <!-- HERO -->
-<section class="Hero p-0 w-100 container-lg" aria-label="Presentación Mercería Larraz">
+<section class="Hero p-0 container-lg" aria-label="Presentación Mercería Larraz">
 
   <!-- Slide/Sección 1 -->
   <article id="mercerialarraz" class="Lockup FirstLockup d-flex align-items-center container-lg">
@@ -18,11 +18,8 @@ require '_partials/header.php';?>
       />
     </div>
 
-    <div class="text-center container-lg">
-      <div class="Text d-grid gap-2 container-lg">
-      
-
-     
+    <div class="text-center container-lg pr-3">
+      <div class="Text d-grid gap-2 container-lg ind-text">
       <h1 class="eyebrow">Mercería Larraz</h1>
 
       <h2 class="subhead">Tu creatividad empieza aquí...</h2>

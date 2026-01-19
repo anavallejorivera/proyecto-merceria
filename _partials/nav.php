@@ -1,6 +1,6 @@
  <header id="home">
-   <div class="border-bottom pre-header align-items-center">
-     <div class="container ">
+   <div class="border-bottom pre-header align-items-center ">
+     <div class="container-lg">
        <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-center">
          <!-- Información de contacto -->
          <ul class="list-unstyled d-flex gap-3 mb-2 mb-md-0">
@@ -71,4 +71,4 @@
      </div>
    </nav>
  </header>
- <main class="w-100">
+ <main class=>
