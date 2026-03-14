@@ -99,4 +99,19 @@ if (heroSection && conocenosSection) {
     }
   });
 
+  /* ===== Menú activo según URL ===== */
+
+  // ⚠️ Quita el alert cuando ya esté probado
+  // alert(location.pathname);
+
+  const currentPage = location.pathname.split("/").pop() || "index.html";
+  const links = document.querySelectorAll(".nav-link a");
+
+  links.forEach(link => {
+    const linkPage = link.getAttribute("href").split("/").pop();
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+
 });

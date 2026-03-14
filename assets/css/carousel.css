@@ -1,114 +1,25 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-html {
-  font-size: clamp(14px, 0.58vw + 11.8px, 17px);
-}
-
-body.about {
-  color: rgb(var(--bs-tertiary-color-rgb));
-  font-family: "FiraSans-light", sans-serif;
-  
-}
-
-.main-somos h1 {
-  font-family: "FiraSans-Bold", sans-serif;
-  font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
-  margin-bottom: 1.5rem;
-}
-.about h2{
-  font-family: "FiraSans-semibold", sans-serif;
-  color: var(--color-texto);
-}
-
-.about span{
-  font-family: "FiraSans-semibold", sans-serif;
-  color: var(--color-texto);
-}
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
+/* =============================================
+   CAROUSEL STYLES FOR QUIENES-SOMOS PAGE
+   ============================================= */
 
 /* Carousel base class */
 .main-somos .carousel {
   margin-bottom: 4rem;
 }
 
-/* Since positioning the image, we need to help out the caption */
+/* Carousel caption positioning */
 .main-somos .carousel-caption {
   bottom: 3rem;
   z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
+/* Carousel item height */
 .main-somos .carousel-item {
   height: 30rem;
+  position: relative;
 }
 
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-/* rtl:begin:ignore */
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-}
-.lead {
-  font-size: 1.125rem;
-  font-weight: 300;
-}
-/* rtl:end:ignore */
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 5rem 0;
-  /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-/* rtl:begin:remove */
-.featurette-heading {
-  letter-spacing: -.05rem;
-}
-
-/* rtl:end:remove */
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 40em) {
-
-  /* Bump up size of carousel content */
-  .main-somos .carousel-caption p {
-    margin-bottom: 10rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
-  .main-somos .featurette-heading {
-    font-size: 40px;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 0.2rem;
-  }
-}
-
-/* codigo adicionado del body*/
-
+/* SVG placeholder for carousel images */
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -117,123 +28,25 @@ body.about {
   user-select: none;
 }
 
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
+/* Main heading in carousel */
+.main-somos h1 {
+  font-family: "FiraSans-Bold", sans-serif;
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+  margin-bottom: 1.5rem;
+  color: white !important;
 }
 
-.b-example-divider {
-  width: 100%;
-  height: 3rem;
-  background-color: #0000001a;
-  border: solid rgba(0, 0, 0, 0.15);
-  border-width: 1px 0;
-  box-shadow:
-    inset 0 0.5em 1.5em #0000001a,
-    inset 0 0.125em 0.5em #00000026;
-}
-
-.b-example-vr {
-  flex-shrink: 0;
-  width: 1.5rem;
-  height: 100vh;
-}
-
-.bi {
-  vertical-align: -0.125em;
-  fill: var(--color-principal);
-}
-
-.main-somos .nav-scroller {
-  position: relative;
-  z-index: 2;
-  height: 2.75rem;
-  overflow-y: hidden;
-}
-
-.main-somos .nav-scroller .nav {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  margin-top: -1px;
-  overflow-x: auto;
-  text-align: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-
-.bd-mode-toggle {
-  z-index: 1500;
-}
-
-.bd-mode-toggle .bi {
-  width: 1em;
-  height: 1em;
-}
-
-.bd-mode-toggle .dropdown-menu .active .bi {
-  display: block !important;
-}
-
-.boton-orange {
-  background-color: var(--color-secundario);
-  border-color: var(--color-secundario);
-  color: var(--color-principal);
-}
-
-.boton-orange:hover {
-  background-color: var(--color-principal);
-  border-color: var(--color-principal);
-}
-
-/* Solo el carrusel con id="myCarousel" */
-.main-somos .carousel-item {
-  position: relative;
-}
-
-.main-somos .carousel-item::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right,
-      rgba(190, 51, 0, 1) 0%,
-      rgba(200, 51, 0, 0) 100%);
-  z-index: 1;
-}
-
-/* Imagen debajo del gradiente */
-.main-somos .carousel-item svg,
-.main-somos .carousel-item img {
-  position: relative;
-  z-index: 0;
-}
-
-
-
-@media (min-width: 768px) {
-  .about .navbar {
-    position: relative;
-    width: 100%;
-    z-index: 999999;
-  }
-}
-
-.title-red {
-  color: var(--color-footer) !important;
-}
-
+/* Page content images */
 img.img1 {
   width: 100%;
   max-width: 700px;
 }
 
-.text-bg-secondary {
-  color: #fff !important;
-  background-color: var(--color-principal) !important;
-}
-
-.text-bg-secondary .bi {
-    vertical-align: -0.125em;
-    fill: #fff;
+/* Responsive adjustments */
+@media (min-width: 40em) {
+  .main-somos .carousel-caption p {
+    margin-bottom: 10rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
 }

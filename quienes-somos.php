@@ -43,7 +43,6 @@ require '_partials/header.php'; ?>
           <div class="carousel-caption text-start">
             <h1 class="">Quienes Somos</h1>
             <p class="small text-light">
-              Nuestra historia
             </p>
           </div>
         </div>
@@ -66,7 +65,7 @@ require '_partials/header.php'; ?>
           <div class="carousel-caption text-start">
             <h1 class="">Quienes Somos</h1>
             <p class="small text-light">
-              Nuestra historia
+              
             </p>
           </div>
         </div>
@@ -87,9 +86,8 @@ require '_partials/header.php'; ?>
         </svg>
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1 class="">Quienes Somos</h1>
+            <h1 class="main-somos">Quienes Somos</h1>
             <p class="small text-light">
-              Nuestra historia
             </p>
           </div>
         </div>
@@ -128,7 +126,7 @@ require '_partials/header.php'; ?>
           Durante esta época el comercio se dedica a las actividades de sedería, mercería y paquetería, trabajando principalmente productos como hilos, algodones, puntillas, encajes, flecos, pasamanería, cintas, botones y adornos. En 1917 fallece Vicente Larraz Gil, y el negocio queda en manos de Miguel García, ayudado quizás por alguno de los hijos del señor Larraz. Finalmente, es el menor de ellos, Vicente Larraz Cardiel, quien toma la dirección de la empresa.
         </p>
       </div>
-      <div class="col-12 col-lg-5">
+      <div class="col-12 col-lg-5 justify-content-center d-flex align-items-center">
         <img src="assets/img/historia.jpg" alt="" class="img1 pt-2" srcset="">
       </div>
     </div>
@@ -164,7 +162,7 @@ require '_partials/header.php'; ?>
     <hr class="featurette-divider" />
     <div class="row featurette">
       <div class="col-12 col-lg-7 order-md-2 ps-lg-5 ps-sm-0 pt-3 pt-lg-0">
-        <h2 class="featurette-heading lh-1 title-red">
+        <h2 class="featurette-heading lh-1 title-red pt-3">
           La Tienda
         </h2>
         <p class="lead">
@@ -173,22 +171,21 @@ require '_partials/header.php'; ?>
           Cada temporada incorporamos nuevas gamas de productos siguiendo las últimas tendencias de la moda. Para ello, disponemos de una selección de artículos de fabricación nacional y realizamos importaciones, algunas de las cuales en exclusiva.
         </p>
       </div>
-      <div class="col-12 col-lg-5 order-md-1">
+      <div class="col-12 col-lg-5 order-md-1 justify-content-center d-flex align-items-center">
         <img src="assets/img/cajaentrada.jpg" alt="" class="img1" srcset="">
       </div>
     </div>
     <hr class="featurette-divider" />
     <div class="row featurette">
       <div class="col-12 col-lg-7 pe-5">
-        <h2 class="featurette-heading lh-1 title-red">
+        <h2 class="featurette-heading lh-1 title-red pt-3">
           Confianza, calidad y seguridad
         </h2>
         <p class="lead"><span class="fw-bold">- Confianza:</span> servimos a miles de clientes que confían en nosotros. Organismos oficiales como la Casa Real, ministerios, gobiernos autonómicos y ayuntamientos, compañías multinacionales y marcas reconocidas, clubes y federaciones deportivas, Ejército, Guardia Civil y otros cuerpos de seguridad, cofradías, partidos políticos y sindicatos, etc.</p>
         <p class="lead">También distribuyen nuestros productos empresas como agencias de publicidad, tiendas de banderas y artículos personalizados, etc.<br /><span class="fw-bold">- Calidad:</span> el conocimiento acumulado durante nuestra larga existencia nos permite ofrecer una amplia variedad de productos con la máxima calidad.</p>
         <p class="lead">Algunos de nuestros productos son los de mayor calidad en España.<br /><span class="fw-bold">- Seguridad:</span> satisfacemos las necesidades de nuestros clientes y cumplimos las fechas de entrega demandadas.</p>
       </div>
-      <div class="col-12 col-lg-5 pe-5
-        ">
+      <div class="col-12 col-lg-5 pe-5 d-flex justify-content-center">
         <img src="assets/img/manualidades.png" alt="" class="img1 pt-2" srcset="">
         </svg>
       </div>

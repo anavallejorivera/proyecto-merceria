@@ -206,7 +206,7 @@ img {
 }
 
 /* ===============================================
-   NAVBAR (STICKY SIN ROMPER HERO)
+   NAVBAR (STICKY HERO)
    =============================================== */
 .navbar {
   position: sticky;
@@ -474,7 +474,7 @@ section.Hero {
   min-height: 100dvh;
 }
 
-/* MÓVIL: imagen arriba + texto abajo */
+/* MÓVIL: imagen -> */
 .Lockup {
   display: block !important;
 }
@@ -573,13 +573,13 @@ z-index: 9999;
   }
 
   .FirstLockup .Media img {
-    transform: rotate(6deg);
+    /* sin rotación */
   }
   .SecondLockup .Media img {
-    transform: rotate(-4deg);
+    /* sin rotación */
   }
   .ThirdLockup .Media img {
-    transform: rotate(15deg);
+    /* sin rotación */
   }
 }
 /* ================================
@@ -675,16 +675,22 @@ z-index: 9999;
       z-index: 1;
     }
 
-    /* La 1ª sale al scrollear la 2ª */
+    /* La 1ª sube cuando aparece la 2ª */
     .FirstLockup .Media img {
-      animation: slide-out-rotate linear both;
+      animation: scroll-up-with-content linear both;
       animation-timeline: --second-lockup;
     }
 
-    /* La 2ª sale al scrollear la 3ª */
+    /* La 2ª sube cuando aparece la 3ª */
     .SecondLockup .Media img {
-      animation: slide-out-rotate linear both;
+      animation: scroll-up-with-content linear both;
       animation-timeline: --third-lockup;
+    }
+
+    /* La 3ª sube cuando aparece "Sobre Nosotros" */
+    .ThirdLockup .Media img {
+      animation: scroll-up-with-content linear both;
+      animation-timeline: --conocenos;
     }
 
     /* dots */
@@ -736,6 +742,16 @@ z-index: 9999;
   }
 }
 
+/* Animación para que la imagen suba cuando scrollea dentro de ThirdLockup */
+@keyframes scroll-up-with-content {
+  0%, 55% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0vh) rotate(10deg);;
+  }
+}
+
 @keyframes highlight {
   50% {
     background-color: var(--color-principal);
@@ -758,6 +774,7 @@ z-index: 9999;
    =============================================== */
 .conocenos {
   background-color: var(--color-fondo);
+  view-timeline-name: --conocenos;
 }
 
 .conocenos h2 {
@@ -883,7 +900,7 @@ z-index: 9999;
   .destacados .card-inner {
     position: relative;
     width: 100%;
-    height: 22rem; /* 🔥 MÁS ALTURA EN MÓVIL */
+    height: 22rem; 
     background: var(--clr);
     border-radius: 0.5rem;
     border-bottom-right-radius: 0;
@@ -1171,3 +1188,57 @@ footer a:hover svg {
    COOKIES BANNER
    =============================================== */
 
+/* =============================================
+   CAROUSEL STYLES FOR QUIENES-SOMOS PAGE
+   ============================================= */
+
+/* Carousel base class */
+.main-somos .carousel {
+  margin-bottom: 4rem;
+}
+
+/* Carousel caption positioning */
+.main-somos .carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Carousel item height */
+.main-somos .carousel-item {
+  height: 30rem;
+  position: relative;
+}
+
+/* SVG placeholder for carousel images */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* Main heading in carousel */
+.main-somos h1 {
+  font-family: "FiraSans-Bold", sans-serif;
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+  margin-bottom: 1.5rem;
+  color: white !important;
+}
+
+/* Page content images */
+img.img1 {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (min-width: 40em) {
+  .main-somos .carousel-caption p {
+    margin-bottom: 10rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
