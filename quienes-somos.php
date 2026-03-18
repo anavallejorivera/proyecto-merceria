@@ -5,7 +5,7 @@ $base = '.';
 require __DIR__ . '/includes/header.php'; ?>
 <?php require __DIR__ . '/includes/nav.php'; ?>
 <main class="main-somos">
-  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-interval="2000" data-bs-pause="false">
     <div class="carousel-indicators">
       <button
         type="button"
@@ -40,12 +40,12 @@ require __DIR__ . '/includes/header.php'; ?>
             height="100%"
             preserveAspectRatio="xMidYMid slice" />
         </svg>
-        <div class="carousel-caption text-center pruebas">
+          <div class="carousel-caption text-start pb-2">
           <h1>Más de un siglo inspirando creatividad en el corazón de Zaragoza</h1>
-          <p class="small text-light">
+          <!-- <p class="small text-light">
             Conóce nuestra historia, misión y visión en el mundo de las manualidades, la mercería y las labores textiles. Desde 1866, Larraz es tu tienda de referencia para dar vida a tus proyectos creativos.
-          </p>
-        </div>
+          </p> -->
+          </div>
       </div>
       <div class="carousel-item">
         <svg
@@ -61,9 +61,11 @@ require __DIR__ . '/includes/header.php'; ?>
             height="100%"
             preserveAspectRatio="xMidYMid slice" />
         </svg>
-        <div class="carousel-caption text-center pruebas">
-          <h1>Quienes Somos</h1>
-          <p class="small text-light"></p>
+          <div class="carousel-caption text-start pb-2">
+          <h1>Más de un siglo inspirando creatividad en el corazón de Zaragoza</h1>
+          <!-- <p class="small text-light">
+            Conóce nuestra historia, misión y visión en el mundo de las manualidades, la mercería y las labores textiles. Desde 1866, Larraz es tu tienda de referencia para dar vida a tus proyectos creativos.
+          </p> -->
         </div>
       </div>
       <div class="carousel-item">
@@ -80,9 +82,11 @@ require __DIR__ . '/includes/header.php'; ?>
             height="100%"
             preserveAspectRatio="xMidYMid slice" />
         </svg>
-        <div class="carousel-caption text-center pruebas">
-          <h1>Quienes Somos</h1>
-          <p class="small text-light"></p>
+          <div class="carousel-caption text-start pb-2">
+          <h1>Más de un siglo inspirando creatividad en el corazón de Zaragoza</h1>
+          <!-- <p class="small text-light">
+            Conóce nuestra historia, misión y visión en el mundo de las manualidades, la mercería y las labores textiles. Desde 1866, Larraz es tu tienda de referencia para dar vida a tus proyectos creativos.
+          </p> -->
         </div>
       </div>
     </div>
