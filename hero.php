@@ -1,25 +1,27 @@
+<?php $base = '.'; ?>
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $title;?></title>
     <meta name="description" content="<?php echo $description;?>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/carousel.css">
-    <link rel="stylesheet" href="./assets/css/productos.css">
-    <link rel="icon" type="image/svg+xml" href="assets/img/logolarraz.svg">
+    <link rel="stylesheet" href="<?php echo $base; ?>/assets/css/layout.css">
+    <link rel="stylesheet" href="<?php echo $base; ?>/assets/css/carousel.css">
+    <link rel="stylesheet" href="<?php echo $base; ?>/assets/css/productos.css">
+    <link rel="icon" type="image/svg+xml" href="<?php echo $base; ?>/assets/img/logolarraz.svg">
   </head>
   <body class="">
-<?php require '_partials/nav.php';?>
+<?php require __DIR__ . '/includes/nav.php';?>
+<div class="hero-scroll">
 <section class="Hero p-0 w-100" aria-label="Presentación Mercería Larraz">
 
 <!-- Slide/Sección 1 -->
 <article id="mercerialarraz" class="Lockup FirstLockup d-flex align-items-center">
   <div class="Media observe" data-slide="1" aria-hidden="true">
     <img
-      src="./assets/img/cat-textil.jpg"
+      src="<?php echo $base; ?>/assets/img/cat-textil.jpg"
       alt="Materiales de costura y manualidades sobre una mesa"
       loading="eager"
       decoding="async"
@@ -43,7 +45,7 @@ somos la mayor tienda de Aragón en manualidades, <span>mercería</span> y
 
     </p>
 
-    <a href="./quienes-somos.php" class="button wobble-top btn-cta btn align-self-start">Conócenos</a>
+    <a href="<?php echo $base; ?>/quienes-somos.php" class="button wobble-top btn-cta btn align-self-start">Conócenos</a>
   </div>
 </article>
 
@@ -51,7 +53,7 @@ somos la mayor tienda de Aragón en manualidades, <span>mercería</span> y
 <article id="manualidadestodos" class="Lockup SecondLockup d-flex align-items-center">
   <div class="Media observe" data-slide="2" aria-hidden="true">
     <img
-      src="./assets/img/hero-imagen.png"
+      src="<?php echo $base; ?>/assets/img/hero-imagen.png"
       alt="Manualidades para todos"
       loading="lazy"
       decoding="async"
@@ -68,7 +70,7 @@ somos la mayor tienda de Aragón en manualidades, <span>mercería</span> y
     Miles de <span>productos</span> para <span>artistas</span> y <span>aficionados</span> de todas las <span>edades</span>.
     </p>
 
-    <a href="./quienes-somos.php" class="button wobble-top btn-cta btn align-self-start">Conócenos</a>
+    <a href="<?php echo $base; ?>/quienes-somos.php" class="button wobble-top btn-cta btn align-self-start">Conócenos</a>
   </div>
 </article>
 
@@ -76,7 +78,7 @@ somos la mayor tienda de Aragón en manualidades, <span>mercería</span> y
 <article id="textil-merceria" class="Lockup ThirdLockup d-flex align-items-center">
   <div class="Media observe" data-slide="3" aria-hidden="true">
     <img
-      src="./assets/img/hero-banner.jpg"
+      src="<?php echo $base; ?>/assets/img/hero-banner.jpg"
       alt="Textil y Mercería"
       loading="lazy"
       decoding="async"
@@ -95,7 +97,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
 
     </p>
 
-    <a href="./quienes-somos.php" class="button wobble-top btn-cta btn align-self-start">Conócenos</a>
+    <a href="<?php echo $base; ?>/quienes-somos.php" class="button wobble-top btn-cta btn align-self-start">Conócenos</a>
   </div>
 </article>
 
@@ -110,12 +112,12 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
 
 
 </section>
-<div class="hero-spacer"></div>
+</div><!-- /.hero-scroll -->
 
 
 
 <!-- Quienes somos -->
-<section class="conocenos py-5">
+<section class="conocenos py-5" id="conocenos">
 <div class="container-lg">
   <div class="row align-items-center g-4">
     <div class="col-12 col-lg-6">
@@ -128,7 +130,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
 
     </div>
     <div class="col-12 col-lg-6">
-      <img src="./assets/img/cat-textil.jpg" alt="Tienda Larraz" class="img-fluid rounded-4 shadow">
+      <img src="<?php echo $base; ?>/assets/img/larraz-portada.png" alt="Tienda Larraz" class="img-fluid rounded-4 shadow">
     </div>
   </div>
 </div>
@@ -142,7 +144,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
       <div class="card-nosotros p-4 rounded-4 h-100">
         <div class="circle-nosotros rounded-circle d-flex align-items-center justify-content-center mb-3">
           <svg>
-            <use href="assets/img/sprite.svg#clock"></use>
+            <use href="<?php echo $base; ?>/assets/img/sprite.svg#clock"></use>
           </svg>
         </div>
         <h5>Más de 125 años</h5>
@@ -157,7 +159,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
       <div class="card-nosotros p-4 rounded-4 h-100">
         <div class="circle-nosotros rounded-circle d-flex align-items-center justify-content-center mb-3">
           <svg>
-            <use href="assets/img/sprite.svg#heart"></use>
+            <use href="<?php echo $base; ?>/assets/img/sprite.svg#heart"></use>
           </svg>
         </div>
         <h5>Pasión artesanal</h5>
@@ -172,7 +174,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
       <div class="card-nosotros p-4 rounded-4 h-100">
         <div class="circle-nosotros rounded-circle d-flex align-items-center justify-content-center mb-3">
           <svg>
-            <use href="assets/img/sprite.svg#persons"></use>
+            <use href="<?php echo $base; ?>/assets/img/sprite.svg#persons"></use>
           </svg>
         </div>
         <h5>Experiencia completa</h5>
@@ -187,7 +189,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
       <div class="card-nosotros p-4 rounded-4 h-100">
         <div class="circle-nosotros rounded-circle d-flex align-items-center justify-content-center mb-3">
           <svg>
-            <use href="assets/img/sprite.svg#lamp"></use>
+            <use href="<?php echo $base; ?>/assets/img/sprite.svg#lamp"></use>
           </svg>
         </div>
         <h5>Atención personalizada</h5>
@@ -215,7 +217,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
             </div>
             <div class="icon">
               <a href="http://www.facebook.com" class="iconBox" ><svg class="icon__xl">
-                   <use href="assets/img/sprite.svg#arrowupright"></use>
+                   <use href="<?php echo $base; ?>/assets/img/sprite.svg#arrowupright"></use>
                  </svg><span class="visually-hidden ">arrow-right</span></a>
             </div>
           </div>
@@ -233,7 +235,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
             </div>
             <div class="icon">
               <a href="http://www.facebook.com" class="iconBox" ><svg class="icon__xl">
-                   <use href="assets/img/sprite.svg#arrowupright"></use>
+                   <use href="<?php echo $base; ?>/assets/img/sprite.svg#arrowupright"></use>
                  </svg><span class="visually-hidden ">arrow-right</span></a>
             </div>
           </div>
@@ -252,7 +254,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
             </div>
             <div class="icon">
               <a href="http://www.facebook.com" class="iconBox" ><svg class="icon__xl">
-                   <use href="assets/img/sprite.svg#arrowupright"></use>
+                   <use href="<?php echo $base; ?>/assets/img/sprite.svg#arrowupright"></use>
                  </svg><span class="visually-hidden ">arrow-right</span></a>
             </div>
           </div>
@@ -272,7 +274,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
             </div>
             <div class="icon">
               <a href="http://www.facebook.com" class="iconBox" ><svg class="icon__xl">
-                   <use href="assets/img/sprite.svg#arrowupright"></use>
+                   <use href="<?php echo $base; ?>/assets/img/sprite.svg#arrowupright"></use>
                  </svg><span class="visually-hidden ">arrow-right</span></a>
             </div>
           </div>
@@ -326,7 +328,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
  </main>
  <footer class="pt-4 pb-1">
  <a href="#inicio" class="subir"><svg class="icon__xl">
-            <use href="assets/img/sprite.svg#arrow-up"></use>
+            <use href="<?php echo $base; ?>/assets/img/sprite.svg#arrow-up"></use>
         </svg><span class="visually-hidden">Inicio</a>
    <div class="container-lg">
 
@@ -336,8 +338,8 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
        <div class="col-sm-10 col-md-3 mb-4">
          <div class="d-flex justify-content-center justify-content-md-start align-items-center gap-3 mb-3">
            <div class="rounded-circle d-flex align-items-center justify-content-center">
-             <a href="./index.php" rel="noopener noreferrer" title="Home"></a>
-               <img src="assets/img/logolarraz.svg" alt="Inicio" class="logo">
+             <a href="<?php echo $base; ?>/index.php" rel="noopener noreferrer" title="Home"></a>
+               <img src="<?php echo $base; ?>/assets/img/logolarraz.svg" alt="Inicio" class="logo">
            </div>
 
            <div>
@@ -360,7 +362,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
          <ul class="list-unstyled small">
            <li class="d-flex justify-content-center justify-content-md-start align-items-start mb-2">
              <svg class="me-2" width="18" height="18">
-               <use href="assets/img/sprite.svg#location"></use>
+               <use href="<?php echo $base; ?>/assets/img/sprite.svg#location"></use>
              </svg>
              <div>
                <p class="mb-0">Calle del Coso, 66-74</p>
@@ -370,7 +372,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
 
            <li class="d-flex justify-content-center justify-content-md-start align-items-center mb-2">
              <svg class="me-2" width="18" height="18">
-               <use href="assets/img/sprite.svg#phoneleft"></use>
+               <use href="<?php echo $base; ?>/assets/img/sprite.svg#phoneleft"></use>
              </svg>
              <a href="tel:+34976000000" class="text-decoration-none">
                +34 976 22 41 13
@@ -379,7 +381,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
 
            <li class="d-flex justify-content-center justify-content-md-start align-items-center mb-3">
              <svg class="me-2" width="18" height="18">
-               <use href="assets/img/sprite.svg#letter"></use>
+               <use href="<?php echo $base; ?>/assets/img/sprite.svg#letter"></use>
              </svg>
              <a href="mailto:info@mundolarraz.es" class="text-decoration-none">
                info@mundolarraz.es
@@ -392,7 +394,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
        <div class="col-sm-6 col-md-3 mb-4 pt-2 pt-md-4">
          <h6 class="mb-3">
            <svg class="me-2" width="18" height="18">
-             <use href="assets/img/sprite.svg#clock"></use>
+             <use href="<?php echo $base; ?>/assets/img/sprite.svg#clock"></use>
            </svg>
            Horario
          </h6>
@@ -412,11 +414,11 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
          <h6 class="mb-3">Enlaces Rápidos</h6>
 
          <ul class="list-unstyled small mb-3">
-           <li><a href="./index.php" class="text-decoration-none">Inicio</a></li>
-           <li><a href="./quienes-somos.php" class="text-decoration-none">Nosotros</a></li>
-           <li><a href="./manualidades.php" class="text-decoration-none">Manualidades</a></li>
-           <li><a href="./textil.php" class="text-decoration-none">Textil</a></li>
-           <li><a href="./merceria.php" class="text-decoration-none">Mercería</a></li>
+           <li><a href="<?php echo $base; ?>/index.php" class="text-decoration-none">Inicio</a></li>
+           <li><a href="<?php echo $base; ?>/quienes-somos.php" class="text-decoration-none">Nosotros</a></li>
+           <li><a href="<?php echo $base; ?>/pages/manualidades/index.php" class="text-decoration-none">Manualidades</a></li>
+           <li><a href="<?php echo $base; ?>/pages/textil/index.php" class="text-decoration-none">Textil</a></li>
+           <li><a href="<?php echo $base; ?>/pages/merceria/index.php" class="text-decoration-none">Mercería</a></li>
          </ul>
 
          <h6 class="small mb-2 pt-4">Síguenos:</h6>
@@ -424,7 +426,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
            <li>
              <a href="http://www.facebook.com" target="_blank">
                <svg class="icon__xl">
-                 <use href="assets/img/sprite.svg#rrssfacebook"></use>
+                 <use href="<?php echo $base; ?>/assets/img/sprite.svg#rrssfacebook"></use>
                </svg>
                <span class="visually-hidden">Facebook</span>
              </a>
@@ -432,7 +434,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
            <li>
              <a href="http://www.instagram.com" target="_blank">
                <svg class="icon__xl">
-                 <use href="assets/img/sprite.svg#rrssinstagram"></use>
+                 <use href="<?php echo $base; ?>/assets/img/sprite.svg#rrssinstagram"></use>
                </svg>
                <span class="visually-hidden">Instagram</span>
              </a>
@@ -440,7 +442,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
            <li>
              <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
                <svg class="icon__xl">
-                 <use href="assets/img/sprite.svg#rrsstwitter"></use>
+                 <use href="<?php echo $base; ?>/assets/img/sprite.svg#rrsstwitter"></use>
                </svg>
                <span class="visually-hidden">X</span>
              </a>
@@ -463,5 +465,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
 
    </div>
  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="<?php echo $base; ?>/assets/js/main.js"></script>
   </body>
 </html>

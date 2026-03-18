@@ -2,17 +2,20 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// Cargar PHPMailer
-require 'assets/PHPMailer/PHPMailer.php';
-require 'assets/PHPMailer/Exception.php';
-require 'assets/PHPMailer/SMTP.php';
+// Cargar PHPMailer desde lib/
+require __DIR__ . '/lib/PHPMailer/PHPMailer.php';
+require __DIR__ . '/lib/PHPMailer/Exception.php';
+require __DIR__ . '/lib/PHPMailer/SMTP.php';
+
+// Cargar configuración de correo (lee credenciales desde config/.env)
+$mailConfig = require __DIR__ . '/config/mail.php';
 
 // 3.1 Verificar reCAPTCHA
 $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-$recaptcha_secret = '6LcLEUQsAAAAAAlgHUxCnYdRzbxnFJXOrMuEh41v';
+$recaptcha_secret = $mailConfig['recaptcha_secret'];
 $recaptcha_response = $_POST['recaptcha_response'] ?? '';
 
-$recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
+$recaptcha = file_get_contents($recaptcha_url . '?secret=' . urlencode($recaptcha_secret) . '&response=' . urlencode($recaptcha_response));
 $recaptcha = json_decode($recaptcha);
 
 if (!$recaptcha->success || $recaptcha->score < 0.7) {
@@ -32,18 +35,18 @@ if (strlen($name) < 2 || !$email || strlen($message) < 10) {
 $mail = new PHPMailer(true);
 
 try {
-    // SMTP Gmail
+    // SMTP desde configuración
     $mail->isSMTP();
-    $mail->Host       = 'smtp.gmail.com';
+    $mail->Host       = $mailConfig['host'];
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'masteringfrontend360@gmail.com'; // Tu cuenta Gmail
-    $mail->Password   = 'ttew pxku jthi kwgr';            // Contraseña de aplicación
+    $mail->Username   = $mailConfig['username'];
+    $mail->Password   = $mailConfig['password'];
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port       = 587;
+    $mail->Port       = $mailConfig['port'];
 
     // Remitente y destinatario
-    $mail->setFrom('masteringfrontend360@gmail.com', 'Formulario Mercería Larraz');
-    $mail->addAddress('bigdatazgz@gmail.com');
+    $mail->setFrom($mailConfig['username'], $mailConfig['from_name']);
+    $mail->addAddress($mailConfig['to_address']);
 
     // 3.4 Crear y enviar mensaje
     $mensaje = "<h2>Nuevo mensaje desde el formulario</h2>";

@@ -1,8 +1,9 @@
 <?php 
  $title = "Mercería Larraz | ML";
  $description = 'Página de contacto Mercería Larraz';
-require '_partials/header.php';?>
-<?php require '_partials/nav.php';?>
+$base = '.';
+require __DIR__ . '/includes/header.php';?>
+<?php require __DIR__ . '/includes/nav.php';?>
 <main class="py-5">
     <div class="container-lg mb-5">
         <div class="row g-5 justify-content-center">
@@ -63,15 +64,15 @@ require '_partials/header.php';?>
             <h5 class="mb-0 me-3 text-footer">Síguenos:</h5>
             <ul class="d-flex justify-content-center justify-content-md-start gap-3 list-unstyled mb-0">
                 <li><a href="http://www.facebook.com" target="_blank" class="social-icon">
-                    <svg class="icon__xl"><use href="assets/img/sprite.svg#rrssfacebook"></use></svg>
+                    <svg class="icon__xl"><use href="<?php echo $base; ?>/assets/img/sprite.svg#rrssfacebook"></use></svg>
                     <span class="visually-hidden">Facebook</span>
                 </a></li>
                 <li><a href="http://www.instagram.com" target="_blank" class="social-icon">
-                    <svg class="icon__xl"><use href="assets/img/sprite.svg#rrssinstagram"></use></svg>
+                    <svg class="icon__xl"><use href="<?php echo $base; ?>/assets/img/sprite.svg#rrssinstagram"></use></svg>
                     <span class="visually-hidden">Instagram</span>
                 </a></li>
                 <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="social-icon">
-                    <svg class="icon__xl"><use href="assets/img/sprite.svg#rrsstwitter"></use></svg>
+                    <svg class="icon__xl"><use href="<?php echo $base; ?>/assets/img/sprite.svg#rrsstwitter"></use></svg>
                     <span class="visually-hidden">X</span>
                 </a></li>
             </ul>
@@ -80,10 +81,10 @@ require '_partials/header.php';?>
     </div>
 </div>
 
-<?php require '_partials/footer.php';?> 
+<?php require __DIR__ . '/includes/footer.php';?> 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-<script src="./assets/js/script.js"></script>
+<script src="<?php echo $base; ?>/assets/js/main.js"></script>
 
 <script>
   const form = document.querySelector("form");

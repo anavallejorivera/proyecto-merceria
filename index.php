@@ -2,16 +2,18 @@
 <?php 
  $title = "Mercería Larraz | ML";
  $description = 'Página de inicio Mercería Larraz';
-require '_partials/header.php';?>
-<?php require '_partials/nav.php';?>
+ $base = '.';
+require __DIR__ . '/includes/header.php';?>
+<?php require __DIR__ . '/includes/nav.php';?>
     <!-- HERO -->
+<div class="hero-scroll">
 <section class="Hero p-0 container-lg" aria-label="Presentación Mercería Larraz">
 
   <!-- Slide/Sección 1 -->
   <article id="mercerialarraz" class="Lockup FirstLockup d-flex align-items-center container-lg">
     <div class="Media observe container-lg" data-slide="1" aria-hidden="true">
       <img
-        src="./assets/img/cat-textil.jpg"
+        src="<?php echo $base; ?>/assets/img/cat-textil.jpg"
         alt="Materiales de costura y manualidades sobre una mesa"
         loading="eager"
         decoding="async"
@@ -35,7 +37,7 @@ somos la mayor tienda de Aragón en manualidades, <span>mercería</span> y
       <span>Inspírate</span>, <span>crea</span> y <span>encuentra</span> el regalo perfecto.
 
       </p>
-      <a href="./quienes-somos.php" class="button wobble-top btn-cta btn conocenos-btn">Conócenos</a>
+      <a href="<?php echo $base; ?>/quienes-somos.php" class="button wobble-top btn-cta btn conocenos-btn">Conócenos</a>
        </div>
     </div>
   </article>
@@ -44,7 +46,7 @@ somos la mayor tienda de Aragón en manualidades, <span>mercería</span> y
   <article id="manualidadestodos" class="Lockup SecondLockup d-flex align-items-center">
     <div class="Media observe container-lg" data-slide="2" aria-hidden="true">
       <img
-        src="./assets/img/hero-imagen.png"
+        src="<?php echo $base; ?>/assets/img/hero-imagen.png"
         alt="Manualidades para todos"
         loading="lazy"
         decoding="async"
@@ -61,7 +63,7 @@ somos la mayor tienda de Aragón en manualidades, <span>mercería</span> y
       Miles de <span>productos</span> para <span>artistas</span> y <span>aficionados</span> de todas las <span>edades</span>.
       </p>
 
-      <a href="./quienes-somos.php" class="button wobble-top btn-cta btn align-self-start">Conócenos</a>
+      <a href="<?php echo $base; ?>/quienes-somos.php" class="button wobble-top btn-cta btn align-self-start">Conócenos</a>
     </div>
     </div>
   </article>
@@ -70,7 +72,7 @@ somos la mayor tienda de Aragón en manualidades, <span>mercería</span> y
   <article id="textil-merceria" class="Lockup ThirdLockup d-flex align-items-center">
     <div class="Media observe container-lg" data-slide="3" aria-hidden="true">
       <img
-        src="./assets/img/hero-banner.jpg"
+        src="<?php echo $base; ?>/assets/img/hero-banner.jpg"
         alt="Textil y Mercería"
         loading="lazy"
         decoding="async"
@@ -89,7 +91,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
 
       </p>
 
-      <a href="./quienes-somos.php" class="button wobble-top btn-cta btn align-self-start">Conócenos</a>
+      <a href="<?php echo $base; ?>/quienes-somos.php" class="button wobble-top btn-cta btn align-self-start">Conócenos</a>
     </div>
     </div>
   </article>
@@ -104,6 +106,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
   </nav>
 
 </section>
+</div><!-- /.hero-scroll -->
 
 
 
@@ -122,7 +125,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
 
       </div>
       <div class="col-12 col-lg-6">
-        <img src="./assets/img/cat-textil.jpg" alt="Tienda Larraz" class="img-fluid rounded-4 shadow">
+        <img src="<?php echo $base; ?>/assets/img/larraz-portada.png" alt="Tienda Larraz" class="img-fluid rounded-4 shadow">
       </div>
     </div>
   </div>
@@ -136,7 +139,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
         <div class="card-nosotros p-4 rounded-4 h-100">
           <div class="circle-nosotros rounded-circle d-flex align-items-center justify-content-center mb-3">
             <svg>
-              <use href="assets/img/sprite.svg#clock"></use>
+              <use href="<?php echo $base; ?>/assets/img/sprite.svg#clock"></use>
             </svg>
           </div>
           <h5>Más de 125 años</h5>
@@ -151,7 +154,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
         <div class="card-nosotros p-4 rounded-4 h-100">
           <div class="circle-nosotros rounded-circle d-flex align-items-center justify-content-center mb-3">
             <svg>
-              <use href="assets/img/sprite.svg#heart"></use>
+              <use href="<?php echo $base; ?>/assets/img/sprite.svg#heart"></use>
             </svg>
           </div>
           <h5>Pasión artesanal</h5>
@@ -166,7 +169,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
         <div class="card-nosotros p-4 rounded-4 h-100">
           <div class="circle-nosotros rounded-circle d-flex align-items-center justify-content-center mb-3">
             <svg>
-              <use href="assets/img/sprite.svg#persons"></use>
+              <use href="<?php echo $base; ?>/assets/img/sprite.svg#persons"></use>
             </svg>
           </div>
           <h5>Experiencia completa</h5>
@@ -181,7 +184,7 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
         <div class="card-nosotros p-4 rounded-4 h-100">
           <div class="circle-nosotros rounded-circle d-flex align-items-center justify-content-center mb-3">
             <svg>
-              <use href="assets/img/sprite.svg#lamp"></use>
+              <use href="<?php echo $base; ?>/assets/img/sprite.svg#lamp"></use>
             </svg>
           </div>
           <h5>Atención personalizada</h5>
@@ -205,11 +208,11 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
           <div class="card-inner" style="--clr:#fff;">
             <div class="box">
               <div class="imgBox">
-                <img src="./assets/img/catalogo/merceria/hilos-y-lanas.jpg" alt="Lanas y Ovillos">
+                <img src="<?php echo $base; ?>/assets/img/catalogo/merceria/hilos-y-lanas.jpg" alt="Lanas y Ovillos">
               </div>
               <div class="icon">
-                <a href="./merceria-hilos-y-lanas.php" class="iconBox" ><svg class="icon__xl">
-                     <use href="assets/img/sprite.svg#arrowupright"></use>
+                <a href="<?php echo $base; ?>/pages/merceria/hilos-y-lanas.php" class="iconBox" ><svg class="icon__xl">
+                     <use href="<?php echo $base; ?>/assets/img/sprite.svg#arrowupright"></use>
                    </svg><span class="visually-hidden ">arrow-right</span></a>
               </div>
             </div>
@@ -223,11 +226,11 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
           <div class="card-inner" style="--clr:#fff;">
             <div class="box">
               <div class="imgBox">
-                <img src="./assets/img/catalogo/merceria/cintas-y-elasticos.jpg" alt="Cintas y Lazos">
+                <img src="<?php echo $base; ?>/assets/img/catalogo/merceria/cintas-y-elasticos.jpg" alt="Cintas y Lazos">
               </div>
               <div class="icon">
-                <a href="./merceria-hilos-y-lanas.php" class="iconBox" ><svg class="icon__xl">
-                     <use href="assets/img/sprite.svg#arrowupright"></use>
+                <a href="<?php echo $base; ?>/pages/merceria/hilos-y-lanas.php" class="iconBox" ><svg class="icon__xl">
+                     <use href="<?php echo $base; ?>/assets/img/sprite.svg#arrowupright"></use>
                    </svg><span class="visually-hidden ">arrow-right</span></a>
               </div>
             </div>
@@ -242,11 +245,11 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
           <div class="card-inner" style="--clr:#fff;">
             <div class="box">
               <div class="imgBox">
-                <img src="./assets/img/catalogo/merceria/botones-y-cierres.jpg" alt="Cintas y Lazos">
+                <img src="<?php echo $base; ?>/assets/img/catalogo/merceria/botones-y-cierres.jpg" alt="Cintas y Lazos">
               </div>
               <div class="icon">
-                <a href="./merceria.php" class="iconBox" ><svg class="icon__xl">
-                     <use href="assets/img/sprite.svg#arrowupright"></use>
+                <a href="<?php echo $base; ?>/pages/merceria/index.php" class="iconBox" ><svg class="icon__xl">
+                     <use href="<?php echo $base; ?>/assets/img/sprite.svg#arrowupright"></use>
                    </svg><span class="visually-hidden ">arrow-right</span></a>
               </div>
             </div>
@@ -262,11 +265,11 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
           <div class="card-inner" style="--clr:#fff;">
             <div class="box">
               <div class="imgBox">
-                <img src="./assets/img/catalogo/manualidades/sellos-decorativos.png" alt="Sellos Decorativos">
+                <img src="<?php echo $base; ?>/assets/img/catalogo/manualidades/sellos-decorativos.png" alt="Sellos Decorativos">
               </div>
               <div class="icon">
-                <a href="./textil.php" class="iconBox" ><svg class="icon__xl">
-                     <use href="assets/img/sprite.svg#arrowupright"></use>
+                <a href="<?php echo $base; ?>/pages/textil/index.php" class="iconBox" ><svg class="icon__xl">
+                     <use href="<?php echo $base; ?>/assets/img/sprite.svg#arrowupright"></use>
                    </svg><span class="visually-hidden ">arrow-right</span></a>
               </div>
             </div>
@@ -283,8 +286,8 @@ Desde <span>1866</span> manteniendo viva la <span>tradición</span> de la <span>
     </section>
    
      
-  <?php require '_partials/footer.php';?> 
+  <?php require __DIR__ . '/includes/footer.php';?> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="./assets/js/script.js"></script>
+<script src="<?php echo $base; ?>/assets/js/main.js"></script>
   </body>
 </html>

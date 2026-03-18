@@ -1,0 +1,16 @@
+# Credenciales y variables de entorno
+config/.env
+
+# Dependencias (si se usa Composer en el futuro)
+vendor/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

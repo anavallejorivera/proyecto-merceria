@@ -2,8 +2,9 @@
 <?php 
  $title = "Mercería Larraz | ML";
  $description = 'Página de inicio Mercería Larraz';
-require '_partials/header.php';?>
-<?php require '_partials/nav.php';?>
+$base = '.';
+require __DIR__ . '/includes/header.php';?>
+<?php require __DIR__ . '/includes/nav.php';?>
 <div class="container-lg mt-5">
 
 
@@ -36,9 +37,9 @@ require '_partials/header.php';?>
   <p>Si tienes preguntas sobre nuestra política de cookies, puedes escribirnos a: <a href="mailto:info@mercerialarraz.com">info@mercerialarraz.com</a></p>
 
   </div>
-<?php require '_partials/footer.php';?> 
+<?php require __DIR__ . '/includes/footer.php';?> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="./assets/js/script.js"></script>
+<script src="<?php echo $base; ?>/assets/js/main.js"></script>
 
   </body>
 </html>

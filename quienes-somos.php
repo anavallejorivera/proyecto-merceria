@@ -1,8 +1,9 @@
 <?php
 $title = "Nosotros | Mercería Larraz";
 $description = 'Página de Productos de Mercería';
-require '_partials/header.php'; ?>
-<?php require '_partials/nav.php'; ?>
+$base = '.';
+require __DIR__ . '/includes/header.php'; ?>
+<?php require __DIR__ . '/includes/nav.php'; ?>
 <main class="main-somos">
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -34,17 +35,16 @@ require '_partials/header.php'; ?>
           width="100%"
           xmlns="http://www.w3.org/2000/svg">
           <image
-            href="assets/img/larraz-portada.png"
+            href="<?php echo $base; ?>/assets/img/larraz-portada.png"
             width="100%"
             height="100%"
             preserveAspectRatio="xMidYMid slice" />
         </svg>
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1 class="">Quienes Somos</h1>
-            <p class="small text-light">
-            </p>
-          </div>
+        <div class="carousel-caption text-center pruebas">
+          <h1>Más de un siglo inspirando creatividad en el corazón de Zaragoza</h1>
+          <p class="small text-light">
+            Conóce nuestra historia, misión y visión en el mundo de las manualidades, la mercería y las labores textiles. Desde 1866, Larraz es tu tienda de referencia para dar vida a tus proyectos creativos.
+          </p>
         </div>
       </div>
       <div class="carousel-item">
@@ -56,18 +56,14 @@ require '_partials/header.php'; ?>
           width="100%"
           xmlns="http://www.w3.org/2000/svg">
           <image
-            href="assets/img/cat-manualidades.jpg"
+            href="<?php echo $base; ?>/assets/img/cat-manualidades.jpg"
             width="100%"
             height="100%"
             preserveAspectRatio="xMidYMid slice" />
         </svg>
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1 class="">Quienes Somos</h1>
-            <p class="small text-light">
-              
-            </p>
-          </div>
+        <div class="carousel-caption text-center pruebas">
+          <h1>Quienes Somos</h1>
+          <p class="small text-light"></p>
         </div>
       </div>
       <div class="carousel-item">
@@ -79,17 +75,14 @@ require '_partials/header.php'; ?>
           width="100%"
           xmlns="http://www.w3.org/2000/svg">
           <image
-            href="assets/img/cat-textil.jpg"
+            href="<?php echo $base; ?>/assets/img/cat-textil.jpg"
             width="100%"
             height="100%"
             preserveAspectRatio="xMidYMid slice" />
         </svg>
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1 class="main-somos">Quienes Somos</h1>
-            <p class="small text-light">
-            </p>
-          </div>
+        <div class="carousel-caption text-center pruebas">
+          <h1>Quienes Somos</h1>
+          <p class="small text-light"></p>
         </div>
       </div>
     </div>
@@ -127,7 +120,7 @@ require '_partials/header.php'; ?>
         </p>
       </div>
       <div class="col-12 col-lg-5 justify-content-center d-flex align-items-center">
-        <img src="assets/img/historia.jpg" alt="" class="img1 pt-2" srcset="">
+        <img src="<?php echo $base; ?>/assets/img/historia.jpg" alt="" class="img1 pt-2" srcset="">
       </div>
     </div>
     <hr class="featurette-divider" />
@@ -172,7 +165,7 @@ require '_partials/header.php'; ?>
         </p>
       </div>
       <div class="col-12 col-lg-5 order-md-1 justify-content-center d-flex align-items-center">
-        <img src="assets/img/cajaentrada.jpg" alt="" class="img1" srcset="">
+        <img src="<?php echo $base; ?>/assets/img/cajaentrada.jpg" alt="" class="img1" srcset="">
       </div>
     </div>
     <hr class="featurette-divider" />
@@ -186,7 +179,7 @@ require '_partials/header.php'; ?>
         <p class="lead">Algunos de nuestros productos son los de mayor calidad en España.<br /><span class="fw-bold">- Seguridad:</span> satisfacemos las necesidades de nuestros clientes y cumplimos las fechas de entrega demandadas.</p>
       </div>
       <div class="col-12 col-lg-5 pe-5 d-flex justify-content-center">
-        <img src="assets/img/manualidades.png" alt="" class="img1 pt-2" srcset="">
+        <img src="<?php echo $base; ?>/assets/img/manualidades.png" alt="" class="img1 pt-2" srcset="">
         </svg>
       </div>
     </div>
@@ -198,7 +191,7 @@ require '_partials/header.php'; ?>
 </main>
 <!-- FOOTER -->
 <?php
-include('_partials/footer.php');
+include(__DIR__ . '/includes/footer.php');
 ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

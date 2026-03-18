@@ -15,7 +15,7 @@ const sections = [
   document.querySelector('#textil-merceria')
 ];
 
-const pictures = document.querySelectorAll('.Media.picture'); // ACTUALIZADO ✅
+const pictures = document.querySelectorAll('.Media.picture');
 
 const activateSection = (index) => {
   pictures.forEach((pic, i) =>
@@ -49,6 +49,19 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => {
   if (section) observer.observe(section);
 });
+
+  /* ===== Ocultar paginación al llegar a "Sobre Nosotros" ===== */
+  const paginationNav = document.querySelector('.pagination');
+  const conocenosSection = document.querySelector('.conocenos');
+
+  if (paginationNav && conocenosSection) {
+    const paginationObserver = new IntersectionObserver(([entry]) => {
+      paginationNav.classList.toggle('hidden', entry.isIntersecting);
+    }, { threshold: 0.1 });
+
+    paginationObserver.observe(conocenosSection);
+  }
+
   /* ===== Botón subir ===== */
   const subirBtn = document.querySelector(".subir");
   if (subirBtn) {
@@ -59,51 +72,7 @@ sections.forEach(section => {
 
 
 
-// hero scroll desappear
-const heroSection = document.querySelector(".Hero");
-const nosotrosSection = document.querySelector(".conocenos");
-
-if (heroSection && conocenosSection) {
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      if (entry.isIntersecting) {
-        heroSection.classList.add("fade-out");
-      } else {
-        heroSection.classList.remove("fade-out");
-      }
-    },
-    {
-      root: null,
-      threshold: 0.3,
-    }
-  );
-
-  observer.observe(conocenosSection);
-}
-
-
-
-
   /* ===== Menú activo según URL ===== */
-
-  // ⚠️ Quita el alert cuando ya esté probado
-  // alert(location.pathname);
-
-  const currentPage = location.pathname.split("/").pop() || "index.html";
-  const links = document.querySelectorAll(".nav-link a");
-
-  links.forEach(link => {
-    const linkPage = link.getAttribute("href").split("/").pop();
-    if (linkPage === currentPage) {
-      link.classList.add("active");
-    }
-  });
-
-  /* ===== Menú activo según URL ===== */
-
-  // ⚠️ Quita el alert cuando ya esté probado
-  // alert(location.pathname);
-
   const currentPage = location.pathname.split("/").pop() || "index.html";
   const links = document.querySelectorAll(".nav-link a");
 
