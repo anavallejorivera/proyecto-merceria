@@ -79,59 +79,6 @@ proyecto-merceria/
 
 ---
 
-## Cambios clave y por qué
-
-### 1. `config/` — Configuración centralizada
-
-```php
-// config/app.php
-return [
-    'site_name'  => 'Mercería Larraz',
-    'phone'      => '+34 666 66 66',
-    'email'      => 'bigdatazgz@gmail.com',
-    'address'    => 'C/ Ejemplo 123, Zaragoza',
-    'analytics'  => 'G-2XM6CYL676',
-];
-```
-
-```
-// config/.env (NUNCA subirlo a Git)
-SMTP_HOST=smtp.gmail.com
-SMTP_USER=masteringfrontend360@gmail.com
-SMTP_PASS=ttew pxku jthi kwgr
-RECAPTCHA_SECRET=6LcLEUQsAAAAAAlgHUxCnYdRzbxnFJXOrMuEh41v
-```
-
-### 2. `includes/layout.php` — Eliminar repetición
-
-```php
-// includes/layout.php
-<?php
-require_once __DIR__ . '/../config/app.php';
-include __DIR__ . '/header.php';
-include __DIR__ . '/nav.php';
-if (isset($breadcrumb)) include __DIR__ . '/breadcrumb.php';
-
-echo $content; // El contenido de cada página
-
-include __DIR__ . '/footer.php';
-```
-
-Cada página solo define `$title`, `$description`, `$content` e incluye el layout.
-
-### 3. `.htaccess` — Seguridad básica
-
-```apache
-# Bloquear acceso directo a config/ y lib/
-<DirectoryMatch "^.*(config|lib|includes).*$">
-    Require all denied
-</DirectoryMatch>
-
-# URL amigables opcionales
-RewriteEngine On
-RewriteRule ^merceria/?$ pages/merceria/index.php [L]
-RewriteRule ^merceria/(.+)$ pages/merceria/$1.php [L]
-```
 
 ### 4. `.gitignore`
 
